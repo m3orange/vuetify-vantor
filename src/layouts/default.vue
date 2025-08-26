@@ -2,7 +2,7 @@
 
     <router-view />
 
-
+    <AppFooter/>
 </template>
 
 <script lang="ts" setup>

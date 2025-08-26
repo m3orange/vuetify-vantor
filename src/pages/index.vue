@@ -1,5 +1,6 @@
 <template>
-     <div class="wrapper-global-watermark">
+  <NavBar/>
+     <div class="wrapper-global">
       <ComponentsImport/>
    </div>
 </template>

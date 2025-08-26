@@ -1,6 +1,7 @@
 <template>
-  <div class="wrapper-global">
+  <div class="wrapper-global-no-nav">
     <ComponentCheckbox/>
+    <!-- <AppFooter/> -->
   </div>
 
 </template>

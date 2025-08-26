@@ -8,9 +8,12 @@
 
 :root {
   --vantor-teal: #06cfff;
+  --vantor-plum: #8E0DD1;
+  --vantor-light-gray: #b6b6b6;
   --font-everett: 'TWK Everett';
   --font-inter: 'Inter';
   --v-theme-primary: #FF7700!important;
+  --vantor-secondary: var(--vantor-plum);
       
 }
 
@@ -25,14 +28,15 @@ body{
   padding: 0 30px;
 }
 
+.wrapper-global-no-nav{
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
 .wrapper-global-watermark{
   background-image: url("https://m3orange.com/maxar/vantor-brand/vantor_logo_orb_dark_gray_03.svg");
   background-position-x: 130%;
   background-position-y: 90% ;
-
-
-
-
 }
 
 
@@ -92,8 +96,42 @@ h1, h2, h3, h4, h5, h6{
     color: rgba(255,255,255,0.6);
 }
 
+/* .area{
+  margin: 0 0 80px 0;
+} */
+
+
 .area{
-  margin: 0 0 60px 0;
+  background-color: rgba(255,255,255,0.06);
+  padding: 40px;
+  margin: 0 0 20px 0;
+  border-radius: 10px;
+}
+
+  .same-area{
+    margin: 40px 0 30px 0;
+  }
+
+    .vuetify-documentation {
+      margin: 20px 0 10px 0;
+      display: flex;
+      flex-direction: row;
+      font-size: 15px;
+    }
+
+  .vuetify-documentation a{
+    color: var(--vantor-light-gray);
+    margin-top: 4px;
+
+  }
+
+    .vuetify-documentation  img{
+      height: 30px;
+      margin: 0 6px 0 0;
+    }
+
+.gray-headers{
+  color: rgba(255,255,255,1);
 }
 
 .v-btn.button-outline,
@@ -129,24 +167,34 @@ h1, h2, h3, h4, h5, h6{
 
 
 .v-card-vantor{
-  background-color: #3b3b3b;
+  background-color: #575757;
   padding: 30px 20px;
   max-width: 600px;
   display: flex;
 
 }
 
-.v-card-vantor .v-list-item__prepend{
-  margin-right: 30px;
+      .v-card-vantor .v-list-item__prepend{
+        margin-right: 30px;
 
+      }
+      .v-card-vantor .v-card-title{
+        font-size: 20px;
+        font-weight: 500;
+        font-family: var(--font-everett);
+
+      }
+
+      .v-card-text{
+        margin: 10px 0px;
+      }
+
+.footer-area{
+  background-color: rgba(0,0,0,0.9)!important;
 }
-.v-card-vantor .v-card-title{
-  font-size: 20px;
-  font-weight: 500;
-  font-family: var(--font-everett);
 
-}
 
-.v-card-text{
-  margin: 10px 0px;
+.footer-link{
+  margin: 0 20px 0 0;
+  color: var(--vantor-teal);
 }

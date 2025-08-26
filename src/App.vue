@@ -1,10 +1,10 @@
 <template>
   <v-app>
-<NavBar/>
+
 
     <RouterView />
     <ComponentImport/>
-    <AppFooter/>
+
   </v-app>
 </template>
 

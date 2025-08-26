@@ -2,6 +2,7 @@
   <v-footer
     app
     height="40"
+    class="footer-area"
   >
     <!-- <a
       v-for="item in items"
@@ -20,8 +21,9 @@
 
 
 
-    <a class="v-btn v-theme--light v-btn--density-default v-btn--size-default" href="/">Home</a>
-    <a class="v-btn v-theme--light v-btn--density-default v-btn--size-default" href="/checkbox">Checkbox</a>
+    <a class="v-theme--light v-btn--size-medium footer-link" href="/">Home</a>
+    <a class="v-theme--light v-btn--size-medium footer-link" href="/checkbox">Checkbox</a>
+    <a class="v-theme--light v-btn--size-medium footer-link" href="/radiobutton">Radio Button</a>
   </v-footer>
 </template>
 

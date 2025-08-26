@@ -1,5 +1,5 @@
 <template>
-  <v-container class="parent-container">
+  <v-container class="parent-container ">
 
     <v-row style="margin: 50px 0;">
 
@@ -13,8 +13,15 @@
 
         <div class="area">
 
-          <h1>Button</h1>
+          <h2>Button</h2>
           <!-- <v-btn class="button-outline">Order</v-btn> -->
+
+          <h4 class="gray-headers">Native</h4>
+          <v-btn>Vantor</v-btn>
+
+          <v-divider class="same-area"></v-divider>
+
+          <h4 class="gray-headers">Custom</h4>
 
           <button type="button" class="v-btn v-theme--light v-btn--size-default button-outline"><span
               class="v-btn__overlay"></span>
@@ -22,35 +29,46 @@
             <span class="v-btn__content" data-no-activator="">Vantor</span>
           </button>
 
+          <div class="vuetify-documentation">
+            <img src="https://cdn.vuetifyjs.com/docs/images/brand-kit/v-logo.svg"/>
+            <a href="https://vuetifyjs.com/en/components/buttons/#usage"
+            target="_blank">View</a>
+          </div>
 
         </div>
 
         <div class="area">
-          <h1>Radio Button</h1>
+          <h2>Radio Button</h2>
           <v-radio-group>
             <v-radio label="Radio One" value="one"></v-radio>
             <v-radio label="Radio Two" value="two"></v-radio>
             <v-radio label="Radio Three" value="three"></v-radio>
           </v-radio-group>
+          
+          <div class="vuetify-documentation">
+            <img src="https://cdn.vuetifyjs.com/docs/images/brand-kit/v-logo.svg"/>
+            <a href="https://vuetifyjs.com/en/components/radio-buttons/#usage"
+            target="_blank">View</a>
+          </div>
         </div>
 
         <div class="area">
-          <h1>Checkbox</h1>
+          <h2>Checkbox</h2>
           <v-checkbox label="Checkbox"></v-checkbox>
         </div>
 
         <div class="area">
-          <h1>Input Fields</h1>
+          <h2>Input Field</h2>
           <v-text-field label="Label" variant="underlined"></v-text-field>
         </div>
 
         <div class="area">
-          <h1>Date Picker</h1>
+          <h2>Date Picker</h2>
           <v-date-picker></v-date-picker>
         </div>
 
         <div class="area">
-          <h1>Card</h1>
+          <h2>VCard</h2>
           
               <div data-v-d4a662d3=""
         class="v-card v-theme--customTheme v-card--density-default elevation-0 v-card--variant-elevated"
