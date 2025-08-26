@@ -1,153 +1,159 @@
 <template>
   <v-container class="parent-container">
-    <div>
-      <v-img
-        class="mb-4"
-        height="150"
-        src="@/assets/logo.png"
-      />
 
-      <div class="mb-8 text-center">
-
-        <h1 class="text-h2 font-weight-bold">Vuetify</h1>
-      </div>
+    <v-row style="margin: 50px 0;">
 
 
 
 
+      <v-col cols="8">
 
 
+        <h3>Add brand image from Tomi's PDF</h3>
+
+        <div class="area">
+
+          <h1>Button</h1>
+          <!-- <v-btn class="button-outline">Order</v-btn> -->
+
+          <button type="button" class="v-btn v-theme--light v-btn--size-default button-outline"><span
+              class="v-btn__overlay"></span>
+            <span class="v-btn__underlay"></span>
+            <span class="v-btn__content" data-no-activator="">Vantor</span>
+          </button>
 
 
-<v-row style="margin: 50px 0;">
+        </div>
 
-  <v-col cols="6">
+        <div class="area">
+          <h1>Radio Button</h1>
+          <v-radio-group>
+            <v-radio label="Radio One" value="one"></v-radio>
+            <v-radio label="Radio Two" value="two"></v-radio>
+            <v-radio label="Radio Three" value="three"></v-radio>
+          </v-radio-group>
+        </div>
 
-<v-btn-group></v-btn-group>
-
-  <div class="area">
-
-    <h1>Button</h1>
-    <!-- <v-btn class="button-outline">Order</v-btn> -->
-
-    <button type="button" class="v-btn v-theme--light v-btn--size-default button-outline"><span class="v-btn__overlay"></span>
-      <span class="v-btn__underlay"></span>
-      <span class="v-btn__content" data-no-activator="">Vantor</span>
-    </button>
-
-
-  </div>
-
-  <div class="area">
-        <h1>Radio Button</h1>
-    <v-radio-group>
-      <v-radio label="Radio One" value="one"></v-radio>
-      <v-radio label="Radio Two" value="two"></v-radio>
-      <v-radio label="Radio Three" value="three"></v-radio>
-    </v-radio-group>
-  </div>
-
-    <div class="area">
+        <div class="area">
           <h1>Checkbox</h1>
-    <v-checkbox label="Checkbox"></v-checkbox>
-  </div>
+          <v-checkbox label="Checkbox"></v-checkbox>
+        </div>
 
-  <div class="area">
-    <h1>Input Fields</h1>
-    <v-text-field label="Label" variant="underlined"></v-text-field>
-  </div>
+        <div class="area">
+          <h1>Input Fields</h1>
+          <v-text-field label="Label" variant="underlined"></v-text-field>
+        </div>
 
-  <div class="area">
-    <h1>Date Picker</h1>
+        <div class="area">
+          <h1>Date Picker</h1>
+          <v-date-picker></v-date-picker>
+        </div>
 
-    <v-row justify="space-around">
-      <v-date-picker
-        color="primary"
-      ></v-date-picker>
+        <div class="area">
+          <h1>Card</h1>
+          
+              <div data-v-d4a662d3=""
+        class="v-card v-theme--customTheme v-card--density-default elevation-0 v-card--variant-elevated"
+        id="vividContainer"><!---->
+        <div class="v-card__loader">
+          <div class="v-progress-linear v-theme--customTheme v-locale--is-ltr" role="progressbar" aria-hidden="true"
+            aria-valuemin="0" aria-valuemax="100" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;">
+            <!---->
+            <div class="v-progress-linear__background"></div>
+            <div class="v-progress-linear__buffer" style="width: 0%;"></div>
+            <div class="v-progress-linear__indeterminate">
+              <div class="v-progress-linear__indeterminate long"></div>
+              <div class="v-progress-linear__indeterminate short"></div>
+            </div><!---->
+          </div>
+        </div><!----><!---->
+        <div data-v-d4a662d3="" class="v-list v-theme--customTheme v-list--density-compact v-list--one-line "
+          tabindex="0" role="listbox">
+
+
+          <div data-v-3d08e742="" data-v-d4a662d3=""
+            class="v-list-item v-list-item--active v-list-item--link v-theme--customTheme v-list-item--density-compact v-list-item--one-line rounded-0 v-list-item--variant-text isActive v-card-vantor"
+            tabindex="-2"><span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span>
+            <div class="v-list-item__prepend">
+              <div data-v-3d08e742=""
+                class="v-input v-input--horizontal v-input--center-affix v-input--density-default v-theme--customTheme v-locale--is-ltr v-input--dirty v-checkbox"
+                data-test="Vivid Advanced 15cm HD-toggle"><!---->
+                <div class="v-input__control">
+                  <div
+                    class="v-selection-control v-selection-control--dirty v-selection-control--density-default v-checkbox-btn">
+                    <div class="v-selection-control__wrapper text-primary"><!---->
+                      <div class="v-selection-control__input"><i
+                          class="mdi-checkbox-marked mdi v-icon notranslate v-theme--customTheme v-icon--size-default"
+                          aria-hidden="true"></i><input id="checkbox-245" aria-disabled="false" type="checkbox"
+                          aria-describedby="checkbox-245-messages" value="true" checked=""></div>
+                    </div><!---->
+                  </div>
+                </div><!---->
+                <div class="v-input__details">
+                  <div class="v-messages" role="alert" aria-live="polite" id="checkbox-245-messages"></div><!---->
+                </div>
+              </div>
+              <div class="v-list-item__spacer"></div>
+            </div>
+            <div class="v-list-item__content" data-no-activator=""><!----><!---->
+
+              <div data-v-3d08e742=""
+                class="v-card v-theme--customTheme v-card--density-default elevation-0 v-card--variant-elevated bg-transparent">
+                <!---->
+                <div class="v-card__loader">
+                  <div class="v-progress-linear v-theme--customTheme v-locale--is-ltr" role="progressbar"
+                    aria-hidden="true" aria-valuemin="0" aria-valuemax="100"
+                    style="top: 0px; height: 0px; --v-progress-linear-height: 2px;"><!---->
+
+                    <div class="v-progress-linear__background"></div>
+                    <div class="v-progress-linear__buffer" style="width: 0%;"></div>
+                    <div class="v-progress-linear__indeterminate">
+                      <div class="v-progress-linear__indeterminate long"></div>
+                      <div class="v-progress-linear__indeterminate short"></div>
+                    </div><!---->
+                  </div>
+                </div><!----><!---->
+                <div data-v-3d08e742="" class="v-card-title">Vivid Advanced 15cm HD</div>
+                <div data-v-3d08e742="" class="v-card-text">Coverage Areas: Global high-interest areas: population,
+                  change, infrastructure</div>
+                <div data-v-3d08e742="" class="v-card-actions">
+                  <v-btn class="v-btn v-theme--light button-outline-small"
+                    variant="outlined"
+                    size="small">Order</v-btn>
+
+                </div><!----><!---->
+                <span class="v-card__underlay"></span>
+              </div>
+            </div>
+
+          </div>
+          
+          
+
+        </div><!----><!----><span class="v-card__underlay"></span>
+      </div>
+        </div>
+
+      </v-col>
+
+
+
+
+
     </v-row>
 
-  </div>
-
-
-</v-col>
-
-
-</v-row>
-
-
-
-
-      
-
-      
-
-
-
-
-    </div>
   </v-container>
 </template>
 
 <style>
 
-.bg-primary{
-  background-color: var(--vantor-teal)!important;
+.primary{
+background-color: #06cfff !important;
 }
 
-.v-application__wrap {
-  background-color: #222!important;
-}
 
-:root {
-  --vantor-teal: #06cfff;
-  --font-everett: 'TWK Everett';
-  --font-inter: 'Inter';
-  --v-theme-primary: #FF7700!important;
-      
-}
 
-body{
-  font-family: var(--font-inter);
-}
-
-.parent-container{
-
-  color: #FFFFFF;
-}
-
-h1, h2, h3, h4, h5, h6{
-    color: #06cfff;
-    margin-bottom: 20px;
-    font-family: var(--font-everett);
-    font-weight: 500;
-}
-
-.area{
-  margin: 0 0 150px 0;
-}
-
-.v-btn.button-outline {
-  font-size: 18px;
-  font-weight: 500;
-  font-family: 'TWK Everett';
-  color: var(--vantor-teal);
-  text-align: center;
-  display: inline-block;
-  padding: 12px 24px;
-  background: none;
-  text-transform: unset;
-  border: 1px solid var(--vantor-teal);
-  border-radius: 4px;
-}
-
-.v-btn.button-outline:hover{
-  background-color: rgba(6, 207, 255, 0.10);
-}
-.v-selection-control__input > .v-icon{
- color: var(--vantor-teal);
-}
 </style>
-
 <script setup lang="ts">
 
 </script>

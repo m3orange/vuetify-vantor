@@ -1,7 +1,7 @@
 <template>
   <div class="parent-container">
     <div>
-      <v-checkbox label="Checkbox"></v-checkbox>
+      <v-checkbox label="Prove you're a human"></v-checkbox>
     </div>
 
   </div>

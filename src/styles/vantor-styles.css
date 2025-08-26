@@ -18,6 +18,24 @@ body{
   font-family: var(--font-inter);
 }
 
+
+.wrapper-global,
+.wrapper-global-watermark{
+  margin-top: 100px;
+  padding: 0 30px;
+}
+
+.wrapper-global-watermark{
+  background-image: url("https://m3orange.com/maxar/vantor-brand/vantor_logo_orb_dark_gray_03.svg");
+  background-position-x: 130%;
+  background-position-y: 90% ;
+
+
+
+
+}
+
+
 .parent-container{
 
   color: #FFFFFF;
@@ -30,11 +48,56 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 500;
 }
 
-.area{
-  margin: 0 0 150px 0;
+.top-nav{
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(0,0,0,0.8);
+  color: #FFF;
+  padding: 20px 40px;
+  display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.v-btn.button-outline {
+.logo img{
+  border: 0px!important;
+  opacity: 0.35;
+}
+
+.logo img,
+.logo a,
+.logo a:visited{
+  border: 0px!important;
+}
+
+.logo{
+    width: 120px;
+  margin-right: 80px;
+  z-index: 11;
+  border: 0px!important;
+}
+
+.top-nav .links{
+  margin: 0 20px 0 0;
+  font-size: 14px;
+  font-family: var(--font-inter);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.top-nav a,
+.top-nav a:visited{
+    color: rgba(255,255,255,0.6);
+}
+
+.area{
+  margin: 0 0 60px 0;
+}
+
+.v-btn.button-outline,
+.v-btn.button-outline-small {
   font-size: 18px;
   font-weight: 500;
   font-family: 'TWK Everett';
@@ -48,6 +111,14 @@ h1, h2, h3, h4, h5, h6{
   border-radius: 4px;
 }
 
+.v-btn.button-outline-small{
+    padding: 8px 20px;
+      font-size: 14px;
+        border-radius: 4px;
+        height: fit-content!important;
+}
+
+.v-btn.button-outline-small:hover,
 .v-btn.button-outline:hover{
   background-color: rgba(6, 207, 255, 0.10);
 }
@@ -57,9 +128,25 @@ h1, h2, h3, h4, h5, h6{
 
 
 
+.v-card-vantor{
+  background-color: #3b3b3b;
+  padding: 30px 20px;
+  max-width: 600px;
+  display: flex;
 
-.top-nav{
-  position: sticky;
-  height: 100px;
-  background-color: white;
+}
+
+.v-card-vantor .v-list-item__prepend{
+  margin-right: 30px;
+
+}
+.v-card-vantor .v-card-title{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--font-everett);
+
+}
+
+.v-card-text{
+  margin: 10px 0px;
 }
