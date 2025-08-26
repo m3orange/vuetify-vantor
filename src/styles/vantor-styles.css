@@ -1,0 +1,65 @@
+.bg-primary{
+  background-color: var(--vantor-teal)!important;
+}
+
+.v-application__wrap {
+  background-color: #222!important;
+}
+
+:root {
+  --vantor-teal: #06cfff;
+  --font-everett: 'TWK Everett';
+  --font-inter: 'Inter';
+  --v-theme-primary: #FF7700!important;
+      
+}
+
+body{
+  font-family: var(--font-inter);
+}
+
+.parent-container{
+
+  color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #06cfff;
+    margin-bottom: 20px;
+    font-family: var(--font-everett);
+    font-weight: 500;
+}
+
+.area{
+  margin: 0 0 150px 0;
+}
+
+.v-btn.button-outline {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'TWK Everett';
+  color: var(--vantor-teal);
+  text-align: center;
+  display: inline-block;
+  padding: 12px 24px;
+  background: none;
+  text-transform: unset;
+  border: 1px solid var(--vantor-teal);
+  border-radius: 4px;
+}
+
+.v-btn.button-outline:hover{
+  background-color: rgba(6, 207, 255, 0.10);
+}
+.v-selection-control__input > .v-icon{
+ color: var(--vantor-teal);
+}
+
+
+
+
+.top-nav{
+  position: sticky;
+  height: 100px;
+  background-color: white;
+}

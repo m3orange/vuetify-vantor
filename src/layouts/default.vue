@@ -1,9 +1,8 @@
 <template>
-  <v-main>
-    <router-view />
-  </v-main>
 
-  <AppFooter />
+    <router-view />
+
+
 </template>
 
 <script lang="ts" setup>

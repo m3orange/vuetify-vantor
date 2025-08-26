@@ -1,6 +1,5 @@
 <template>
-  <!-- <HelloWorld /> -->
-    <ComponentsImport/>
+  <ComponentCheckbox/>
 </template>
 
 <script lang="ts" setup>

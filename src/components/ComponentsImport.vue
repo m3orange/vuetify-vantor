@@ -23,6 +23,8 @@
 
   <v-col cols="6">
 
+<v-btn-group></v-btn-group>
+
   <div class="area">
 
     <h1>Button</h1>
@@ -65,6 +67,8 @@
     </v-row>
 
   </div>
+
+
 </v-col>
 
 
