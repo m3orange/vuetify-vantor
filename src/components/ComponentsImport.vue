@@ -85,7 +85,7 @@
                       <div class="v-selection-control__input"><i
                           class="mdi-checkbox-marked mdi v-icon notranslate v-theme--customTheme v-icon--size-default"
                           aria-hidden="true"></i><input id="checkbox-245" aria-disabled="false" type="checkbox"
-                          aria-describedby="checkbox-245-messages" value="true" checked=""></div>
+                          aria-describedby="checkbox-245-messages" value="true"></div>
                     </div><!---->
                   </div>
                 </div><!---->
@@ -128,8 +128,7 @@
 
           </div>
           
-          
-
+        
         </div><!----><!----><span class="v-card__underlay"></span>
       </div>
         </div>
