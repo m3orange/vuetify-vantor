@@ -48,6 +48,12 @@ body{
 }
 
 
+.bg-white{
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
 .parent-container{
 
   color: #FFFFFF;
@@ -234,6 +240,40 @@ h1, h2, h3, h4, h5, h6{
       }
 
 
+.grid-v-card{
+  max-width: 400px;
+  /* min-height: 400px; */
+}
+
+
+.grid-v-card-below{
+  height: 100%;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.grid-v-card .v-card-title{
+  padding: 1rem;
+}
+
+.grid-v-card .v-card-text{
+      padding: 20px 20px 10px 20px;
+      margin: 0px;
+}
+.grid-v-card-below .label{
+  background-color: var(--vantor-plum);
+  width: fit-content;
+  border-radius: 20px;
+  padding: 2px 10px;
+  color: #FFF;
+  font-size: 12px;
+  font-family: var(--font-everett);
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
 
 
 .footer-area{
