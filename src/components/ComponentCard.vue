@@ -1,12 +1,12 @@
 <template>
   <v-container class="parent-container">
 
-    <v-row style="margin: 50px 0;">
+    <v-row>
 
 
 
-      <!-- Card #1-->
-      <v-col cols="6">
+
+      <!-- <v-col cols="6">
         <v-card class="mx-auto grid-v-card" max-width="400">
         <v-img class="align-end text-white" height="200" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover>
           <v-card-title>Top 10 Australian beaches</v-card-title>
@@ -25,12 +25,12 @@
         </v-card-actions>
         </v-card>
 
-      </v-col>
-      <!-- End Card #1-->
+      </v-col> -->
+
 
 
       <!-- Card #2 -->
-        <v-col cols="6">
+        <v-col cols="6" md="12">
           <div class="v-card v-theme--light v-card--density-default v-card--variant-elevated mx-auto grid-v-card"><!---->
             <div class="v-card__loader">
               <div class="v-progress-linear v-theme--light v-locale--is-ltr" role="progressbar" aria-hidden="true"
