@@ -17,9 +17,25 @@
       
 }
 
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 body{
   font-family: var(--font-inter);
 }
+
+.inter-600 {
+  font-family: "Inter", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 
 .wrapper-global-reset{
   margin: 0px;
@@ -244,7 +260,10 @@ h1, h2, h3, h4, h5, h6{
   max-width: 400px;
   /* min-height: 400px; */
 }
-
+.grid-v-card .v-btn__content{
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
 
 .grid-v-card-below{
   height: 100%;
@@ -260,7 +279,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .grid-v-card .v-card-text{
-      padding: 20px 20px 10px 20px;
+      padding: 20px 1rem 10px 1rem;
       margin: 0px;
 }
 .grid-v-card-below .label{
@@ -273,6 +292,87 @@ h1, h2, h3, h4, h5, h6{
   font-family: var(--font-everett);
   font-weight: 600;
   margin: 0 0 8px 0;
+}
+
+.stats-card .v-icon{
+    font-weight: 700;
+}
+.stats-card {
+    border: 1px solid rgba(255,255,255,0.6)!important;
+
+}
+
+.stats-card .v-card--variant-plain,  .v-card--variant-outlined, .v-card--variant-text, .v-card--variant-tonal{
+    border-radius: 12px!important;
+    
+}
+
+.stats-card .v-card-item{
+
+      min-height: 180px;
+ 
+}
+
+.v-card-item__content .content-block{
+    /* border: 1px solid purple; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.v-card-item__content {
+  height: 100%;
+}
+
+
+
+.stats-title{
+  color: rgba(255,255,255,1);
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.stats-digit{
+  font-weight: 600;
+  font-size: 40px;
+   color: rgba(255,255,255,1);
+
+}
+
+.stats-digit .super{
+  font-size: 26px;
+  font-weight: 400;
+  vertical-align: text-top;  
+  margin-left: 3px;
+}
+
+.stats-period{
+  font-family: var(--font-inter);
+     color: rgba(255,255,255,0.6);
+     font-weight: 500;
+}
+
+.stats-title, .stats-digit{
+  font-family: var(--font-everett);
+
+}
+
+.stats-card .v-btn__content{
+    text-transform: none;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+}
+
+.stats-card .v-btn__content,
+.v-icon{
+    color: rgba(255,255,255,0.6);
+}
+
+.stats-card .v-card-actions{
+      gap: 0px;
 }
 
 

@@ -1,5 +1,5 @@
 <template>
-  <div class=".wrapper-global-reset">
+  <div class="wrapper-global-reset">
     <ComponentNavDrawer/>
  
   </div>
