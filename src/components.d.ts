@@ -11,9 +11,11 @@ declare module 'vue' {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     ComponentCheckbox: typeof import('./components/ComponentCheckbox.vue')['default']
     ComponentImport: typeof import('./components/ComponentsImport.vue')['default']
+    ComponentNavDrawer: typeof import('./components/ComponentNavDrawer.vue')['default']
     ComponentRadioButton: typeof import('./components/ComponentRadioButton.vue')['default']
-    Components: typeof import('./components/ComponentsImport.vue')['default']
+    Components: typeof import('./components/Comp./components/ComponentSpeedDial.vue
     ComponentsImport: typeof import('./components/ComponentsImport.vue')['default']
+    ComponentSpeedDial: typeof import('./components/ComponentSpeedDial.vue')['default']
     copy: typeof import('./components/ComponentRadioButton.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']

@@ -21,6 +21,10 @@ body{
   font-family: var(--font-inter);
 }
 
+.wrapper-global-reset{
+  margin: 0px;
+  padding: 0px;
+}
 
 .wrapper-global,
 .wrapper-global-watermark{
@@ -39,6 +43,10 @@ body{
   background-position-y: 90% ;
 }
 
+.wrapper-speed-dial{
+  height: 100%;
+}
+
 
 .parent-container{
 
@@ -51,6 +59,8 @@ h1, h2, h3, h4, h5, h6{
     font-family: var(--font-everett);
     font-weight: 500;
 }
+
+/* Top Nav */
 
 .top-nav{
   position: fixed;
@@ -100,6 +110,34 @@ h1, h2, h3, h4, h5, h6{
   margin: 0 0 80px 0;
 } */
 
+
+/* Sidebar */
+
+.nav-drawer .v-card{
+  border-radius: 0px;
+}
+
+.nav-icon{
+  padding: 10px 12px;
+  /* background-color: rgba(0,0,0,0.05); */
+}
+
+.vantor-nav-links.v-list-item--one-line{
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+      min-height: 48px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+}
+.v-list-item-title{
+  font-family: var(--font-inter);
+  font-size: 16px!important;
+  padding: 6px 0px;
+  min-height: 22px;
+}
+
+
+
+/* Rest */
 
 .area{
   background-color: rgba(255,255,255,0.06);
@@ -188,6 +226,15 @@ h1, h2, h3, h4, h5, h6{
       .v-card-text{
         margin: 10px 0px;
       }
+
+      .speed-dial-placement{
+        position: absolute!important;
+        bottom: 80px;
+        right: 60px;
+      }
+
+
+
 
 .footer-area{
   background-color: rgba(0,0,0,0.9)!important;

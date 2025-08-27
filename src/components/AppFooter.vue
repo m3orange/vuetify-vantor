@@ -24,6 +24,7 @@
     <a class="v-theme--light v-btn--size-medium footer-link" href="/">Home</a>
     <a class="v-theme--light v-btn--size-medium footer-link" href="/checkbox">Checkbox</a>
     <a class="v-theme--light v-btn--size-medium footer-link" href="/radiobutton">Radio Button</a>
+    <a class="v-theme--light v-btn--size-medium footer-link" href="/navdrawer">Navigation Drawer</a>
   </v-footer>
 </template>
 
