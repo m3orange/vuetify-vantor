@@ -19,7 +19,7 @@
 
 <v-col cols="4">
 <div class="area">
-<ComponentNavDrawer/>
+  <ComponentNavDrawer/>
 </div>
   
 </v-col>
