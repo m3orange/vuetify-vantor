@@ -33,10 +33,29 @@
       
 }
 
+
 .inter {
-  font-family: "Everett Bold", Helvetica, Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+body{
+  font-family: var(--font-inter);
+}
+
+.inter-600 {
+  font-family: "Inter", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+.wrapper-global-reset{
+  margin: 0px;
+  padding: 0px;
 }
 
 body{
@@ -359,7 +378,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .stats-title, .stats-digit{
-  font-family: "Everett Bold", Helvetica, sans-serif;
+  font-family: var(--font-everett);
 
 }
 

@@ -10,7 +10,10 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     ComponentCard: typeof import('./components/ComponentCard.vue')['default']
+<<<<<<< HEAD
     ComponentCardHubProduct: typeof import('./components/ComponentCardHubProduct.vue')['default']
+=======
+>>>>>>> a21d573 (Stat cards added)
     ComponentCardStats: typeof import('./components/ComponentCardStats.vue')['default']
     ComponentCheckbox: typeof import('./components/ComponentCheckbox.vue')['default']
     ComponentImport: typeof import('./components/ComponentsImport.vue')['default']
