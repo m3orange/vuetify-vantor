@@ -1,0 +1,71 @@
+
+@font-face {
+    font-family: "Everett Regular";
+    src: url("../assets/fonts/Everett/TWKEverett-Regular.woff");
+    /* IE9 Compat Modes */
+    src:
+        url("../assets/fonts/Everett/TWKEverett-Regular.woff") format("woff"),
+        url("../assets/fonts/Everett/TWKEverett-Regular.woff2") format("woff2"),
+        url("../assets/fonts/Everett/TWKEverett-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Everett Medium";
+    src: url("../assets/fonts/Everett/TWKEverett-Medium.woff");
+    /* IE9 Compat Modes */
+    src:
+        url("../assets/fonts/Everett/TWKEverett-Medium.woff") format("woff"),
+        url("../assets/fonts/Everett/TWKEverett-Medium.woff2") format("woff2"),
+        url("../assets/fonts/Everett/TWKEverett-Medium.ttf") format("truetype");
+}
+
+
+
+@font-face {
+    font-family: "Everett Bold";
+    src: url("../assets/fonts/Everett/TWKEverett-Bold.woff");
+    /* IE9 Compat Modes */
+    src:
+        url("../assets/fonts/Everett/TWKEverett-Bold.woff") format("woff"),
+        url("../assets/fonts/Everett/TWKEverett-Bold.woff2") format("woff2"),
+        url("../assets/fonts/Everett/TWKEverett-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url("../assets/fonts/Inter/Inter-Regular.woff2");
+    /* IE9 Compat Modes */
+    src:
+        url("../assets/fonts/Inter/Inter-Regular.woff") format("woff"),
+        url("../assets/fonts/Inter/Inter-Regular.woff2") format("woff2"),
+        url("../assets/fonts/Inter/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url("../assets/fonts/Inter/Inter-Bold.woff2");
+    /* IE9 Compat Modes */
+    src:
+        url("../assets/fonts/Inter/Inter-Bold.woff") format("woff"),
+        url("../assets/fonts/Inter/Inter-Bold.woff2") format("woff2"),
+        url("../assets/fonts/Inter/Inter-Bold.ttf") format("truetype");
+}
+
+
+.font{
+    font-family: 'Inter-Regular', "Inter-Regular";
+}
+
+@font-face {
+  font-family: Inter-Regular, "Inter-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+            src: url("fonts/Inter/Inter-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: Inter-Medium, "Inter-Medium";
+  font-style: normal;
+  font-weight: 600;
+        src: url("fonts/Inter/Inter-Medium.woff2") format("woff2");
+}

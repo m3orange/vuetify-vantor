@@ -10,12 +10,13 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     ComponentCard: typeof import('./components/ComponentCard.vue')['default']
+    ComponentCardHubProduct: typeof import('./components/ComponentCardHubProduct.vue')['default']
     ComponentCardStats: typeof import('./components/ComponentCardStats.vue')['default']
     ComponentCheckbox: typeof import('./components/ComponentCheckbox.vue')['default']
     ComponentImport: typeof import('./components/ComponentsImport.vue')['default']
     ComponentNavDrawer: typeof import('./components/ComponentNavDrawer.vue')['default']
     ComponentRadioButton: typeof import('./components/ComponentRadioButton.vue')['default']
-    Components: typeof import('./components/Comp./components/ComponentSpeedDial.vue
+    Components: typeof import('./components/Comp./components/ComponentSpeedDial.vue') ['default']
     ComponentsImport: typeof import('./components/ComponentsImport.vue')['default']
     ComponentSpeedDial: typeof import('./components/ComponentSpeedDial.vue')['default']
     copy: typeof import('./components/ComponentRadioButton.vue')['default']
@@ -23,5 +24,6 @@ declare module 'vue' {
     NavBar: typeof import('./components/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TopBar: typeof import('./components/TopBar.vue')['default']
   }
 }

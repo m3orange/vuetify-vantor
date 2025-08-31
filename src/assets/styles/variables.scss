@@ -1,0 +1,169 @@
+@use "vuetify/settings" with (
+    $border-radius-root: 0,
+    $table-header-height: 40px,
+    $table-row-height: 28px,
+    $table-header-font-size: 20px
+);
+
+
+@font-face {
+    font-family: "Everett-Book";
+    src: url("@/assets/fonts/TWKEverett-Book.woff");
+    /* IE9 Compat Modes */
+    src:
+        url("@/assets/fonts/TWKEverett-Book.woff") format("woff"),
+        url("@/assets/fonts/TWKEverett-Book.woff2") format("woff2"),
+        url("@/assets/fonts/TWKEverett-Book.ttf") format("truetype");
+
+}
+
+@font-face {
+    font-family: "Everett-Regular";
+    src: url("@/assets/fonts/TWKEverett-Regular.woff");
+    /* IE9 Compat Modes */
+    src:
+        url("@/assets/fonts/TWKEverett-Regular.woff") format("woff"),
+        url("@/assets/fonts/TWKEverett-Regular.woff2") format("woff2"),
+        url("@/assets/fonts/TWKEverett-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Everett-Medium";
+    src: url("@/assets/fonts/TWKEverett-Medium.woff");
+    /* IE9 Compat Modes */
+    src:
+        url("@/assets/fonts/TWKEverett-Medium.woff") format("woff"),
+        url("@/assets/fonts/TWKEverett-Medium.woff2") format("woff2"),
+        url("@/assets/fonts/TWKEverett-Medium.ttf") format("truetype");
+
+}
+
+@font-face {
+    font-family: "Everett-Bold";
+    src: url("@/assets/fonts/TWKEverett-Bold.woff");
+    /* IE9 Compat Modes */
+    src:
+        url("@/assets/fonts/TWKEverett-Bold.woff") format("woff"),
+        url("@/assets/fonts/TWKEverett-Bold.woff2") format("woff2"),
+        url("@/assets/fonts/TWKEverett-Bold.ttf") format("truetype");
+
+}
+
+
+
+$body-font-family: "Blender-Bold";
+$heading-font-family: "Blender-Bold";
+
+
+
+:root {
+    --dp-font-family: "Courier";
+    --primary-base: #1a1918;
+    --tonal-background: #42403f;
+    --alternative-base: #272727;
+    --primary-highlight: #FCAF17!important; /* M3 250428_1509 - Critical */
+    --left-panel-height: 0px;
+    --orders-panel-width: 600px;
+    --edit-panel-width: 360px; //Consider changing value where needed.
+    --usage-panel-width: 875px;
+    --runs-edit-panel-width: 380px;
+    --app-bar-height: 64px;
+    --left-nav-width: 64px;
+    --footer-height: 64px;
+    --ce-ais-toolbar-height: 15px;
+    --ce-toolbar-height: 24px;
+    --ce-toolbar-minimized-height: 0px;
+    --ce-toolbar-minimized-width: 0px;
+    --ce-tab-height: 30px;
+    --ce-tab-toolbar-height: 36px;
+    --ce-footer-height: 52px;
+    --ce-opacity-slider-height: 30px;
+    --ce-opacity-slider-max-width: 350px; 
+    --ce-opacity-slider-min-width: 100px;
+    --vdr-stick-height: 8px;
+    --archive-ordering-panel-width: 500px;
+    --metadata-dialog-card-title-height: 65px;
+    --input-emphasize-color:  #D1026E!important; /* M3 250428_1509 - Critical */
+    --input-deemphasize-color: rgba(255, 255, 255, 0.7);
+    --ce-locked-border: solid 2px;
+    --ce-lockIcon-animation-duration: 1.5s;
+    --user-layers-panel-width: 405px;
+    --create-user-layer-panel-width: 405px;
+    --analytics-panel-width: 500px;
+    --areas-panel-width: 405px;
+    --vivid-panel-width: 500px;
+    --archive-ordering-panel-width: 525px;
+    --create-online-order-panel-width: 525px;
+    --online-orders-panel-width: 900px;
+    --tasking-panel-width: 555px;
+    --area-monitor-panel-width: 450px;
+    --exploit-image-panel-width: 450px;
+    --threed-panel-width: 500px;
+    --coords-toggle-container-default-width: 280px;
+    --snapshot-order-panel-width: 500px;
+    --full-strip-order-panel-width: 500px;
+
+    font-family: Blender-Heavy;
+    -webkit-font-smoothing: antialiased;
+            /* Overriding Vuetify CSS variables */
+
+            // --v-accent-base: #b2afaa;
+            // these lighten values are incorrect. Accent is declared in the plugin file
+            // --v-accent-lighten5: #ffd8ff;
+            // --v-accent-lighten4: #ffbaed;
+            // --v-accent-lighten3: #ff9dd1;
+            // --v-accent-lighten2: #ff7fb6;
+            // --v-accent-lighten1: #ff619b;
+            // --v-accent-darken1: #df1368;
+            // --v-accent-darken2: #c00050;
+            // --v-accent-darken3: #a1003a;
+            // --v-accent-darken4: #820025;
+
+    --v-grey-darken-3: #424242;
+    --v-grey-darken-4: #212121;
+
+    --v-error-base: #ff5252;
+    --v-error-lighten5: #ffe4d5;
+    --v-error-lighten4: #ffc6b9;
+    --v-error-lighten3: #ffa99e;
+    --v-error-lighten2: #ff8c84;
+    --v-error-lighten1: #ff6f6a;
+    --v-error-darken1: #df323b;
+    --v-error-darken2: #bf0025;
+    --v-error-darken3: #9f0010;
+    --v-error-darken4: #800000;
+    --v-info-base: #2196f3;
+    --v-info-lighten5: #d4ffff;
+    --v-info-lighten4: #b5ffff;
+    --v-info-lighten3: #95e8ff;
+    --v-info-lighten2: #75ccff;
+    --v-info-lighten1: #51b0ff;
+    --v-info-darken1: #007cd6;
+    --v-info-darken2: #0064ba;
+    --v-info-darken3: #004d9f;
+    --v-info-darken4: #003784;
+    --v-info-darken5: #348ff5;
+
+    /* Very different green example */
+    --v-success-base: #4cafaf;
+    --v-success-lighten5: #dcffd6;
+    --v-success-lighten4: #beffba;
+    --v-success-lighten3: #a2ff9e;
+    --v-success-lighten2: #85e783;
+    --v-success-lighten1: #69cb69;
+    --v-success-darken1: #2d9437;
+    --v-success-darken2: #00791e;
+    --v-success-darken3: #006000;
+    --v-success-darken4: #004700;
+    --v-warning-base: #fb8c00;
+    --v-warning-lighten5: #ffff9e;
+    --v-warning-lighten4: #fffb82;
+    --v-warning-lighten3: #ffdf67;
+    --v-warning-lighten2: #ffc24b;
+    --v-warning-lighten1: #ffa72d;
+    --v-warning-darken1: #db7200;
+    --v-warning-darken2: #bb5900;
+    --v-warning-darken3: #9d4000;
+    --v-warning-darken4: #802700;
+}

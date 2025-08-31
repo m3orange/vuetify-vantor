@@ -1,5 +1,6 @@
 <template>
-  <div class="parent-container">
+
+
     <div>
       <v-radio-group>
         <v-radio label="Chicken" value="one"></v-radio>
@@ -13,7 +14,7 @@
       </div>
     </div>
 
-  </div>
+
 </template>
 
 <style>

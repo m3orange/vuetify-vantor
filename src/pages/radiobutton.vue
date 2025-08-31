@@ -1,9 +1,12 @@
 <template>
-  <div class="wrapper-global-no-nav">
-    <ComponentRadioButton/>
-    <!-- <AppFooter/> -->
-  </div>
 
+    <div class="app-wrapper">
+      
+      
+      <ComponentRadioButton/>
+
+
+    </div>
 </template>
 
 <script lang="ts" setup>

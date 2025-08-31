@@ -19,7 +19,9 @@
       />
     </a> -->
 
-
+      <RouterLink class="links" to="/">Home</RouterLink>
+      <RouterLink class="links" to="/checkbox">Checkbox</RouterLink>
+      <RouterLink class="links" to="/radiobutton">Radio Button</RouterLink>
 
     <a class="v-theme--light v-btn--size-medium footer-link" href="/">Home</a>
     <a class="v-theme--light v-btn--size-medium footer-link" href="/checkbox">Checkbox</a>

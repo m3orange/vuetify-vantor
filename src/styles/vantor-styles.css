@@ -2,16 +2,32 @@
   background-color: var(--vantor-teal)!important;
 }
 
+.top-wrapper{
+
+}
+
+.nav-wrapper{
+  border: 1px solid yellow;
+}
+
+.app-wrapper{
+  padding: 60px 30px 30px 30px;
+  border: 1px solid green;
+}
+
+
+
 .v-application__wrap {
-  background-color: #222!important;
+  /* background-color: #FF7700!important; */
 }
 
 :root {
   --vantor-teal: #06cfff;
   --vantor-plum: #8E0DD1;
   --vantor-light-gray: #b6b6b6;
-  --font-everett: 'TWK Everett';
-  --font-inter: 'Inter';
+  --font-everett: "Everett Regular",Helvetica, Arial, sans-serif;
+    --font-everett-bold: "Everett Bold",Helvetica, Arial, sans-serif;
+  --font-inter: "Inter Regular",Helvetica, Arial, sans-serif;
   --v-theme-primary: #FF7700!important;
   --vantor-secondary: var(--vantor-plum);
       
@@ -19,13 +35,13 @@
 
 
 .inter {
-  font-family: "Inter", sans-serif;
+  font-family: "Everett Bold", Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
 body{
-  font-family: var(--font-inter);
+  font-family:  "Inter Regular", Helvetica, Arial, sans-serif;
 }
 
 .inter-600 {
@@ -37,31 +53,11 @@ body{
 }
 
 .container-wide{
-  max-width: 150%%;
+  max-width: 150%;
     /* border: 2px solid green; */
 }
 
-.wrapper-global-reset{
-  margin: 0px;
-  padding: 0px;
-}
 
-.wrapper-global,
-.wrapper-global-watermark{
-  margin-top: 100px;
-  padding: 0 30px;
-}
-
-.wrapper-global-no-nav{
-  margin-top: 30px;
-  padding: 0 30px;
-}
-
-.wrapper-global-watermark{
-  background-image: url("https://m3orange.com/maxar/vantor-brand/vantor_logo_orb_dark_gray_03.svg");
-  background-position-x: 130%;
-  background-position-y: 90% ;
-}
 
 .wrapper-speed-dial{
   height: 100%;
@@ -74,26 +70,23 @@ body{
   width: 100%;
 }
 
-.parent-container{
-
-  color: #FFFFFF;
-}
-
 h1, h2, h3, h4, h5, h6{
-    color: #06cfff;
+    color: var(--v-theme-primary);
     margin-bottom: 20px;
-    font-family: var(--font-everett);
-    font-weight: 500;
+    font-family: "Everett Bold";
+    color: var(--vantor-teal);
+    /* font-weight: 500; */
 }
 
 /* Top Nav */
 
 .top-nav{
-  position: fixed;
+  position: sticky;
+  margin-bottom: 30px;
   z-index: 10;
   width: 100%;
   height: fit-content;
-  background-color: rgba(0,0,0,0.8);
+  /* background-color: rgba(0,0,0,0.8); */
   color: #FFF;
   padding: 20px 40px;
   display: flex;
@@ -123,7 +116,7 @@ h1, h2, h3, h4, h5, h6{
   margin: 0 20px 0 0;
   font-size: 14px;
   font-family: var(--font-inter);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 600;
 }
 
@@ -201,8 +194,8 @@ h1, h2, h3, h4, h5, h6{
 .v-btn.button-outline,
 .v-btn.button-outline-small {
   font-size: 18px;
-  font-weight: 500;
-  font-family: 'TWK Everett';
+  /* font-weight: 600!important; */
+  font-family: var(--font-everett-bold);
   color: var(--vantor-teal);
   text-align: center;
   display: inline-block;
@@ -233,7 +226,7 @@ h1, h2, h3, h4, h5, h6{
 .v-card-vantor{
   background-color: #4e4e4e!important;
   padding: 30px 20px;
-  max-width: 400px;
+  max-width: 550px;
   display: flex;
 
 }
@@ -369,7 +362,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .stats-title, .stats-digit{
-  font-family: var(--font-everett);
+  font-family: "Everett Bold", Helvetica, sans-serif;
 
 }
 

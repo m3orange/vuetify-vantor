@@ -1,5 +1,5 @@
 <template>
-  <v-container class="parent-container container-wide">
+  <v-container class="container-wide">
 
 
 
@@ -17,13 +17,8 @@
 <v-row class="mt-0">
 
 
+
 <v-col cols="4">
-<div class="area">
-  <ComponentNavDrawer/>
-</div>
-  
-</v-col>
-<v-col cols="3">
 
 
   <div class="area">
@@ -55,9 +50,10 @@
   <div class="area">
     <h2>Radio Button</h2>
     <v-radio-group>
-      <v-radio label="Radio One" value="one"></v-radio>
-      <v-radio label="Radio Two" value="two"></v-radio>
-      <v-radio label="Radio Three" value="three"></v-radio>
+    <div class="">What would you prefer?</div>
+      <v-radio label="Chicken" value="one"></v-radio>
+      <v-radio label="Lasagna" value="two"></v-radio>
+
     </v-radio-group>
     
     <div class="vuetify-documentation">
@@ -69,7 +65,8 @@
 
   <div class="area">
     <h2>Checkbox</h2>
-    <v-checkbox label="Checkbox"></v-checkbox>
+     <div class="">Prove you're a human</div>
+    <v-checkbox label="I'm a Human"></v-checkbox>
   </div>
 
   <div class="area">
@@ -85,11 +82,14 @@
 
 
 
+
 </v-col>
 
 
 
-<v-col cols="5">
+<v-col cols="8">
+
+
 
 <div class="area">
 <h2>VCard</h2>
@@ -186,7 +186,6 @@ size="small">Order</v-btn>
 <h2>Date Picker</h2>
 <v-date-picker></v-date-picker>
 </div>
-
 
 
 

@@ -1,6 +1,7 @@
 <template>
-  <NavBar/>
-     <div class="wrapper-global">
+
+     <div class="app-wrapper">
+
       <ComponentsImport/>
    </div>
 </template>
