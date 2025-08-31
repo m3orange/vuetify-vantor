@@ -75,11 +75,6 @@
   </div>
 
 
-    <div class="area">
-    <h2>Speed Dial</h2>
-    <component-speed-dial/>
-    </div>
-
 
 
 
