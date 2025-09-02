@@ -1,13 +1,13 @@
 <template>
   <div class="embed-wrapper">
 
-  <ComponentCardStats/>
+  <ComponentCardHubProduct/>
 
   </div>
 </template>
 
 <script lang="ts" setup>
-import ComponentCard from '@/components/ComponentCard.vue';
+import ComponentCard from '@/components/ComponentCardHubProduct.vue';
 
   //
 </script>

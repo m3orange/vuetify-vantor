@@ -6,28 +6,6 @@
 
 
 
-      <!-- <v-col cols="6">
-        <v-card class="mx-auto grid-v-card" max-width="400">
-        <v-img class="align-end text-white" height="200" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg" cover>
-          <v-card-title>Top 10 Australian beaches</v-card-title>
-        </v-img>
-
-        <v-card-subtitle class="pt-4">
-          <h3>Probable Shadow Change</h3>
-        </v-card-subtitle>
-
-        <v-card-text>
-          <div>In-track stereo imagery collection ideal for Digital Elevation Model (DEM) generation, 3D visualization and feature extraction applications</div>
-        </v-card-text>
-
-        <v-card-actions>
-          <v-btn color="orange" text="Learn More"></v-btn>
-        </v-card-actions>
-        </v-card>
-
-      </v-col> -->
-
-
 
       <!-- Card #2 -->
         <v-col cols="6" md="12">
@@ -59,7 +37,7 @@
     </div>
     <div class="v-card-text">
       <div>In-track stereo imagery collection ideal for Digital Elevation Model (DEM) generation, 3D visualization and feature extraction applications</div>   
-      <div>Electro-Optical CM Change Detection from 2010 - 2022</div>
+
     </div>
     <div class="v-card-actions">
         <button type="button"

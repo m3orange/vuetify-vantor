@@ -13,13 +13,31 @@
 }
 */
 .nav-wrapper{
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
+
+
 
 .app-wrapper{
   padding: 60px 30px 30px 30px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
+
+.embed-wrapper{
+  padding: 30px;
+  /* border: 1px solid pink; */
+  height: 100%;
+}
+
+.sidebar-wrapper{
+  padding: 0px;
+  /* border: 5px solid blue; */
+  height: 100%;
+}
+
+
+
+
 
 :root {
   --vantor-teal: #06cfff;
@@ -86,6 +104,10 @@ body{
   width: 100%;
 }
 
+.font-everett{
+  font-family: "Everett Bold",Helvetica, Arial, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6{
     color: var(--v-theme-primary);
     margin-bottom: 20px;
@@ -98,7 +120,7 @@ h1, h2, h3, h4, h5, h6{
 
 .top-nav{
   position: sticky;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   z-index: 10;
   width: 100%;
   height: fit-content;
@@ -148,8 +170,28 @@ h1, h2, h3, h4, h5, h6{
 
 /* Sidebar */
 
+
+.sidebar-wrapper .v-main{
+min-height: 1200px;
+}
+
+
+
+.nav-drawer{
+  height: 800px;
+}
+
+
 .nav-drawer .v-card{
   border-radius: 0px;
+}
+
+.v-list-item--density-default.v-list-item--one-line{
+  min-height: 56px!important ;
+}
+
+.v-list-item--nav .v-list-item-title{
+  font-family: var(--font-everett);
 }
 
 .nav-icon{
@@ -279,7 +321,7 @@ h1, h2, h3, h4, h5, h6{
 
 
 .grid-v-card{
-  max-width: 400px;
+  max-width: 350px;
   /* min-height: 400px; */
 }
 .grid-v-card .v-btn__content{
@@ -399,6 +441,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
+
+
 .footer-area{
   background-color: rgba(0,0,0,0.9)!important;
 }
@@ -407,4 +451,63 @@ h1, h2, h3, h4, h5, h6{
 .footer-link{
   margin: 0 20px 0 0;
   color: var(--vantor-teal);
+}
+
+
+
+/* Map Tools */
+
+.dial-locator{
+  position: relative;
+  left: 40%;
+  /* left: 0; */
+  /* border: 1px solid yellow; */
+}
+
+.panel-drawer .v-btn__content{
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #232323;
+}
+
+
+
+
+.panel-title{
+  padding: 10px 15px;
+    text-transform: none!important;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    width: 100%;
+    text-align: left;
+
+  font-family: var(--font-everett);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.panel-links{
+  text-align: left;
+  font-family: var(--font-everett);
+  font-size: 14px;
+  text-transform: none!important;
+  margin-bottom: 20px;
+      display: flex;
+    flex-direction: row;
+    gap: 8px
+
+}
+
+.links-left{
+  margin: 0 60px 0 0;
+}
+
+.panel-content{
+  display: flex;
+  flex-direction: column;
+
+  /* gap: 40px; */
+}
+
+.panel-content{
+  font-size: 14px;
 }

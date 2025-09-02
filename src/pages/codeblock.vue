@@ -1,9 +1,9 @@
 <template>
-  <div class="embed-wrapper">
+    <div class="embed-wrapper">
 
-  <ComponentCardStats/>
+        <CodeBlock/>
 
-  </div>
+    </div>
 </template>
 
 <script lang="ts" setup>

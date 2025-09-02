@@ -1,13 +1,13 @@
 <template>
-  <div class="wrapper-global-reset">
+  <div class="sidebar-wrapper">
+  
     <ComponentNavDrawer/>
  
   </div>
-
 </template>
 
 <script lang="ts" setup>
-import ComponentRadioButton from '@/components/ComponentRadioButton.vue';
+
 
 
   //
