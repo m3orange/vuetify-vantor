@@ -22,6 +22,7 @@ declare module 'vue-router/auto-routes' {
     '/accordion': RouteRecordInfo<'/accordion', '/accordion', Record<never, never>, Record<never, never>>,
     '/card': RouteRecordInfo<'/card', '/card', Record<never, never>, Record<never, never>>,
     '/cardhubproduct': RouteRecordInfo<'/cardhubproduct', '/cardhubproduct', Record<never, never>, Record<never, never>>,
+    '/cardmonitoring': RouteRecordInfo<'/cardmonitoring', '/cardmonitoring', Record<never, never>, Record<never, never>>,
     '/cardstats': RouteRecordInfo<'/cardstats', '/cardstats', Record<never, never>, Record<never, never>>,
     '/checkbox': RouteRecordInfo<'/checkbox', '/checkbox', Record<never, never>, Record<never, never>>,
     '/codeblock': RouteRecordInfo<'/codeblock', '/codeblock', Record<never, never>, Record<never, never>>,

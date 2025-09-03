@@ -15,6 +15,7 @@ declare module 'vue' {
     CompDatePicker: typeof import('./components/compDatePicker.vue')['default']
     CompForm: typeof import('./components/compForm.vue')['default']
     CompLogin: typeof import('./components/compLogin.vue')['default']
+    CompMonitoringCard: typeof import('./components/CompMonitoringCard.vue')['default']
     ComponentCalendar: typeof import('./components/ComponentCalendar.vue')['default']
     ComponentCard: typeof import('./components/ComponentCard.vue')['default']
     ComponentCardHubProduct: typeof import('./components/ComponentCardHubProduct.vue')['default']
