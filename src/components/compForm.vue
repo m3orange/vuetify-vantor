@@ -1,110 +1,159 @@
 <template>
-    <div class="embed-wrapper">
+<v-row>
+  <v-col cols="">
+    <v-form ref="form" class="form-canvas" id="accordion-collection">
+   
 
-    <v-row>
-        <v-col cols="6">
-
-
-<form>
-    <v-text-field
-      v-model="state.name"
-      :counter="10"
-      :error-messages="v$.name.$errors.map(e => e.$message)"
-      label="Name"
-      required
-      @blur="v$.name.$touch"
-      @input="v$.name.$touch"
-    ></v-text-field>
-
-    <v-text-field
-      v-model="state.email"
-      :error-messages="v$.email.$errors.map(e => e.$message)"
-      label="E-mail"
-      required
-      @blur="v$.email.$touch"
-      @input="v$.email.$touch"
-    ></v-text-field>
-
-    <v-select
-      v-model="state.select"
-      :error-messages="v$.select.$errors.map(e => e.$message)"
-      :items="items"
-      label="Item"
-      required
-      @blur="v$.select.$touch"
-      @change="v$.select.$touch"
-    ></v-select>
-
-    <v-checkbox
-      v-model="state.checkbox"
-      :error-messages="v$.checkbox.$errors.map(e => e.$message)"
-      label="Do you agree?"
-      required
-      @blur="v$.checkbox.$touch"
-      @change="v$.checkbox.$touch"
-    ></v-checkbox>
-
-    <v-btn
-      class="me-4"
-      @click="v$.$validate"
-    >
-      submit
-    </v-btn>
-    <v-btn @click="clear">
-      clear
-    </v-btn>
-  </form>
+  <v-row>
+    <v-col cols="12" sm="12">
+      <v-text-field variant="outlined" persistent-placeholder label="Order Name"></v-text-field>
+    </v-col>
+  </v-row>
 
 
-        </v-col>
+<v-row>
+    <v-col cols="6" lg="6" md="12" sm="12">
+      <v-text-field variant="outlined" persistent-placeholder label="Earliest Date">
+        <div class="form-slider">
+          <div class="calendar-date-text">
+                <v-icon color="primary" icon="mdi-calendar-outline" size="small"></v-icon>
+          2024-04-13
+          </div>
+        </div>
+      </v-text-field>
+    </v-col>
+
+
+    <v-col cols="6" lg="6" md="12" sm="12">
+      <v-text-field variant="outlined" persistent-placeholder label="Latest Date">
+        <div class="form-slider">
+          <div class="calendar-date-text">
+                <v-icon color="primary" icon="mdi-calendar-outline" size="small"></v-icon>
+          2024-12-07
+          </div>
+        </div>
+      </v-text-field>
+    </v-col>
+</v-row>
+
+
+
+
+<v-row>
+  <v-col cols="12" sm="12">
+    <div class="form-slider">
+    <v-text-field variant="outlined" density="compact" persistent-placeholder label="Off-Nadir Angle">
+     <div class="slider-text"> Minº 0</div>
+      <v-range-slider
+        v-model="value"
+        step="10"
+        thumb-label="never"
+        color="blue"
+        width="100%"
+      ></v-range-slider>
+      <div class="slider-text"> 30 Maxº</div>
+    </v-text-field>
+    </div>
+  </v-col>
+</v-row>
+
+
+
+      <div class="d-flex flex-column">
+
+
+
+    <v-row align="center" class="button-row">
+
+
+
+
+        <v-btn density="default" size="large" variant="outlined" color="tertiary" class="form-button">Cancel</v-btn>
+        <v-btn density="default" size="large" variant="flat" color="primary" class="form-button">Submit</v-btn>
+
 
     </v-row>
 
-    </div>
+
+      </div>
+    </v-form>
+  </v-col>
+</v-row>
+    
+    
+
+
+
+
 </template>
 
 <style>
 
+.form-canvas{
+  padding: 30px;
+}
+
+.form-slider{
+  z-index: 100;
+}
+.slider-text{
+  min-width: fit-content;
+}
+
+.form-slider .v-field__input {
+    display: flex!important;
+    grid-area: control;
+    flex-direction: row!important;
+    flex-wrap: nowrap!important;
+    min-height: fit-content!important;
+    gap: 25px;
+}
+
+.v-field .v-input{
+  height: 40px;
+}
+
+.form-slider .v-field{
+  /* border: 3px solid red!important; */
+  min-height: fit-content;
+}
+
+.v-field{
+  height: 50px;
+}
+.v-slider-thumb__label {
+    /* background: rgba(var(--v-theme-surface-variant), 1); */
+    background: #444444!important;
+    color: rgb(var(--v-theme-on-surface-variant));
+}
+
+.calendar-date-text{
+  font-family: var(--font-everett);
+  font-weight: 600;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-row{
+  display: flex;
+      justify-content: space-evenly;
+      margin: 10px 0 0 0;
+}
+
+.form-button{
+  text-transform: unset!important;
+  font-family: var(--font-everett-bold);
+  letter-spacing: 0px;
+}
+
+
 </style>
 
+
 <script setup>
-  import { reactive } from 'vue'
-  import { useVuelidate } from '@vuelidate/core'
-  import { email, required } from '@vuelidate/validators'
+  import { ref } from 'vue'
 
-  const initialState = {
-    name: '',
-    email: '',
-    select: null,
-    checkbox: null,
-  }
-
-  const state = reactive({
-    ...initialState,
-  })
-
-  const items = [
-    'Item 1',
-    'Item 2',
-    'Item 3',
-    'Item 4',
-  ]
-
-  const rules = {
-    name: { required },
-    email: { required, email },
-    select: { required },
-    items: { required },
-    checkbox: { required },
-  }
-
-  const v$ = useVuelidate(rules, state)
-
-  function clear () {
-    v$.value.$reset()
-
-    for (const [key, value] of Object.entries(initialState)) {
-      state[key] = value
-    }
-  }
+  const value = ref([0, 50])
 </script>
