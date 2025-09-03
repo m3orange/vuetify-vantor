@@ -6,7 +6,7 @@
         </v-col>
         <v-col lg="auto" md="3" sm="6">
             <CompAccordion/> 
-            <CompCardHubProduct/> 
+
 
         </v-col>
         <v-col lg="auto" md="4" sm="6">
@@ -23,7 +23,7 @@
 </v-col>
 
 <v-col lg="4" md="6" sm="12">
-<CompMonitoringCard/>
+Monitoring card goes here
 </v-col>
 
 <!-- <v-col lg="3" md="6" sm="12">
@@ -42,13 +42,6 @@ Another Card
 
 <style>
 
-.app-wrapper-dashboard{
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
-
-
-}
 
 .v-container{
   max-width: 1600px!important;
@@ -57,8 +50,8 @@ Another Card
 </style>
 
 <script lang="ts" setup>
-import CompCardHubProduct from '../components/CompCardHubProduct.vue';
-import CompMonitoringCard from '../components/CompMonitoringCard.vue';
+
+
 
 
 </script>
