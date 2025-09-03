@@ -16,7 +16,9 @@
   /* border: 1px solid yellow; */
 }
 
-
+.no-padding{
+  padding: 0px!important;
+}
 .app-wrapper-dashboard,
 .app-wrapper{
   padding: 60px 30px 30px 30px;
@@ -43,7 +45,7 @@
   background-color:var(--background)!important;
   border: 1px solid var(--border-color)!important;
   border-radius: 8px!important;
-  padding: 30px!important;
+  padding: 20px 30px 30px 30px!important;
 }
 
 

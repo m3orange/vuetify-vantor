@@ -140,6 +140,10 @@
       justify-content: space-evenly;
       margin: 10px 0 0 0;
 }
+.v-btn__content{
+  font-family: "Everett Regular";
+  font-weight: 600;
+}
 
 .form-button{
   text-transform: unset!important;

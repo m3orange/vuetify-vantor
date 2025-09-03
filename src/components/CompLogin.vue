@@ -6,7 +6,7 @@
       class="mx-auto pa-12 pb-8 login-card"
       elevation="0"
       rounded="lg"
-      max-width="600px"
+
 
     >
 
@@ -17,7 +17,7 @@
         size="large"
         variant="tonal"
         style="border: 1px solid rgba(255,255,255,0.3); margin-top: 30px;
-        height: 50px; padding: 10px;"
+        height: 50px; padding: 10px; background-color: rgb(11 11 11);"
         block
       >
         <div class="google-sso-btn">

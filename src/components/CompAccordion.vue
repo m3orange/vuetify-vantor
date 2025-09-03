@@ -1,6 +1,6 @@
 <template>
-<div class="dashboard-card" style="padding: 24px;">
-<h3>Collections</h3>
+<div class="dashboard-card" style="padding: 24px; height: max-content!important;">
+<h3 style="margin-bottom:10px!important;">Collections</h3>
   <v-expansion-panels>
 
 <!--One Tab & Expandable-->
@@ -119,62 +119,6 @@
     </v-expansion-panel>
 
 
-
-
-
-    
-
-    <v-expansion-panel>
-      <v-expansion-panel-title v-slot="{ expanded }">
-        <v-row no-gutters>
-          <v-col class="d-flex justify-start" cols="4">
-            Start and end dates
-          </v-col>
-          <v-col
-            class="text--secondary"
-            cols="8"
-          >
-            <v-fade-transition leave-absolute>
-              <span v-if="expanded">When do you want to travel?</span>
-              <v-row
-                v-else
-                style="width: 100%"
-                no-gutters
-              >
-                <v-col class="d-flex justify-start" cols="6">
-                  Start date: {{ trip.start || 'Not set' }}
-                </v-col>
-                <v-col class="d-flex justify-start" cols="6">
-                  End date: {{ trip.end || 'Not set' }}
-                </v-col>
-              </v-row>
-            </v-fade-transition>
-          </v-col>
-        </v-row>
-      </v-expansion-panel-title>
-      <v-expansion-panel-text>
-        <v-row
-          justify="space-around"
-          no-gutters
-        >
-          <v-col cols="3">
-            <v-text-field
-              v-model="trip.start"
-              label="Start date"
-              type="date"
-            ></v-text-field>
-          </v-col>
-
-          <v-col cols="3">
-            <v-text-field
-              v-model="trip.end"
-              label="End date"
-              type="date"
-            ></v-text-field>
-          </v-col>
-        </v-row>
-      </v-expansion-panel-text>
-    </v-expansion-panel>
   </v-expansion-panels>
 </div>
 
