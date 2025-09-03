@@ -16,8 +16,7 @@
       <v-text-field variant="outlined" persistent-placeholder label="Earliest Date">
         <div class="form-slider">
           <div class="calendar-date-text">
-                <v-icon color="primary" icon="mdi-calendar-outline" size="small"></v-icon>
-          2024-04-13
+                <v-icon color="rgba(6,207,255,1)" icon="mdi-calendar-outline" size="small"></v-icon>2024-04-13
           </div>
         </div>
       </v-text-field>
@@ -28,9 +27,9 @@
       <v-text-field variant="outlined" persistent-placeholder label="Latest Date">
         <div class="form-slider">
           <div class="calendar-date-text">
-                <v-icon color="primary" icon="mdi-calendar-outline" size="small"></v-icon>
-          2024-12-07
+                <v-icon color="rgba(6,207,255,1)" icon="mdi-calendar-outline" size="small"></v-icon>2024-12-07
           </div>
+
         </div>
       </v-text-field>
     </v-col>
@@ -48,7 +47,7 @@
         v-model="value"
         step="10"
         thumb-label="never"
-        color="blue"
+        color="rgba(6,207,255,1)"
         width="100%"
       ></v-range-slider>
       <div class="slider-text"> 30 Maxº</div>
@@ -69,7 +68,7 @@
 
 
         <v-btn density="default" size="large" variant="outlined" color="tertiary" class="form-button">Cancel</v-btn>
-        <v-btn density="default" size="large" variant="flat" color="primary" class="form-button">Submit</v-btn>
+        <v-btn density="default" size="large" variant="flat" color="primary" class="form-button bg-primary" style="background-color: rgba(6,207,255,1)!important; color: var(--background)!important;">Submit</v-btn>
 
 
     </v-row>
@@ -90,7 +89,7 @@
 <style>
 
 .form-canvas{
-  padding: 30px;
+
 }
 
 .form-slider{

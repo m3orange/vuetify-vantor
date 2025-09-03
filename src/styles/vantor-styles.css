@@ -17,10 +17,14 @@
 }
 
 
-
+.app-wrapper-dashboard,
 .app-wrapper{
   padding: 60px 30px 30px 30px;
   /* border: 1px solid green; */
+}
+
+.v-container{
+  max-width: 1400px!important;
 }
 
 .embed-wrapper{
@@ -38,10 +42,14 @@
 .dashboard-card{
   background-color:var(--background)!important;
   border: 1px solid var(--border-color)!important;
+  border-radius: 8px!important;
+  padding: 30px!important;
 }
 
 
-
+/*
+--v-theme-primary: rgb(33,150,243);
+*/
 
 :root {
   --vantor-teal: rgba(6,207,255,1);
@@ -51,7 +59,7 @@
   --font-everett: "Everett Regular",Helvetica, Arial, sans-serif;
     --font-everett-bold: "Everett Bold",Helvetica, Arial, sans-serif;
   --font-inter: "Inter Regular",Helvetica, Arial, sans-serif;
-  --v-theme-primary: #FF7700!important;
+  --v-theme-primary: rgba(6,207,255,1)!important;
   --vantor-secondary: var(--vantor-plum);
   --border-color:#3D3D3D;
   --background: #1D1D1D;
@@ -59,6 +67,10 @@
   --on-surface: #D1D1D1;
   --text-blue: rgba(6,207,255,1)!important;
       
+}
+
+.bg-primary{
+  background-color:  rgba(6,207,255,1)!important;
 }
 
 
@@ -121,9 +133,10 @@ body{
 h1, h2, h3, h4, h5, h6{
     color: var(--v-theme-primary);
     margin-bottom: 20px;
-    font-family: "Everett Bold";
+    font-family: "Everett Regular";
     color: var(--vantor-teal);
-    /* font-weight: 500; */
+    font-weight: 600!important;
+    letter-spacing: 0.55px;
 }
 
 /* Top Nav */

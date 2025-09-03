@@ -1,6 +1,6 @@
 <template>
 <div class="dashboard-card" style="padding: 24px;">
-<h2>Collections</h2>
+<h3>Collections</h3>
   <v-expansion-panels>
 
 <!--One Tab & Expandable-->
@@ -8,7 +8,7 @@
       <v-expansion-panel-title>
         <template v-slot:default="{ expanded }">
           <v-row no-gutters>
-            <v-col class="d-flex justify-start" cols="4">
+            <v-col class="d-flex justify-start" cols="12">
               General Parameters
             </v-col>
             <v-col
@@ -32,7 +32,7 @@
       <v-expansion-panel-title>
         <template v-slot:default="{ expanded }">
           <v-row no-gutters>
-            <v-col class="d-flex justify-start" cols="4">
+            <v-col class="d-flex justify-start" cols="12">
               Advanced Parameters
             </v-col>
             <v-col
@@ -55,7 +55,7 @@
       <v-expansion-panel-title>
         <template v-slot:default="{ expanded }">
           <v-row no-gutters>
-            <v-col class="d-flex justify-start" cols="4">
+            <v-col class="d-flex justify-start" cols="12">
               Collection Availability
             </v-col>
             <v-col
@@ -212,6 +212,7 @@
 .v-card-title-1{
     background-color: rgba(6, 207, 255, 0.15)!important;
     border-bottom: 1px solid rgba(6, 207, 255, 1);
+
 }
 
 .v-card-title-2{
@@ -219,8 +220,16 @@
     border-bottom: 1px solid var(--on-surface)!important;
 }
 
-.v-selection-control__input > .v-icon{
+.v-card-title-1,
+.v-card-title-2{
+    padding: 10px 10px 10px 12px;
 
+}
+
+.v-expansion-panel-title{
+  padding: 20px 0!important;
+  min-height: 68px!important;
+      font-size: 18px!important;
 }
 /* 
 .radio-01{
@@ -241,9 +250,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding:5px 30px 5px 30px!important;
+  padding:5px 20px 5px 20px!important;
 
 }
+
+
 .v-card-text img{
   height: 16px!important;
 

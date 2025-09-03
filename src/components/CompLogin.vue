@@ -16,7 +16,7 @@
         color="white"
         size="large"
         variant="tonal"
-        style="border: 1px solid rgba(255,255,255,0.3); 
+        style="border: 1px solid rgba(255,255,255,0.3); margin-top: 30px;
         height: 50px; padding: 10px;"
         block
       >
@@ -70,13 +70,13 @@ OR
       </v-btn>
 
       <v-row>
-        <v-card-text class="text-center">
-          <div style="margin-bottom: 10px;">New to Vantor?
+        <v-card-text class="text-center links-below">
+          <div style="margin-bottom: 10px; display: block;">New to Vantor?
             <a class="text-blue" href="#" rel="noopener noreferrer">
               Create your freemium account.
             </a>
           </div>
-          <div>
+          <div style="display: block;">
             <a class="text-blue" href="#" rel="noopener noreferrer">
               Forgot your password?
             </a>
@@ -116,6 +116,7 @@ OR
   align-items: center;
   gap: 10px;
 
+
 }
 
 .google-sso-divider{
@@ -124,6 +125,8 @@ OR
   justify-content: center;
     align-items: center;
     color: #888;
+    margin: 0 0 20px 0;
+    max-height: 20px;
 }
 
 hr {
@@ -156,5 +159,11 @@ a{
 
 .google-sso-btn img{
   max-height: 30px;
+}
+
+.links-below{
+  display: flex;
+  flex-direction: column!important;
+  
 }
 </style>
