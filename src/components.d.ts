@@ -31,6 +31,7 @@ declare module 'vue' {
     ComponentsImport: typeof import('./components/ComponentsImport.vue')['default']
     ComponentSpeedDial: typeof import('./components/ComponentSpeedDial.vue')['default']
     ComponentVarious: typeof import('./components/ComponentVarious.vue')['default']
+    CompTable: typeof import('./components/CompTable.vue')['default']
     copy: typeof import('./components/-template copy.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']

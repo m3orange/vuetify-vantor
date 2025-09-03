@@ -34,6 +34,8 @@ declare module 'vue-router/auto-routes' {
     '/maptools': RouteRecordInfo<'/maptools', '/maptools', Record<never, never>, Record<never, never>>,
     '/navdrawer': RouteRecordInfo<'/navdrawer', '/navdrawer', Record<never, never>, Record<never, never>>,
     '/radiobutton': RouteRecordInfo<'/radiobutton', '/radiobutton', Record<never, never>, Record<never, never>>,
+    '/table': RouteRecordInfo<'/table', '/table', Record<never, never>, Record<never, never>>,
+    '/table copy': RouteRecordInfo<'/table copy', '/table copy', Record<never, never>, Record<never, never>>,
     '/template': RouteRecordInfo<'/template', '/template', Record<never, never>, Record<never, never>>,
     '/various': RouteRecordInfo<'/various', '/various', Record<never, never>, Record<never, never>>,
   }

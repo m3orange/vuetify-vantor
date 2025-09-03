@@ -1,10 +1,11 @@
 <template>
   <v-container class="app-wrapper-dashboard">
+    <h1>Vantor Design System</h1>
     <v-row gutters="10px"> <!--no-gutters-->
         <v-col lg="auto" md="4" sm="6">
         <CompDatePicker/>
         </v-col>
-        <v-col lg="auto" md="3" sm="6">
+        <v-col lg="4" md="3" sm="6">
             <CompAccordion/> 
             <CompCardHubProduct/> 
 
@@ -32,6 +33,12 @@ Another Card
 </div>
 </v-col> -->
 </v-row>
+
+    <v-row gutters="10px">
+      <v-col cols="8">
+        <CompTable/>
+      </v-col>
+    </v-row>
 
 
 

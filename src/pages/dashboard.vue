@@ -4,7 +4,7 @@
         <v-col lg="3" md="4" sm="6">
         <CompDatePicker/>
         </v-col>
-        <v-col lg="4" md="3" sm="6" style="height: max-content!important; height: max-content;">
+        <v-col lg="3" md="3" sm="6" style="height: max-content!important; height: max-content;">
             <CompAccordion/> 
             <ComponentCardHubProduct/> 
 
