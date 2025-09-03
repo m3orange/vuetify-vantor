@@ -6,23 +6,23 @@
         <div class="monitoring-card">
 
             <v-row>
-                <div class="monitoring-title-area">
-                    <div class="title-left dashboard-card-title">
-                    Airfield Monitoring 01
-                    </div>
-
-                    <div class="title-right">
-                    <img style="margin-right: 10px;" src="@/assets/images/monitoring/monitoring-icon-01.png"/>
-                    <img src="@/assets/images/monitoring/monitoring-icon-02.png"/>
-
-                    </div>
+            <div class="monitoring-title-area">
+                <div class="title-left dashboard-card-title">
+                Airfield Monitoring 01
                 </div>
 
-            </v-row>
-                <v-row class="airport-image">
-                    <img src="@/assets/images/monitoring/monitoring-image.png"/>
+                <div class="title-right">
+                <img style="margin-right: 10px;" src="@/assets/images/monitoring/monitoring-icon-01.png"/>
+                <img src="@/assets/images/monitoring/monitoring-icon-02.png"/>
 
-                </v-row>
+                </div>
+            </div>
+
+            </v-row>
+            <v-row class="airport-image">
+                <img src="@/assets/images/monitoring/monitoring-image.png"/>
+
+            </v-row>
             <v-row>
             <div class="bottom-images">
                 <img style="margin-right: 10px;" src="@/assets/images/monitoring/monitoring-icon-03.png"/>

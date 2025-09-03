@@ -60,8 +60,6 @@
   --on-background: #B2B2B2;
   --on-surface: #D1D1D1;
   --text-blue: rgba(6,207,255,1)!important;
-  --status-green-icon: rgba(0,162,0,1);
-    --status-green-bg: rgba(2,118,2,0.6);
       
 }
 
@@ -554,7 +552,7 @@ min-height: 1200px;
   font-weight: 600;
   letter-spacing: 0.5px;
   font-size: 18px!important;
-  color: var(--vantor-teal)!important;
+  color: var(--vantor-teal);
   /* border: 1px solid pink; */
   margin-bottom: 10px;
 }
