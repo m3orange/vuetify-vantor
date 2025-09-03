@@ -3,7 +3,17 @@
   <v-col cols="">
     <v-form ref="form" class="form-canvas" id="accordion-collection">
    
+          <v-row no-gutters>
+            <v-col class="d-flex justify-start dashboard-card-title" cols="12">
+              General Parameters
+            </v-col>
+            <v-col
+              class="text-grey"
+              cols="8"
+            >
 
+            </v-col>
+          </v-row>
   <v-row>
     <v-col cols="12" sm="12">
       <v-text-field variant="outlined" persistent-placeholder label="Order Name"></v-text-field>

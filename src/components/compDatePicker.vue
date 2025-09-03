@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard-card no-padding" style="padding: 0px!important; display: table;">
     <div class="date-picker-title">
-      <h3 style="margin-bottom:10px!important;">Calendar</h3>
+      <h3 class="dashboard-card-title">Calendar</h3>
     </div>
        <v-date-picker hide-header style="background: none!important;"></v-date-picker> 
 </div>

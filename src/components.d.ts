@@ -12,6 +12,7 @@ declare module 'vue' {
     'BUComponentCardHubProduct copy': typeof import('./components/BUComponentCardHubProduct copy.vue')['default']
     CodeBlock: typeof import('./components/CodeBlock.vue')['default']
     CompAccordion: typeof import('./components/CompAccordion.vue')['default']
+    CompCardHubProduct: typeof import('./components/CompCardHubProduct.vue')['default']
     CompDatePicker: typeof import('./components/CompDatePicker.vue')['default']
     CompForm: typeof import('./components/CompForm.vue')['default']
     CompLogin: typeof import('./components/CompLogin.vue')['default']

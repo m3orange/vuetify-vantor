@@ -1,6 +1,6 @@
 <template>
 <div class="dashboard-card" style="padding: 24px; height: max-content!important;">
-<h3 style="margin-bottom:10px!important;">Collections</h3>
+<h3 class="dashboard-card-title">Collections</h3>
   <v-expansion-panels>
 
 <!--One Tab & Expandable-->
@@ -69,7 +69,7 @@
       </v-expansion-panel-title>
 
       <v-expansion-panel-text class="accordion-panel-content">
-
+        <v-radio-group>
         <v-row>
           <v-col>
             <v-card
@@ -114,7 +114,7 @@
           </v-col>
 
         </v-row>
-
+</v-radio-group>
       </v-expansion-panel-text>
     </v-expansion-panel>
 
@@ -170,11 +170,7 @@
 
 }
 
-.v-expansion-panel-title{
-  padding: 20px 0!important;
-  min-height: 68px!important;
-      font-size: 18px!important;
-}
+
 /* 
 .radio-01{
   color: var(--vantor-blue);

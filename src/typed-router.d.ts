@@ -29,6 +29,7 @@ declare module 'vue-router/auto-routes' {
     '/dashboard': RouteRecordInfo<'/dashboard', '/dashboard', Record<never, never>, Record<never, never>>,
     '/datepicker': RouteRecordInfo<'/datepicker', '/datepicker', Record<never, never>, Record<never, never>>,
     '/form': RouteRecordInfo<'/form', '/form', Record<never, never>, Record<never, never>>,
+    '/import': RouteRecordInfo<'/import', '/import', Record<never, never>, Record<never, never>>,
     '/login': RouteRecordInfo<'/login', '/login', Record<never, never>, Record<never, never>>,
     '/maptools': RouteRecordInfo<'/maptools', '/maptools', Record<never, never>, Record<never, never>>,
     '/navdrawer': RouteRecordInfo<'/navdrawer', '/navdrawer', Record<never, never>, Record<never, never>>,

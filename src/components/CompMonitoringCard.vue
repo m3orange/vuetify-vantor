@@ -1,12 +1,13 @@
 <template>
-  <v-row align="center" justify="center" dense>
-    <v-col cols="12" md="6">
+
+
+<div class="dashboard-card" style="padding: 0px!important;">
 
         <div class="monitoring-card">
 
             <v-row>
             <div class="monitoring-title-area">
-                <div class="title-left">
+                <div class="title-left dashboard-card-title">
                 Airfield Monitoring 01
                 </div>
 
@@ -18,7 +19,7 @@
             </div>
 
             </v-row>
-            <v-row>
+            <v-row class="airport-image">
                 <img src="@/assets/images/monitoring/monitoring-image.png"/>
 
             </v-row>
@@ -32,18 +33,21 @@
 
         </div>
 
-    </v-col>
-</v-row>
+
+
+</div>
+
 </template>
 
 <style>
 
 .monitoring-card{
-    padding: 30px 40px;
-    background-color: var(background);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    width: fit-content;
+
+      background-color:var(--background)!important;
+  border: 1px solid var(--border-color)!important;
+  border-radius: 8px!important;
+  padding: 40px!important;
+  /* min-width: 200px; */
 }
 
 .monitoring-title-area{
@@ -52,6 +56,14 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 15px;
+}
+
+.airport-image{
+    background-image: url(../assets/images/monitoring/monitoring-image.png);
+    background-repeat: no;
+    background-size: cover;
+    height: 300px;
+    height: 300px;
 }
 
 .title-left{
