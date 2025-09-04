@@ -51,13 +51,6 @@
 
 <style>
 
-.app-wrapper-dashboard{
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
-
-
-}
 
 .v-container{
   max-width: 1600px!important;

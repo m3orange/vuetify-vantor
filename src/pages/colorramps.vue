@@ -8,6 +8,4 @@
 <script lang="ts" setup>
 import CompColorRamps from '../components/CompColorRamps.vue';
 
-
-  //
 </script>
