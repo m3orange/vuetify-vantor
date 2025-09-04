@@ -1,10 +1,11 @@
 <template>
-    <CompTopNav/>
+
   <v-container class="app-wrapper-dashboard">
-    <h1>The Divine DS</h1>
+
 
     <v-row gutters="10px"> <!--no-gutters-->
         <v-col lg="auto" md="4" sm="6">
+          <a href="#embedform">View Demo</a>
         <CompDatePicker/>
         </v-col>
         <v-col lg="auto" md="3" sm="6">
@@ -43,7 +44,7 @@
 
       <v-row gutters="10px"> <!--no-gutters-->
 
-          <v-col lg="4" md="4" sm="12">
+          <v-col lg="6" md="6" sm="12">
             <div class="dashboard-card embed-window">
               <div class="orange-from-orange">Form to embed</div>
                 <CompForm/>
