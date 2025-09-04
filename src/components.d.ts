@@ -11,6 +11,8 @@ declare module 'vue' {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     CompAccordion: typeof import('./components/CompAccordion.vue')['default']
     CompCardHubProduct: typeof import('./components/CompCardHubProduct.vue')['default']
+    CompColorRamps: typeof import('./components/CompColorRamps.vue')['default']
+    CompColorRamps1: typeof import('./components/CompColorRamps-1.vue')['default']
     CompDatePicker: typeof import('./components/CompDatePicker.vue')['default']
     CompForm: typeof import('./components/CompForm.vue')['default']
     CompLogin: typeof import('./components/CompLogin.vue')['default']

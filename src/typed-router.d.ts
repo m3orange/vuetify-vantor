@@ -22,6 +22,7 @@ declare module 'vue-router/auto-routes' {
     '/card': RouteRecordInfo<'/card', '/card', Record<never, never>, Record<never, never>>,
     '/cardstats': RouteRecordInfo<'/cardstats', '/cardstats', Record<never, never>, Record<never, never>>,
     '/checkbox': RouteRecordInfo<'/checkbox', '/checkbox', Record<never, never>, Record<never, never>>,
+    '/colorramps': RouteRecordInfo<'/colorramps', '/colorramps', Record<never, never>, Record<never, never>>,
     '/navdrawer': RouteRecordInfo<'/navdrawer', '/navdrawer', Record<never, never>, Record<never, never>>,
     '/radiobutton': RouteRecordInfo<'/radiobutton', '/radiobutton', Record<never, never>, Record<never, never>>,
   }
