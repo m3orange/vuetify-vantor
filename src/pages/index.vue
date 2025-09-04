@@ -37,8 +37,8 @@
   </v-container>
 
 
-<div id="embed-form">
-  <div  class="embed-area">
+<div name="embedform" id="embedform">
+  <div class="embed-area">
 
 
       <v-row gutters="10px"> <!--no-gutters-->
