@@ -50,7 +50,6 @@
 </div>
 
     <v-switch
-    v-model="model"
     hide-details
     inset
   ></v-switch>

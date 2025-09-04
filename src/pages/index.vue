@@ -36,13 +36,39 @@
     </v-row>
   </v-container>
 
+
+<div id="embed-form">
+  <div  class="embed-area">
+
+
+      <v-row gutters="10px"> <!--no-gutters-->
+
+          <v-col lg="4" md="4" sm="12">
+            <div class="dashboard-card embed-window">
+              <div class="orange-from-orange">Form to embed</div>
+                <CompForm/>
+            </div>
+          </v-col>
+
+      </v-row>
+
+  </div>
+</div>
+
+
 </template>
 
 <style>
 
 
+
+
 .v-container{
   max-width: 1600px!important;
+}
+
+.embed-area{
+  margin-top: 200px;
 }
 
 </style>
