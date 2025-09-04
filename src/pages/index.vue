@@ -1,7 +1,8 @@
 <template>
-
+    <CompTopNav/>
   <v-container class="app-wrapper-dashboard">
     <h1>The Divine DS</h1>
+
     <v-row gutters="10px"> <!--no-gutters-->
         <v-col lg="auto" md="4" sm="6">
         <CompDatePicker/>

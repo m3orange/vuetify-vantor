@@ -170,6 +170,10 @@
 
 }
 
+.v-expansion-panel__shadow{
+  box-shadow: none!important;
+}
+
 
 /* 
 .radio-01{
