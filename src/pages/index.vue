@@ -11,7 +11,6 @@
         <v-col lg="auto" md="3" sm="6">
             <CompAccordion/> 
 
-
         </v-col>
         <v-col lg="auto" md="4" sm="6">
         <div class="dashboard-card">
