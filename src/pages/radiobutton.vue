@@ -7,10 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import ComponentRadioButton from '@/components/ComponentRadioButton.vue';
-
   //
 </script>
-
 
     

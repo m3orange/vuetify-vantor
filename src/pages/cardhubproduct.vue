@@ -7,7 +7,5 @@
 </template>
 
 <script lang="ts" setup>
-import ComponentCard from '@/components/ComponentCardHubProduct.vue';
-
   //
 </script>

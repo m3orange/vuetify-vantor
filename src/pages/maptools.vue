@@ -7,10 +7,9 @@
 </template>
 
 <script lang="ts" setup>
-import ComponentCard from '@/components/ComponentCard.vue';
-
   //
 </script>
+
 
 
 <style lang="css" scoped>
