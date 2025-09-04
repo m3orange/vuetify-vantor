@@ -3,8 +3,9 @@
   <v-row style="height: 100vh;     justify-content: flex-start;">
 
       <div class="right-side-panel">
-        <h3>Visualization Settings</h3>
-        <h4>Road Change Visualization</h4>
+<div class="panel-content">
+          <h4>Visualization Settings</h4>
+        <h5>Road Change Visualization</h5>
         <h6>Change Vector Color</h6>
 
 
@@ -21,28 +22,48 @@
                 elevation="0"
                 class="ramp-btn"
               >
-                <img src="../assets/images/color-ramps/ramp-button-01.png"/>
+                <img  src="../assets/images/color-ramps/ramp-button-01-@2x.png"/>
               </v-btn>
             </template>
             <v-list>
-              <v-list-item
-                v-for="(item, i) in items"
-                :key="i"
-                :value="i"
-              >
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              <v-list-item class="ramp-panel">
+                <v-list-item-title>
+                                  <img  src="../assets/images/color-ramps/ramp-panel-01-nopadding@2x.png"/>
+
+                </v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
 
 
 
-            <v-text-field size="x-small" density="compact">
+            <v-text-field size="x-small" density="compact" class="ramp-text-field"
+            style="border: 1px solid rgba(255, 255, 255, 0.2) !important;">
               100%
             </v-text-field>
 
           </div>
+          <v-container style="width: 100%;">
+<v-row class="row-toggle">
+<div class="row-toggle-text">
+<h5>Toggle change vector</h5><a href="#">Fill</a>
+</div>
 
+    <v-switch
+    v-model="model"
+    hide-details
+    inset
+  ></v-switch>
+
+</v-row>
+
+
+          </v-container>
+</div>
+
+      </div>
+      <div>
+         <img  src="../assets/images/color-ramps/ramp-panel-mockup.png" style="width: 380px;"/>
       </div>
 
   </v-row>
@@ -51,6 +72,19 @@
 </template>
 
 <style>
+
+
+.row-toggle{
+  display: flex;
+      justify-content: space-between;
+}
+
+.row-toggle-text{
+  display: flex;
+    flex-direction: row;
+    gap: 10px;
+        align-items: baseline;
+}
 
 .v-btn, v-btn--elevated, v-theme--dark v-btn--density-default, v-btn--size-default, v-btn--variant-elevated
 {
@@ -82,10 +116,18 @@ h1, h2, h3, h4, h5, h6{
 .right-side-panel{
   background-color: var(--background);
   padding: 30px;
-  width: 33%;
+  width: 450px;
   height: 100%;
-  min-width: 400px;
+  min-width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
 }
+  .panel-content{
+    display: flex;
+    flex-direction: column;
+  }
 
 .button-row{
   display: flex;
@@ -95,38 +137,67 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .v-btn{
-  border: 1px solid #393939!important;
-    /* border: 1px solid orange!important; */
+    border: 1px solid rgba(255,255,255,0.2)!important;
+    width: 80%!important;
     height: 40px!important;
 
+}
+
+v-input__control{
+    width: 100px!important;
+    max-width: 100px!important;
 }
 
 .v-input,
 .v-btn__content{
   background-color: rgba(255,255,255,0.02)!important;
   height: 40px!important;
+  /* width: 10px!important; */
   border-radius: 4px!important;
-  border: 1px solid #393939!important;
+  
+}
+
+.v-input{
+    /* border: 1px solid rgba(255,255,255,0.2)!important; */
+        width: 100px!important;
+        max-width: 100px!important; /* Size of the input field next to the ramp button.*/
+        background-color: unset;
+
 }
 
 .v-field__input{
   color: #B2B2B2!important;
   font-size: 14px!important;
   font-family: "Everett Regular",Helvetica, Arial, sans-serif;
+
+  /* width: 50px!important; */
+    /* border: 4px solid teal!important; */
 }
 
 
-.ramp-btn{
+.v-input--density-compact .v-field__input{
+  display: flex;
+  flex-direction: row;
+      justify-content: center;
+}
+
+.ramp-btn{ 
 
   border: 0px;
   margin: 0px;
   padding: 0px;
 }
 
+.ramp-btn img{
+  width: 100%!important; /* This is the size of the image inside the button. */
+}
+
 
 .v-btn--size-default,
 .v-btn__content{
-   width: 252px!important;
+   /* 
+    width: auto!important;
+    This is the size of the ramp btn. Image width is 252px */
    height: 40px!important;
     padding: 10px;
 
@@ -143,14 +214,47 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
+.v-menu > .v-overlay__content{
+  background-color: #393939;
+  padding: 0px!important;
+  margin-top: 10px;
+}
+
+.ramp-panel img{
+  width: 300px!important;
+}
+
+.v-menu > .v-overlay__content > .v-list{
+  box-shadow: 0px!important;
+}
+
+.v-list-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.v-list-item-title{
+      text-align: center;
+}
+
+.v-list-item--density-default:not(.v-list-item--nav).v-list-item--one-line{
+  padding-inline: 0px!important;
+  padding: 20px;
+}
+
+v-list v-theme--dark v-list--density-default v-list--one-line{
+  box-shadow: none!important;
+}
+
+
+
 </style>
 
-<script setup>
-  const items = [
-    { title: 'Click Me' },
-    { title: 'Click Me' },
-    { title: 'Click Me' },
-    { title: 'Click Me 2' },
-  ]
+<script setup lang="ts">
+
+  const menuItems = [
+    { image: 'assets/color-ramps/ramp-panel-01@2x.png' },
+      ]
+
 </script>
 

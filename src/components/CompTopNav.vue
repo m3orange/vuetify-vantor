@@ -68,18 +68,19 @@
 </style>
 
 <script setup lang="ts">
+
   const menuItems = [
-        { text: 'Home', route: '/' },
-        { text: 'Checkbox', route: '/checkbox' },
-        { text: 'Radio Button', route: '/radiobutton' },
-        { text: 'Color Ramps', route: '/colorramps' },
-                { text: 'Accordion', route: '/accordion' },
-{ text: 'Date Picker', route: '/datepicker' },
-{ text: 'Form', route: '/form' },
-{ text: 'Login', route: '/login' },
-{ text: 'Map Tools', route: '/maptools' },
-{ text: 'Sidebar', route: '/navdrawer' },
-{ text: 'Hub Card', route: '/cardhubproduct' },
+    { text: 'Home', route: '/' },
+    { text: 'Checkbox', route: '/checkbox' },
+    { text: 'Radio Button', route: '/radiobutton' },
+    { text: 'Color Ramps', route: '/colorramps' },
+            { text: 'Accordion', route: '/accordion' },
+    { text: 'Date Picker', route: '/datepicker' },
+    { text: 'Form', route: '/form' },
+    { text: 'Login', route: '/login' },
+    { text: 'Map Tools', route: '/maptools' },
+    { text: 'Sidebar', route: '/navdrawer' },
+    { text: 'Hub Card', route: '/cardhubproduct' },
       ]
 
 </script>
