@@ -144,9 +144,7 @@
 .v-expansion-panel{
   background-color: var(--background);
 }
-.panel-content-above{
 
-}
 
 .v-label{
   color: var(--on-surface);
