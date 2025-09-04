@@ -1,11 +1,15 @@
 <template>
     <div class="embed-wrapper">
-      
-          <ComponentCheckbox/>
+
+
 
     </div>
 </template>
 
+<style>
+
+</style>
+
 <script lang="ts" setup>
-  //
+
 </script>

@@ -1,13 +1,11 @@
 <template>
   <div class="embed-wrapper">
 
-  <ComponentCardStats/>
+  <CompAccordion/>
 
   </div>
 </template>
 
 <script lang="ts" setup>
-import ComponentCard from '@/components/ComponentCard.vue';
 
-  //
 </script>

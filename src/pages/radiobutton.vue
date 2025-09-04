@@ -1,10 +1,7 @@
 <template>
-
-    <div class="app-wrapper">
-      
+    <div class="embed-wrapper">
       
       <ComponentRadioButton/>
-
 
     </div>
 </template>
@@ -14,3 +11,6 @@ import ComponentRadioButton from '@/components/ComponentRadioButton.vue';
 
   //
 </script>
+
+
+    

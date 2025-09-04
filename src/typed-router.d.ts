@@ -19,11 +19,23 @@ declare module 'vue-router/auto-routes' {
    */
   export interface RouteNamedMap {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
+    '/accordion': RouteRecordInfo<'/accordion', '/accordion', Record<never, never>, Record<never, never>>,
     '/card': RouteRecordInfo<'/card', '/card', Record<never, never>, Record<never, never>>,
+    '/cardhubproduct': RouteRecordInfo<'/cardhubproduct', '/cardhubproduct', Record<never, never>, Record<never, never>>,
+    '/cardmonitoring': RouteRecordInfo<'/cardmonitoring', '/cardmonitoring', Record<never, never>, Record<never, never>>,
     '/cardstats': RouteRecordInfo<'/cardstats', '/cardstats', Record<never, never>, Record<never, never>>,
     '/checkbox': RouteRecordInfo<'/checkbox', '/checkbox', Record<never, never>, Record<never, never>>,
+    '/codeblock': RouteRecordInfo<'/codeblock', '/codeblock', Record<never, never>, Record<never, never>>,
     '/colorramps': RouteRecordInfo<'/colorramps', '/colorramps', Record<never, never>, Record<never, never>>,
+    '/dashboard': RouteRecordInfo<'/dashboard', '/dashboard', Record<never, never>, Record<never, never>>,
+    '/datepicker': RouteRecordInfo<'/datepicker', '/datepicker', Record<never, never>, Record<never, never>>,
+    '/form': RouteRecordInfo<'/form', '/form', Record<never, never>, Record<never, never>>,
+    '/import': RouteRecordInfo<'/import', '/import', Record<never, never>, Record<never, never>>,
+    '/login': RouteRecordInfo<'/login', '/login', Record<never, never>, Record<never, never>>,
+    '/maptools': RouteRecordInfo<'/maptools', '/maptools', Record<never, never>, Record<never, never>>,
     '/navdrawer': RouteRecordInfo<'/navdrawer', '/navdrawer', Record<never, never>, Record<never, never>>,
     '/radiobutton': RouteRecordInfo<'/radiobutton', '/radiobutton', Record<never, never>, Record<never, never>>,
+    '/template': RouteRecordInfo<'/template', '/template', Record<never, never>, Record<never, never>>,
+    '/various': RouteRecordInfo<'/various', '/various', Record<never, never>, Record<never, never>>,
   }
 }

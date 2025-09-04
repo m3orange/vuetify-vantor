@@ -1,11 +1,11 @@
 <template>
     <div class="embed-wrapper">
-      
-          <ComponentCheckbox/>
+
+        <CompMonitoringCard/>
 
     </div>
 </template>
 
 <script lang="ts" setup>
-  //
+
 </script>

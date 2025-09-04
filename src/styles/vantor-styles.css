@@ -7,7 +7,6 @@
 .no-padding{
   padding: 0px!important;
 }
-
 .app-wrapper-dashboard,
 .app-wrapper{
   padding: 60px 30px 30px 30px;
@@ -36,12 +35,14 @@
 
 :root {
   --vantor-teal: rgba(6,207,255,1);
+  --vantor-teal: rgba(6,207,255,1);
   --vantor-plum: #8E0DD1;
   --vantor-purple: rgba(189, 82, 244,1);
   --vantor-light-gray: #b6b6b6;
   --font-everett: "Everett Regular",Helvetica, Arial, sans-serif;
     --font-everett-bold: "Everett Bold",Helvetica, Arial, sans-serif;
   --font-inter: "Inter Regular",Helvetica, Arial, sans-serif;
+  --v-theme-primary: rgba(6,207,255,1)!important;
   --v-theme-primary: rgba(6,207,255,1)!important;
   --vantor-secondary: var(--vantor-plum);
   --border-color:#3D3D3D;
@@ -52,6 +53,10 @@
   --status-green-icon: rgba(0,162,0,1);
     --status-green-bg: rgba(2,118,2,0.6);
       
+}
+
+.bg-primary{
+  background-color:  rgba(6,207,255,1)!important;
 }
 
 .bg-primary{
@@ -444,6 +449,8 @@ min-height: 1200px;
 .stats-card .v-card-actions{
       gap: 0px;
 }
+
+
 
 
 .footer-area{

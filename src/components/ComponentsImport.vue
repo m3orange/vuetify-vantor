@@ -20,18 +20,13 @@
 
 <v-col cols="4">
 
-
+  
   <div class="area">
 
+
+
     <h2>Button</h2>
-    <!-- <v-btn class="button-outline">Order</v-btn> -->
 
-    <h4 class="gray-headers">Native</h4>
-    <v-btn>Vantor</v-btn>
-
-    <v-divider class="same-area"></v-divider>
-
-    <h4 class="gray-headers">Custom</h4>
 
     <button type="button" class="v-btn v-theme--light v-btn--size-default button-outline"><span
         class="v-btn__overlay"></span>
@@ -203,6 +198,8 @@ background-color: #06cfff !important;
 
 </style>
 <script setup lang="ts">
+import CodeBlock from './CodeBlock.vue';
+
 
 </script>
 

@@ -1,35 +1,35 @@
 <template>
   <v-row justify="center">
-
-  <div style="width: 100%;">
     <v-col cols="auto">
       <v-radio-group
         v-model="color"
         hide-details
         inline
       >
+        <v-radio
+          color="primary"
+          label="primary"
+          value="primary"
+        ></v-radio>
+
+                <v-radio
+          color="secondary"
+          label="secondary"
+          value="secondary"
+        ></v-radio>
 
         <v-radio
-          color="Primary"
-          label="Primary"
-          value="Primary"
+          color="tertiary"
+          label="tertiary"
+          value="tertiary"
         ></v-radio>
 
-        <v-radio
-          color="Secondary"
-          label="Secondary"
-          value="Secondary"
-        ></v-radio>
-
-          <v-radio
-          color="Tertiary"
-          label="Tertiary"
-          value="Tertiary"
-        ></v-radio>
       </v-radio-group>
     </v-col>
 
-    </div>
+  </v-row>
+  
+  <v-row justify="center">
 
     <v-col
       v-for="(variant, i) in variants"
@@ -62,25 +62,18 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row>
-    <v-col>
-      <v-btn>This is a button</v-btn>
-    </v-col>
-
-  </v-row>
 </template>
 
+<script setup>
+  import { ref } from 'vue'
+
+  const variants = ['flat', 'tonal', 'outlined']
+  const color = ref('indigo')
+</script>
 
 <style>
 
 
 </style>
-
-<script setup>
-  import { ref } from 'vue'
-
-  const variants = ['elevated', 'flat', 'tonal', 'outlined']
-  const color = ref('primary')
-</script>
 
 

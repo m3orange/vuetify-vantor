@@ -9,6 +9,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
+    'BUComponentCardHubProduct copy': typeof import('./components/BUComponentCardHubProduct copy.vue')['default']
+    CodeBlock: typeof import('./components/CodeBlock.vue')['default']
     CompAccordion: typeof import('./components/CompAccordion.vue')['default']
     CompCardHubProduct: typeof import('./components/CompCardHubProduct.vue')['default']
     CompColorRamps: typeof import('./components/CompColorRamps.vue')['default']
@@ -17,10 +19,12 @@ declare module 'vue' {
     CompForm: typeof import('./components/CompForm.vue')['default']
     CompLogin: typeof import('./components/CompLogin.vue')['default']
     CompMonitoringCard: typeof import('./components/CompMonitoringCard.vue')['default']
+    ComponentCalendar: typeof import('./components/ComponentCalendar.vue')['default']
     ComponentCard: typeof import('./components/ComponentCard.vue')['default']
     ComponentCardHubProduct: typeof import('./components/ComponentCardHubProduct.vue')['default']
     ComponentCardStats: typeof import('./components/ComponentCardStats.vue')['default']
     ComponentCheckbox: typeof import('./components/ComponentCheckbox.vue')['default']
+    ComponentDatePicker: typeof import('./components/ComponentDatePicker.vue')['default']
     ComponentImport: typeof import('./components/ComponentsImport.vue')['default']
     ComponentMapTools: typeof import('./components/ComponentMapTools.vue')['default']
     ComponentNavDrawer: typeof import('./components/ComponentNavDrawer.vue')['default']
@@ -28,12 +32,15 @@ declare module 'vue' {
     Components: typeof import('./components/Comp./components/ComponentSpeedDial.vue') ['default']
     ComponentsImport: typeof import('./components/ComponentsImport.vue')['default']
     ComponentSpeedDial: typeof import('./components/ComponentSpeedDial.vue')['default']
+    ComponentVarious: typeof import('./components/ComponentVarious.vue')['default']
     CompTable: typeof import('./components/CompTable.vue')['default']
-    copy: typeof import('./components/ComponentRadioButton.vue')['default']
+    copy: typeof import('./components/-template copy.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TableAvatarAndDropdown: typeof import('./components/tableAvatarAndDropdown.vue')['default']
+    Template: typeof import('./components/-template.vue')['default']
     TopBar: typeof import('./components/TopBar.vue')['default']
   }
 }
