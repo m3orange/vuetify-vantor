@@ -1,5 +1,6 @@
 <template>
   <v-container class="app-wrapper-dashboard">
+    <h1>The Divine DS</h1>
     <v-row gutters="10px"> <!--no-gutters-->
         <v-col lg="auto" md="4" sm="6">
         <CompDatePicker/>
@@ -18,19 +19,18 @@
     </v-row>
 
 <v-row style=""> <!--no-gutters-->
-<v-col lg="5" md="6" sm="12">
-<CompLogin/>
-</v-col>
+  <v-col lg="4" md="6" sm="12">
+  <CompLogin/>
+  </v-col>
 
-<v-col lg="4" md="6" sm="12">
-Monitoring card goes here
-</v-col>
+  <v-col lg="4" md="6" sm="12">
+  <CompMonitoringCard/>
+  </v-col>
 
-<!-- <v-col lg="3" md="6" sm="12">
-<div class="dashboard-card">
-Another Card
-</div>
-</v-col> -->
+  <v-col lg="4" md="6" sm="12">
+  <ComponentMapTools/>
+  </v-col>
+
 </v-row>
 
 

@@ -1,11 +1,11 @@
 <template>
-
-    <router-view />
-
-
+  <div class="bg-white">
+    <CompColorRamps/>
+  </div>
 
 </template>
 
 <script lang="ts" setup>
-  //
+
+
 </script>
