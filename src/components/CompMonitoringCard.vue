@@ -73,6 +73,10 @@
   
 }
 
+.title-right{
+  
+}
+
 .bottom-images{
     display: flex;
     flex-direction: row;
