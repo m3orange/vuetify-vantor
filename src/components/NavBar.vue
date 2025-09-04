@@ -16,7 +16,6 @@
       <RouterLink class="links" to="/radiobutton">Radio Button</RouterLink>
       <RouterLink class="links" to="/cardstats">Stats Card</RouterLink>
       <RouterLink class="links" to="/card">Card Grid</RouterLink>
-      <RouterLink class="links" to="/codeblock">Code Block</RouterLink>
       <RouterLink class="links" to="/navdrawer">Sidebar Drawer</RouterLink>
       <RouterLink class="links" to="/maptools">Map Tools</RouterLink>
       <RouterLink class="links" to="/cardhubproduct">Hub Card</RouterLink>
