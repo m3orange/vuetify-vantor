@@ -2,13 +2,6 @@
   <v-container class="app-wrapper-dashboard">
     <h1>Vantor Design System</h1>
 
-<v-row>
-  <v-col lg="auto" md="4" sm="6">
-    <CompColorRamps/>
-  </v-col>
-</v-row>
-
-
     <v-row gutters="10px"> <!--no-gutters-->
         <v-col lg="auto" md="4" sm="6">
         <CompDatePicker/>
