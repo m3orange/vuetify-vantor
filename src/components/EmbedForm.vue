@@ -1,5 +1,5 @@
 <template>
-    <div name="embedform" id="embedform" class="embed-area embed-turn-on">
+    <div name="embedform" id="embedform" class="embed-area">
       <v-col lg="5" md="5" sm="12" class="embed-v-col">
         <div class="dashboard-card embed-window">
             <CompForm/>
@@ -45,6 +45,7 @@
 
 .embed-window{
   width: 500px !important;
+  min-width: 500px!important;
 }
 
 .embed-v-col{
@@ -54,22 +55,22 @@
 }
 
 .embed-turn-on{
-  visibility: visible!important;
-      width: 100%!important;
-    height: 100%!important;
+visibility: visible!important;
+width: 100%!important;
+height: 100vh!important;
 
-        display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 
 
-    position: absolute!important;
-    left: 0!important;
-    top: 0!important;
-    /* background-color: antiquewhite; */
-    background-color: #222 !important;
-    z-index: 1000!important;
+position: absolute!important;
+left: 0!important;
+top: 0!important;
+/* background-color: antiquewhite; */
+background-color: #222 !important;
+z-index: 1000!important;
 }
 
 

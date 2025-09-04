@@ -535,6 +535,13 @@ min-height: 1200px;
   padding: 20px 30px 30px 30px!important;
 }
 
+.box-in-box{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+    align-items: center;
+}
+
 .dashboard-card-title{
   font-family: var(--font-everett)!important;
   font-weight: 600;
@@ -544,3 +551,4 @@ min-height: 1200px;
   /* border: 1px solid pink; */
   margin-bottom: 10px;
 }
+

@@ -1,18 +1,17 @@
 <template>
 
   <v-container class="app-wrapper-dashboard">
-
-
     <v-row gutters="10px"> <!--no-gutters-->
-        <v-col lg="auto" md="4" sm="6">
-          <a href="#embedform">View Demo</a>
+        <v-col lg="4" md="6" sm="12">
+          <div class="dashboard-card box-in-box">
         <CompDatePicker/>
+        </div>
         </v-col>
-        <v-col lg="auto" md="3" sm="6">
+        <v-col lg="4" md="6" sm="12">
             <CompAccordion/> 
 
         </v-col>
-        <v-col lg="auto" md="4" sm="6">
+        <v-col lg="4" md="6" sm="12">
         <div class="dashboard-card">
             <CompForm/>
         </div>
@@ -38,24 +37,12 @@
 
 
 
-  <div name="embedform" id="embedform" class="embed-area">
-
-
-      <v-row gutters="10px"> <!--no-gutters-->
-
-          <v-col lg="6" md="6" sm="12">
-            <div class="dashboard-card embed-window">
-              <div class="orange-from-orange">Form to embed</div>
-                <CompForm/>
-            </div>
-          </v-col>
-
-      </v-row>
-
-  </div>
+<EmbedForm/>
 
 
 
+
+<CompTopNav/>
 </template>
 
 <style>
@@ -92,7 +79,7 @@
 </style>
 
 <script lang="ts" setup>
-
+import CompTopNav from '../components/CompTopNav.vue';
 
 
 

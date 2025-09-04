@@ -29,6 +29,7 @@ declare module 'vue' {
     CompTopNav: typeof import('./components/CompTopNav.vue')['default']
     'CompTopNav copy': typeof import('./components/CompTopNav copy.vue')['default']
     copy: typeof import('./components/CompTopNav copy.vue')['default']
+    EmbedForm: typeof import('./components/EmbedForm.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

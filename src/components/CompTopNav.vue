@@ -27,10 +27,12 @@
 <style>
 
 .header-bar{
-  width: 100%;
+  width: fit-content;
   height: 60px;
-  position: absolute;
-  background-color: #222;
+  bottom: 0px;
+  left: 0px;
+  position: sticky;
+  /* background-color: #222; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
