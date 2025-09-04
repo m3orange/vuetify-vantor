@@ -2,19 +2,16 @@
   <div class="embed-page">
     <v-container class="">
 
-      <a name="section-id"style="color: white;">Go to form</a>
-        <a href="http://localhost:3000#embedform" style="color: white;">Go to form</a>
+          <a name="section-id"style="color: white;">Go to form</a>
+          <a href="http://localhost:3000#embedform" style="color: white;">Go to form</a>
 
-    <div class="embed-container-around">
-      <iframe 
-      scrolling="no"
-      src="https://vuetify-vantor-ovc08nax1-vantor-ds.vercel.app/#embedform"
-      class="embed-iframe">
-      </iframe>
-    </div><!--embed-container-around-->
-<a href="#div_id">jump link</a>
-Then make
-
+        <div class="embed-container-around">
+          <iframe 
+          scrolling="no"
+          src="https://vuetify-vantor-ovc08nax1-vantor-ds.vercel.app#embedform"
+          class="embed-iframe">
+          </iframe>
+        </div><!--embed-container-around-->
 
     </v-container>
   </div>

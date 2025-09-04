@@ -37,8 +37,8 @@
   </v-container>
 
 
-<div name="embedform" id="embedform">
-  <div class="embed-area">
+
+  <div name="embedform" id="embedform" class="embed-area">
 
 
       <v-row gutters="10px"> <!--no-gutters-->
@@ -53,7 +53,7 @@
       </v-row>
 
   </div>
-</div>
+
 
 
 </template>
@@ -68,8 +68,26 @@
 }
 
 .embed-area{
-  margin-top: 200px;
+    border: 1px solid orange!important;
+    padding: 30px;
+    margin: 0px!important;
+    margin-top: 0px!important;
+
+
+
 }
+
+/* .embed-inside-layer-above{
+    width: 100%!important;
+    height: 100%!important;
+    position: absolute;
+    left: 0;
+    top: 0;
+  background-color: #222 !important;
+  z-index: 1000;
+} */
+
+
 
 </style>
 
