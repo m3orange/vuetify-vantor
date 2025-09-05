@@ -45,7 +45,7 @@
     padding: 20px 10px;
     display: flex;
     align-items: center;
-      background-color: rgba(255,255,255,0.05);
+      background-color: #222;
       border: 1px solid rgba(255,255,255,0.2);
       margin: 10px 12px 20px 0;
       margin-right: 12px;

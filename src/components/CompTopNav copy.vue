@@ -40,7 +40,14 @@
 }
 
 .menu-hamburger{
-   padding: 20px 10px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+      background-color: #222;
+      border: 1px solid rgba(255,255,255,0.2);
+      margin: 10px 12px 20px 0;
+      margin-right: 12px;
+      margin-bottom: 10px;
 }
 
 </style>
