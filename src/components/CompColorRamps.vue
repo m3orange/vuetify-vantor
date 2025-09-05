@@ -224,9 +224,6 @@ v-input__control{
   flex-direction: column;
   align-items: center;
 }
-.v-list-item-title{
-      /* text-align: center; */
-}
 
 .v-list-item--density-default:not(.v-list-item--nav).v-list-item--one-line{
   padding-inline: 0px!important;

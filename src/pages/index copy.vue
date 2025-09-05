@@ -11,21 +11,24 @@
 
     <v-row gutters="10px"> <!--no-gutters-->
 
-      <!--
-<v-col cols="6">
+<v-col cols="7">
   <div class="dashboard-card"><Charts01/></div>
-  </v-col>
-  -->
+</v-col>
+
+  <v-col lg="5" md="6" sm="12">
+  <div class="dashboard-card map-tools-adjust map-for-dashboard-card">
+    <ComponentMapTools/>
+  </div>
+</v-col>
+
+
+
         <v-col lg="4" md="6" sm="12">
-          <div class="dashboard-card box-in-box">
+          <div class="dashboard-card box-in-box" style="">
           <CompDatePicker/>
           </div>
         </v-col>
-        <v-col lg="4" md="6" sm="12">
-          <div class="dashboard-card map-tools-adjust map-for-dashboard-card">
-            <ComponentMapTools/>
-          </div>
-        </v-col>
+
         <v-col lg="4" md="6" sm="12">
         <div class="dashboard-card">
             <CompForm/>
@@ -53,6 +56,12 @@
 
 
 
+<EmbedForm/>
+
+
+
+
+<CompTopNav/>
 </template>
 
 <style>
@@ -88,7 +97,7 @@ position: unset!important;
 .map-tools-adjust{
   display: flex;
     justify-content: center;
-    aspect-ratio: 1/0.8;
+    aspect-ratio: 1/0.95;
 }
 
 /* .embed-inside-layer-above{

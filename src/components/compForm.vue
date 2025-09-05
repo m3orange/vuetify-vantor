@@ -98,9 +98,7 @@
 
 <style>
 
-.form-canvas{
 
-}
 
 .form-slider{
   z-index: 100;
