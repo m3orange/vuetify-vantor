@@ -8,46 +8,51 @@
       transition="fade-transition"
     >
       <template v-slot:activator="{ props: activatorProps }">
-        <v-fab v-bind="activatorProps" size="medium">
+        <v-fab v-bind="activatorProps" size="medium" variant="flat">
               <img src="@/assets/images/map-tools/tool-btn-01a.png"/>
         </v-fab>
       </template>
 
       <v-btn key="1" class="panel-drawer">
-      <div class="panel-content">
-      <v-row>
+        <div class="panel-content">
+          <v-row>
 
-      <div class="panel-title">Add an Area</div>
+          <div class="panel-title">Add an Area</div>
 
-      </v-row>
-      <v-row>
-        <v-col cols="6">
-          <div class="links-left">
-            <div class="panel-links">
-              <img src="@/assets/images/map-tools/tools-annot-01.png"/>Text
-            </div>
-            <div class="panel-links">
-              <img src="@/assets/images/map-tools/tools-annot-02.png"/>Polygon
-            </div>
-            <div class="panel-links">
-              <img src="@/assets/images/map-tools/tools-annot-03.png"/>Polyline
-            </div>
-            <div class="panel-links">
-              <img src="@/assets/images/map-tools/tools-annot-04.png"/>Magnify
-            </div>
-          </div>
-        </v-col>
-        <v-col cols="6">
-          <div class="links-right">
-            <div class="panel-links">Text</div>
-            <div class="panel-links">Polygon</div>
-            <div class="panel-links">Polyline</div>
-            <div class="panel-links">Magnify</div>
+          </v-row>
+          <v-row>
+            <v-col cols="6">
+              <div class="links-left">
+                <div class="panel-links">
+                  <img src="@/assets/images/map-tools/tools-annot-01.png"/>Text
+                </div>
+                <div class="panel-links">
+                  <img src="@/assets/images/map-tools/tools-annot-02.png"/>Polygon
+                </div>
+                <div class="panel-links">
+                  <img src="@/assets/images/map-tools/tools-annot-03.png"/>Polyline
+                </div>
+                <div class="panel-links">
+                  <img src="@/assets/images/map-tools/tools-annot-04.png"/>Magnify
+                </div>
+              </div>
+            </v-col>
+            <v-col cols="6">
+              <div class="links-right">
+                <div class="panel-links">
+                  <img src="@/assets/images/map-tools/tools-annot-05.png"/>Grid
+                </div>
+                <div class="panel-links">
+                  <img src="@/assets/images/map-tools/tools-annot-06.png"/>Military Symbol
+                </div>
+                <div class="panel-links">
+                  <img src="@/assets/images/map-tools/tools-annot-07.png"/>Basic Symbol
+                </div>
 
-          </div>
-        </v-col>
-      </v-row>
-      </div>
+              </div>
+            </v-col>
+          </v-row>
+        </div>
       
       </v-btn>
 
@@ -60,7 +65,7 @@
 <!-- Button #1-->
 
 <!-- Divider -->
-    <v-fab size="medium">
+    <v-fab size="medium" variant="flat">
           <img src="@/assets/images/map-tools/divider.png"/>
     </v-fab>
 <!-- Divider -->
@@ -71,7 +76,7 @@
       transition="fade-transition"
     >
       <template v-slot:activator="{ props: activatorProps }">
-        <v-fab v-bind="activatorProps" size="medium">
+        <v-fab v-bind="activatorProps" size="medium" variant="flat">
               <img src="@/assets/images/map-tools/tool-btn-02a.png"/>
         </v-fab>
       </template>
@@ -80,35 +85,24 @@
       <div class="panel-content">
       <v-row>
 
-      <div class="panel-title">Add Annotation</div>
+      <div class="panel-title">Create an Area</div>
 
       </v-row>
       <v-row>
         <v-col cols="6">
           <div class="links-left">
             <div class="panel-links">
-              <img src="@/assets/images/map-tools/tools-annot-01.png"/>Text
+              <img src="@/assets/images/map-tools/tools-area-01b.png"/>Use Viewport
             </div>
             <div class="panel-links">
-              <img src="@/assets/images/map-tools/tools-annot-02.png"/>Polygon
+              <img src="@/assets/images/map-tools/tools-area-02.png"/>Draw Area
             </div>
             <div class="panel-links">
-              <img src="@/assets/images/map-tools/tools-annot-03.png"/>Polyline
-            </div>
-            <div class="panel-links">
-              <img src="@/assets/images/map-tools/tools-annot-04.png"/>Magnify
+              <img src="@/assets/images/map-tools/tools-area-03.png"/>Polyline
             </div>
           </div>
         </v-col>
-        <v-col cols="6">
-          <div class="links-right">
-            <div class="panel-links">Text</div>
-            <div class="panel-links">Polygon</div>
-            <div class="panel-links">Polyline</div>
-            <div class="panel-links">Magnify</div>
 
-          </div>
-        </v-col>
       </v-row>
 
 
@@ -126,7 +120,7 @@
 <!-- Button #2-->
 
 <!-- Divider -->
-    <v-fab size="medium">
+    <v-fab size="medium" variant="flat">
           <img src="@/assets/images/map-tools/divider.png"/>
     </v-fab>
 <!-- Divider -->
@@ -138,7 +132,7 @@
       transition="fade-transition"
     >
       <template v-slot:activator="{ props: activatorProps }">
-        <v-fab v-bind="activatorProps" size="medium">
+        <v-fab v-bind="activatorProps" size="medium" variant="flat">
               <img src="@/assets/images/map-tools/tool-btn-03a.png"/>
         </v-fab>
       </template>
@@ -147,7 +141,7 @@
 <!-- Button #3-->
 
 <!-- Divider -->
-    <v-fab size="medium">
+    <v-fab size="medium" variant="flat">
           <img src="@/assets/images/map-tools/divider.png"/>
     </v-fab>
 <!-- Divider -->
@@ -158,7 +152,7 @@
       transition="fade-transition"
     >
       <template v-slot:activator="{ props: activatorProps }">
-        <v-fab v-bind="activatorProps" size="medium">
+        <v-fab v-bind="activatorProps" size="medium" variant="flat">
               <img src="@/assets/images/map-tools/tool-btn-04b.png"/>
         </v-fab>
       </template>
@@ -189,6 +183,8 @@
   width: fit-content;
   display: flex;
   flex-direction: row;
+  border-radius: 8px;
+  border: 1px solid #2d2d2d;
 
 }
 
@@ -200,8 +196,7 @@
 
 
 .v-btn--variant-elevated, .v-btn--variant-flat{
-
-  /* border: 1px solid green; */
+  background-color: #1D1D1D;
 }
 
 .v-btn__overlay,.v-btn__underlay  {

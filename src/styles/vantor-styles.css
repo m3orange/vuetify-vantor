@@ -88,7 +88,7 @@ body{
 
 .full-screen-with-map{
   margin: 0px;
-  padding: 0px;
+  padding: 16px 0 0 0;
   background-color: #262626;
   height: 100vh;
   background-image: 
@@ -500,7 +500,8 @@ min-height: 1200px;
     width: 100%;
     text-align: left;
 
-  font-family: var(--font-everett);
+  font-family: var(--font-everett-bold);
+  font-size: 14px;
     font-weight: 600;
     margin-bottom: 10px;
 }
