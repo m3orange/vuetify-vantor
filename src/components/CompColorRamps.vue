@@ -1,5 +1,5 @@
 <template>
-<div class="full-screen">
+<div class="full-screen-with-map">
   <v-row style="height: 100vh;     justify-content: flex-start;">
 
       <div class="right-side-panel">
@@ -102,15 +102,7 @@ h1, h2, h3, h4, h5, h6{
   color: var(--on-surface);
 }
 
-.full-screen{
-  margin: 0px;
-  padding: 0px;
-  background-color: #262626;
-  height: 100vh;
-  background: url(../assets/images/app-map-bg.png);
-  background-size: cover;
-  overflow-x: hidden;
-}
+
 
 .right-side-panel{
   background-color: var(--background);
@@ -233,7 +225,7 @@ v-input__control{
   align-items: center;
 }
 .v-list-item-title{
-      text-align: center;
+      /* text-align: center; */
 }
 
 .v-list-item--density-default:not(.v-list-item--nav).v-list-item--one-line{

@@ -37,6 +37,7 @@
   background-color: #262626!important;
   border: 1px solid rgba(255,255,255,0.05)!important;
   margin-top: 20px;
+  aspect-ratio: 1/0.3;
 }
 
 .hub-product:hover{

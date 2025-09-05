@@ -1,9 +1,9 @@
 <template>
-    <div class="embed-wrapper">
+<div class="full-screen-with-map">
 
     <ComponentMapTools/>
 
-    </div>
+</div>
 </template>
 
 <script lang="ts" setup>
@@ -13,8 +13,6 @@
 
 
 <style lang="css" scoped>
-.embed-wrapper{
-  background-color:rgba(255,255,255,0.1)!important;
-}
+
 
 </style>

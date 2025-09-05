@@ -72,7 +72,7 @@
 
 
 
-    <v-row align="center" class="button-row">
+    <v-row align="center" class="form-button-row">
 
 
 
@@ -145,10 +145,10 @@
   align-items: center;
 }
 
-.button-row{
+.form-button-row{
   display: flex;
       justify-content: space-evenly;
-      margin: 10px 0 0 0;
+      margin: 5px 0 5px 0!important;
 }
 .v-btn__content{
   font-family: "Everett Regular";

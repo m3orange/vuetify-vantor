@@ -80,8 +80,22 @@ body{
   padding: 0px;
 }
 
+
+
 body{
   font-family:  "Inter Regular", Helvetica, Arial, sans-serif;
+}
+
+.full-screen-with-map{
+  margin: 0px;
+  padding: 0px;
+  background-color: #262626;
+  height: 100vh;
+  background-image: 
+  url(../assets/images/app-map-bg-2300x1300.png);
+background-repeat: no-repeat;
+  overflow-x: hidden!important;
+  overflow-y: hidden!important;
 }
 
 .inter-600 {

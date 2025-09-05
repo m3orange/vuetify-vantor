@@ -2,7 +2,7 @@
     <div class="embed-wrapper">
 <v-row>
     <v-col cols="">
-        <ComponentDatePicker/>
+       <CompDatePicker/>
 </v-col>
 </v-row>
     </div>
