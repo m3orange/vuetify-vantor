@@ -1,0 +1,282 @@
+<!DOCTYPE HTML>
+    <!--250906_1918-->
+    <!--https://www.m3orange.com/vantor-perm/design-system-poc/charts/_bar-01.html-->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Vantor | Sales Pipeline</title>
+
+		<style type="text/css">
+* {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+}
+
+body{
+    margin: 0px!important;
+    padding: 0px!important;
+    background-color: unset!important;
+}
+
+#container {
+    height: 400px;
+}
+
+.highcharts-figure {
+    min-width: 310px;
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid var(--highcharts-neutral-color-10, #343333);
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: var(--highcharts-neutral-color-60, #a5a2a2);
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tbody tr:nth-child(even) {
+    background: var(--highcharts-neutral-color-3, #242424);
+}
+
+.highcharts-description {
+    margin: 0.3rem 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        /* background-color: #1d1d1d; */
+        color: #ddd;
+    }
+    a {
+        color: #06cfff;
+    }
+}
+		</style>
+        <link href="../../code/css/highcharts-m3.css" as="style"/>
+	</head>
+
+	<body class="embed-page" style="padding: 0px!important; background-color: rgba(18,18,18,1)!important;"> 
+    <!-- Bg color is the --v-theme-background variable-->
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://code.highcharts.com/themes/adaptive.js"></script>
+
+<script src="../../code/highcharts.js"></script>
+<script src="../../code/modules/data.js"></script>
+<script src="../../code/modules/exporting.js"></script>
+<script src="../../code/modules/accessibility.js"></script>
+<script src="../../code/themes/adaptive.js"></script>
+
+<style>
+
+    .embed-page{
+        padding: 0px!important;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .dashboard-card{
+        background-color:#141414!important;
+        border: 1px solid #3D3D3D!important;
+        border-radius: 10px!important;
+        margin: 0px!important;
+            /* These are defined by .highcharts-figure */
+            padding: 30px; 
+            min-width: 310px;
+            max-width: 800px;
+
+}
+
+    .hide-table, .highcharts-legend, .highcharts-title, .highcharts-subtitle, .highcharts-axis-title, .highcharts-credits{
+        visibility: hidden;
+    }
+
+    .highcharts-background{
+        padding-bottom: 20px;
+    }
+
+
+        .embed-page, .dashboard-card,
+        .highcharts-dark, .highcharts-background{
+        background-color: rgba(18,18,18,1)!important;
+        height: 360px!important; /* Declare one single height for all*/
+        overflow-x: hidden;
+        overflow-y: hidden;
+        }
+
+        .dashboard-card{
+            height: 450px!important;
+        }
+
+                /* To make sure the bg matches that of the dashboard, make sure to override these
+        .embed-page, .dashboard-card, .highcharts-dark, .highcharts-background{}
+        */
+
+
+
+.highcharts-exporting-group, .highcharts-a11y-proxy-element
+{
+
+        border: 1px solid green!important;
+}
+
+.chart-header{
+    /* border: 1px solid red; */
+    color: white;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+
+}
+
+.chart-title-01, chart-title-02, chart-title-03{
+font-family: "Everett Regular",Helvetica, Arial, sans-serif;
+}
+
+.chart-title-01 h4{
+    font-size: 20px!important;
+        color: rgba(6,207,255,1)!important;
+        font-weight: 500;
+}
+.chart-title-02 h1{
+     font-size: 34px!important;
+     font-weight: 500;
+}
+
+
+</style>
+
+
+<div class="dashboard-card">    
+
+
+    <div class="chart-header">
+        <img src="images/charts-bar-header-left.png" style="margin: 6px 0 0 0;"/>
+        <img src="images/charts-bar-header-right.png"/>
+    </div>
+        
+    <div class="highcharts-dark" style="overflow: hidden; height: fit-content; border-radius: 10px;">
+            
+            
+            <figure class="highcharts-figure">
+
+        <div id="container"></div>
+
+                <div class="highcharts-data-table hide-table">
+                    <table id="datatable">
+                        <thead>
+                            <tr>
+                            <th>Product</th>
+                            <th>Sales</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th>Discovery</th>
+                            <td>18445930</td>
+
+                            </tr>
+                            <tr>
+                            <th>Qualify</th>
+                            <td>22216731</td>
+                            </tr>
+                            <tr>
+                            <th>Design Solution</th>
+                            <td>30880100</td>
+                            </tr>
+                            <tr>
+                            <th>Propose Solution</th>
+                            <td>51556430</td>
+                            </tr>
+                            <tr>
+                            <th>Obtain Commitment</th>
+                            <td>16266984</td>
+                            </tr>
+                            <tr>
+                            <th>Final Negotiations</th>
+                            <td>3718606</td>
+                            </tr>
+                            <tr>
+                            <th>Closed Lost</th>
+                            <td>346099962</td>
+                            </tr>
+                            <tr>
+                            <th>Closed Won</th>
+                            <td>255827730</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </figure>
+        </div><!--highcharts-dark end-->
+
+</div>
+
+<script type="text/javascript">
+    Highcharts.chart('container', {
+        data: {
+            table: 'datatable'
+        },
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: '........'
+        },
+        subtitle: {
+            text:
+                ''
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Amount'
+            }
+        }
+    });
+
+</script>
+	</body>
+</html>

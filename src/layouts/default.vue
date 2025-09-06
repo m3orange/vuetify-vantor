@@ -3,7 +3,7 @@
     <router-view />
 
 
-<!-- <CompTopNav/> -->
+<CompTopNav/>
 </template>
 
 <script lang="ts" setup>

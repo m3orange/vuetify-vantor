@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+    <!--250906_1015-->
+    <!--https://www.m3orange.com/vantor-perm/design-system-poc/charts/_bar-01.html-->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Vantor | Sales Pipeline</title>
+
+		<style type="text/css">
+* {
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        sans-serif;
+}
+
+body{
+    margin: 0px!important;
+    padding: 0px!important;
+    background-color: unset!important;
+}
+
+#container {
+    height: 400px;
+}
+
+.highcharts-figure {
+    min-width: 310px;
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid var(--highcharts-neutral-color-10, #343333);
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: var(--highcharts-neutral-color-60, #a5a2a2);
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tbody tr:nth-child(even) {
+    background: var(--highcharts-neutral-color-3, #242424);
+}
+
+.highcharts-description {
+    margin: 0.3rem 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        /* background-color: #1d1d1d; */
+        color: #ddd;
+    }
+    a {
+        color: #06cfff;
+    }
+}
+		</style>
+        <link href="../../code/css/highcharts-m3.css" as="style"/>
+	</head>
+	<body class="embed-page" style="padding: 0px!important; background-color: red!important;">
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://code.highcharts.com/themes/adaptive.js"></script>
+
+<script src="../../code/highcharts.js"></script>
+<script src="../../code/modules/data.js"></script>
+<script src="../../code/modules/exporting.js"></script>
+<script src="../../code/modules/accessibility.js"></script>
+<script src="../../code/themes/adaptive.js"></script>
+
+<style>
+
+    .embed-page{
+        /* background-color: #222 !important; */
+        padding: 0px!important;
+    }
+
+    .dashboard-card{
+        /* background-color: #1D1D1D!important; */
+                background-color:#141414!important;
+        border: 1px solid #3D3D3D!important;
+        border-radius: 8px!important;
+        /* padding: 10px!important; */
+        height: fit-content;
+        height: 400px;
+}
+
+.embed-page, .dashboard-card{
+    background-color: teal!important;
+}
+
+
+
+    .hide-table, .highcharts-legend, .highcharts-title, .highcharts-subtitle, .highcharts-axis-title, .highcharts-credits{
+        visibility: hidden;
+    }
+
+    .highcharts-background{
+        height: 355px!important;
+        padding-bottom: 20px;
+        background-color: green!important;
+    }
+.highcharts-dark{
+    background-color: green!important;
+}
+
+/* .highcharts-figure, .highcharts-container, .highcharts-background-color, .highcharts-background,
+   #container{
+        background-color: orange!important;
+
+    .highcharts-figure{
+        margin: 0px;
+    }
+
+    :root{
+        --highcharts-background-color:#1D1D1D!important;
+    }
+
+    .highcharts-background-color,
+    .no-background{
+        background-color: teal;
+        background: teal;
+    }
+    #container, .highcharts-figure{
+        height: 450px!important;
+    }
+    
+</style>
+
+
+<div class="dashboard-card">    
+    <div class="highcharts-dark" style="height: 400px; overflow: hidden;">
+        <figure class="highcharts-figure">
+            <div id="container"></div>
+            <p class="highcharts-description">
+            </p>
+            <div class="highcharts-data-table hide-table">
+                <table id="datatable">
+                    <thead>
+                        <tr>
+                        <th>Product</th>
+                        <th>Sales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th>Discovery</th>
+                        <td>18445930</td>
+
+                        </tr>
+                        <tr>
+                        <th>Qualify</th>
+                        <td>22216731</td>
+                        </tr>
+                        <tr>
+                        <th>Design Solution</th>
+                        <td>30880100</td>
+                        </tr>
+                        <tr>
+                        <th>Propose Solution</th>
+                        <td>51556430</td>
+                        </tr>
+                        <tr>
+                        <th>Obtain Commitment</th>
+                        <td>16266984</td>
+                        </tr>
+                        <tr>
+                        <th>Final Negotiations</th>
+                        <td>3718606</td>
+                        </tr>
+                        <tr>
+                        <th>Closed Lost</th>
+                        <td>346099962</td>
+                        </tr>
+                        <tr>
+                        <th>Closed Won</th>
+                        <td>255827730</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </figure>
+    </div><!--highcharts-dark end-->
+</div>
+
+<script type="text/javascript">
+    Highcharts.chart('container', {
+        data: {
+            table: 'datatable'
+        },
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: '........'
+        },
+        subtitle: {
+            text:
+                ''
+        },
+        xAxis: {
+            type: 'category'
+        },
+        yAxis: {
+            allowDecimals: false,
+            title: {
+                text: 'Amount'
+            }
+        }
+    });
+
+</script>
+	</body>
+</html>

@@ -16,6 +16,17 @@
   <div class="dashboard-card"><Charts01/></div>
   </v-col>
   -->
+
+        <v-col lg="6" md="6" sm="12">
+
+<div class="highcharts-dark">
+    <div class="embed-window" style="padding: 0px!important;">
+        <iframe src="https://www.m3orange.com/vantor-perm/design-system-poc/charts/_bar-01.html" frameBorder="0" style="padding: 0!important; background-color: transparent!important;"></iframe>
+                <!-- <iframe src="../charts-html/_bar-01.html" frameBorder="0" style="padding: 0!important; background-color: transparent!important;"></iframe> -->
+    </div>
+</div><!--highcharts-dark ends-->
+
+      </v-col>
         <v-col lg="4" md="6" sm="12">
           <div class="dashboard-card box-in-box">
           <CompDatePicker/>
@@ -56,6 +67,33 @@
 </template>
 
 <style>
+
+
+/* Classes specifically for the chart embedding */
+
+
+.embed-window{
+  /* border: 2px solid red;  */
+  margin: 0; 
+  padding: 0!important;
+}
+  
+
+
+iframe{
+  padding: 0px!important;
+  margin: 0px!important;
+    width: 100%; 
+  min-height: 550px;
+    overflow-x: hidden; 
+  overflow-y: hidden; 
+  border: 0px!important;
+    /* padding: 0!important;
+    background: none!important;
+    background-color: none!important; */
+}
+
+/* Classes specifically for the chart embedding */
 
 .dial-locator{
 position: unset!important;
