@@ -19,14 +19,14 @@
                 </div>
 
             </v-row>
-                <v-row class="airport-image">
-                    <img src="@/assets/images/monitoring/monitoring-image.png"/>
+                <v-row class="airport-image" style="height: 275px;">
+                    <!-- <img src="@/assets/images/monitoring/monitoring-image.png"/> -->
 
                 </v-row>
             <v-row>
             <div class="bottom-images">
-                <img style="margin-right: 10px;" src="@/assets/images/monitoring/monitoring-icon-03.png"/>
-                <img src="@/assets/images/monitoring/monitoring-icon-04.png"/>
+                <img style="margin-right: 10px;" src="@/assets/images/monitoring/monitoring-icon-03@2x.png"/>
+                <img src="@/assets/images/monitoring/monitoring-icon-04@2x.png"/>
                 </div>
 
             </v-row>
@@ -43,11 +43,11 @@
 
 .monitoring-card{
 
-      background-color:var(--background)!important;
-  border: 1px solid var(--border-color)!important;
-  border-radius: 8px!important;
-  padding: 40px!important;
-  /* min-width: 200px; */
+    background-color:var(--background)!important;
+    border: 1px solid var(--border-color)!important;
+    border-radius: 8px!important;
+    padding: 40px!important;
+    /* min-width: 200px; */
 }
 
 .monitoring-title-area{
@@ -60,10 +60,9 @@
 
 .airport-image{
     background-image: url(../assets/images/monitoring/monitoring-image.png);
-    background-repeat: no;
     background-size: cover;
-    height: 300px;
-    height: 300px;
+ 
+
 }
 
 .title-left{
@@ -80,6 +79,11 @@
     justify-content: flex-end;
     width: 100%;
     margin-top: 20px;
+}
+
+.bottom-images img{
+    width: 36px;   
+    height: 36px;
 }
 
 </style>

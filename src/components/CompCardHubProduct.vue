@@ -42,7 +42,7 @@
 }
 
 .hub-product:hover{
-  background-color: #3c3c3c!important;
+  background-color: #2d2d2d !important
 
 }
 
