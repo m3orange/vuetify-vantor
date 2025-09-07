@@ -1,13 +1,65 @@
 <template>
 
+<div class="dashboard-bg-mesh-01a">
+
+
+  <v-container class="app-wrapper-dashboard ">
+
+
+<v-row class="hero-header">
+<v-col lg="7" md="6" sm="12" class="hero-left-col">
+  <div class="logo-block">  
+    <img src="../assets/images/logos/atlas-logo-bw.png"/>
+
+  </div>
+  <div class="text-block">
+    <div class="hero-title">Atlas Design System</div>
+    <div class="hero-paragraph">
+        Atlas is the design system for Vantor’s products and user experiences. This repository contains Atlas’s documentation, and contains design guidelines and usage, product specifications, and working code with live previews.
+    </div>
+
+  </div>
 
 
 
 
-  <v-container class="app-wrapper-dashboard">
+</v-col>
+
+<v-col lg="3" md="6" sm="12">
+
+  <div class="hero-button">
+    <!-- <v-btn
+        class="mb-8"
+        color="rgba(6,207,255,1)"
+        size="x-large"
+        variant="outlined"
+        density="default"
+        outline
+        block>
+    View Documentation
+      </v-btn> -->
+          <v-btn
+        class="mb-8"
+        color="white"
+        size="large"
+        variant="flat"
+        density="default"
+        outline
+        block>
+    View Documentation
+      </v-btn>
+  </div>
 
 
 
+</v-col>
+
+
+
+
+</v-row>
+
+<v-row>Color Ramps</v-row>
 
     <v-row gutters="10px"> <!--no-gutters-->
 
@@ -67,16 +119,111 @@
       </v-col>
     </v-row>
 
-
-
-
   </v-container>
 
 
+</div>
 
 </template>
 
 <style>
+
+
+.dashboard-bg-mesh-01a{
+    background: url(../assets/images/dashboard/dashboard-bg-mesh-01d.svg);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position-x: 120% ;
+  background-position-y: 100px ;
+  left: 0px;
+    /* filter: sepia(100%) hue-rotate(90deg) saturate(200%);  */
+    /* Example filter chain */
+}
+
+
+.dashboard-bg-image-01{
+  background: url(../assets/images/dashboard/dashboard-bg-02.png);
+
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: 110% ;
+  background-position-y: 100px ;
+  left: 0px;
+}
+
+.dashboard-bg-image-03{
+  background: url(../assets/images/dashboard/dashboard-bg-03.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: 110% ;
+  background-position-y: 100px ;
+  left: 0px;
+}
+
+.dashboard-bg-image-06{
+    background-image: url(../assets/images/dashboard/dashboard-bg-06.png);
+    background-position-x: 150%;
+    background-position-y: 150px ;
+  
+}
+
+
+
+.hero-header{
+  height: 40vh;
+  padding: 80px 0;
+
+
+}
+
+.hero-header.v-row{
+    display: flex;
+  align-items: center;
+    justify-content: space-between;
+}
+
+.hero-left-col{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+}
+
+.logo-block{
+
+}
+
+.text-block{
+  padding: 20px 0 0 0;;
+}
+
+.logo-block, .text-block{
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 10px;
+}
+
+.hero-title{
+font-size: 42px; 
+font-family: var(--font-everett-bold);
+line-height: 1em; 
+margin-bottom: 20px;
+padding-right: 30px;
+}
+
+.hero-paragraph{
+  font-size: 20px;
+  font-family: var(--font-everett);
+line-height: 1.3em; 
+}
+
+.hero-button .v-btn{
+padding: 35px 30px;
+
+  /* border: 1px solid white; */
+  border-radius: 8px;
+  margin-bottom: 0px;
+
+}
 
 
 /* Classes specifically for the chart embedding */
@@ -87,7 +234,6 @@
   margin: 0; 
   padding: 0!important;
 }
-  
 
 
 iframe{
@@ -104,6 +250,8 @@ iframe{
 }
 
 /* Classes specifically for the chart embedding */
+
+
 
 .dial-locator{
 position: unset!important;
