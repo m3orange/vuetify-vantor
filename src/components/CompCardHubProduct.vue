@@ -34,10 +34,11 @@
 <style>
 
 .hub-product {
-  background-color: #262626!important;
-  border: 1px solid rgba(255,255,255,0.05)!important;
-  margin-top: 20px;
+      background-color: var(--background) !important;
+    border: 1px solid var(--border-color) !important;
+  /* margin-top: 20px; */
   aspect-ratio: 1/0.3;
+  padding-top: 10px;
 }
 
 .hub-product:hover{

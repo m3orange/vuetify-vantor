@@ -17,49 +17,59 @@
   </v-col>
   -->
 
-        <v-col lg="6" md="6" sm="12">
+        <v-col lg="7" md="7" sm="12">
+          <div class="highcharts-dark">
+              <div class="embed-window" style="padding: 0px!important;">
+                  <iframe src="https://www.m3orange.com/vantor-perm/design-system-poc/charts/_bar-01.html" frameBorder="0" style="padding: 0!important; background-color: transparent!important;"></iframe>
+              </div>
+          </div><!--highcharts-dark ends-->
+      </v-col>
 
-<div class="highcharts-dark">
-    <div class="embed-window" style="padding: 0px!important;">
-        <iframe src="https://www.m3orange.com/vantor-perm/design-system-poc/charts/_bar-01.html" frameBorder="0" style="padding: 0!important; background-color: transparent!important;"></iframe>
-                <!-- <iframe src="../charts-html/_bar-01.html" frameBorder="0" style="padding: 0!important; background-color: transparent!important;"></iframe> -->
-    </div>
-</div><!--highcharts-dark ends-->
+      <v-col lg="5" md="5" sm="12">
+        <div class="dashboard-card map-tools-adjust map-for-dashboard-card">
+          <ComponentMapTools/>
+        </div>
 
       </v-col>
-        <v-col lg="4" md="6" sm="12">
-          <div class="dashboard-card box-in-box">
-          <CompDatePicker/>
-          </div>
-        </v-col>
-        <v-col lg="4" md="6" sm="12">
-          <div class="dashboard-card map-tools-adjust map-for-dashboard-card">
-            <ComponentMapTools/>
-          </div>
-        </v-col>
-        <v-col lg="4" md="6" sm="12">
-        <div class="dashboard-card">
-            <CompForm/>
-        </div>
-        </v-col>
 
-    </v-row>
 
-    <v-row style=""> <!--no-gutters-->
+                  <v-col lg="4" md="6" sm="12">
+      <CompAccordion/> 
+
+      </v-col>
+
+
+
       <v-col lg="4" md="6" sm="12">
+          <CompCardHubProduct style="margin-bottom: 20px;"/>
+          <CompMonitoringCard/>
+      </v-col>
+
+      <v-col lg="4" md="6" sm="12">
+        <div class="dashboard-card">
+        <CompForm/>
+        </div>
+      </v-col>
+      
+
+
+
+            <v-col lg="4" md="6" sm="12">
       <CompLogin/>
       </v-col>
 
-      <v-col lg="4" md="6" sm="12">
-      <CompMonitoringCard/>
-      <CompCardHubProduct/>
-      </v-col>
+
 
       <v-col lg="4" md="6" sm="12">
-      <CompAccordion/> 
+        <div class="dashboard-card box-in-box">
+        <CompDatePicker/>
+        </div>
       </v-col>
-
     </v-row>
+
+
+
+
   </v-container>
 
 

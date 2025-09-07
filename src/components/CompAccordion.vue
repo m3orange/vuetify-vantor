@@ -1,10 +1,10 @@
 <template>
 <div class="dashboard-card" style="padding: 24px; height: max-content!important;">
 <h3 class="dashboard-card-title">Collections</h3>
-  <v-expansion-panels>
+  <v-expansion-panels v-model="activePanel">
 
 <!--One Tab & Expandable-->
-    <v-expansion-panel>
+    <v-expansion-panel value="0">
       <v-expansion-panel-title>
         <template v-slot:default="{ expanded }">
           <v-row no-gutters>
@@ -28,7 +28,7 @@
 
 
 <!--One Tab & Expandable-->
-    <v-expansion-panel>
+    <v-expansion-panel value="1">
       <v-expansion-panel-title>
         <template v-slot:default="{ expanded }">
           <v-row no-gutters>
@@ -51,7 +51,7 @@
     </v-expansion-panel>
 
 <!--One Tab & Expandable-->
-    <v-expansion-panel>
+    <v-expansion-panel value="settings">
       <v-expansion-panel-title>
         <template v-slot:default="{ expanded }">
           <v-row no-gutters>
@@ -128,6 +128,9 @@
 <script setup>
   import { ref } from 'vue'
 
+const activePanel = ref('settings') // "settings" panel starts open
+
+
   const locations = ['Australia', 'Barbados', 'Chile', 'Denmark', 'Ecuador', 'France']
 
   const trip = ref({
@@ -138,6 +141,10 @@
   })
 </script>
 <style>
+
+.v-expansion-panel--active{
+  border-top: 1px solid rgba(255,255,255,0.2)!important;
+}
 .accordion-panel-content-blue-border {
   border: 1px solid var(--vantor-blue)!important;
 }
