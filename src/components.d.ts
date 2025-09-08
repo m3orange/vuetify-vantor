@@ -24,6 +24,7 @@ declare module 'vue' {
     ComponentMapTools: typeof import('./components/ComponentMapTools.vue')['default']
     ComponentNavDrawer: typeof import('./components/ComponentNavDrawer.vue')['default']
     ComponentRadioButton: typeof import('./components/ComponentRadioButton.vue')['default']
+    ComponentSidebar: typeof import('./components/ComponentSidebar.vue')['default']
     ComponentsImport: typeof import('./components/ComponentsImport.vue')['default']
     ComponentVarious: typeof import('./components/ComponentVarious.vue')['default']
     CompTable: typeof import('./components/CompTable.vue')['default']

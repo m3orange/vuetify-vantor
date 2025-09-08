@@ -109,7 +109,7 @@ position: unset!important;
 }
 
 .embed-area{
-    border: 1px solid orange!important;
+    /* border: 1px solid orange!important; */
     padding: 30px;
     margin: 0px!important;
     margin-top: 0px!important;

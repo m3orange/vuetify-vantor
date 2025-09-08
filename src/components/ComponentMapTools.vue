@@ -10,6 +10,7 @@
       <template v-slot:activator="{ props: activatorProps }">
         <v-fab v-bind="activatorProps" size="medium" variant="flat">
               <img src="@/assets/images/map-tools/tool-btn-01a.png"/>
+                    <v-tooltip activator="parent" location="top">Add an Annotation</v-tooltip>
         </v-fab>
       </template>
 
@@ -17,7 +18,7 @@
         <div class="panel-content">
           <v-row>
 
-          <div class="panel-title">Add an Area</div>
+          <div class="panel-title">Add an Annotation</div>
 
           </v-row>
           <v-row>
@@ -78,6 +79,7 @@
       <template v-slot:activator="{ props: activatorProps }">
         <v-fab v-bind="activatorProps" size="medium" variant="flat">
               <img src="@/assets/images/map-tools/tool-btn-02a.png"/>
+              <v-tooltip activator="parent" location="top">Add an Area</v-tooltip>
         </v-fab>
       </template>
 
@@ -134,6 +136,7 @@
       <template v-slot:activator="{ props: activatorProps }">
         <v-fab v-bind="activatorProps" size="medium" variant="flat">
               <img src="@/assets/images/map-tools/tool-btn-03a.png"/>
+              <v-tooltip activator="parent" location="top">Measure Distance</v-tooltip>
         </v-fab>
       </template>
 
@@ -234,7 +237,9 @@
     margin: 0px!important;
 }
 
-
+.v-tooltip{
+  border: 1px solid orange!important;
+}
 
 </style>
 

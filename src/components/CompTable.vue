@@ -11,44 +11,32 @@
   <v-table theme="dark">
     <thead>
       <tr>
-        <th class="text-left">
-          Name
-        </th>
-        <th class="text-left">
-          Status
-        </th>
-        <th class="text-left">
-          Credits Charged
-        </th>
-        <th class="text-left">
-          Creation Date
-        </th>
-        <th class="text-left">
-          Product Type
-        </th>
-
-        <th class="text-left">
-          Actions
-        </th>
-
+        <th class="text-left">Name</th>
+        <th class="text-left">Status</th>
+        <th class="text-left">Credits Charged</th>
+        <th class="text-left">Creation Date</th>
+        <th class="text-left">Product Type</th>
+        <th class="text-left">Actions</th>
       </tr>
     </thead>
     <tbody>
-      <tr
-        v-for="item in orders"
-        :key="item.name"
-      >
-        <td>{{ item.name }}</td>
-        
-
-        <td>{{ item.credits }}</td>
-        <td>{{ item.date }}</td>
-        <td>{{ item.type }}</td>
+      <tr>
+        <td>Order Name</td>
+        <td>
+          <div class="status-pill-01">
+            <v-icon icon="mdi-circle" size="10px"></v-icon>Fulfilled  
+        </div>
+      </td>
+        <td>132255.39</td>
+        <td>2025-09-05 13:45:14</td>
+        <td>Precision3D True Ortho</td>
         <td>
           <div class="order-actions">
-            <v-icon color="" icon="mdi-tray-arrow-down" size="small"></v-icon>
-            <v-icon color="" icon="mdi-dots-vertical" size="small"></v-icon>
+            <v-icon icon="mdi-tray-arrow-down" size="small"></v-icon>
+            <v-icon icon="mdi-dots-vertical" size="small"></v-icon>
           </div>
+
+
 
         </td>
       </tr>
@@ -63,41 +51,34 @@
   gap: 10px;
 }
 
+.status-pill-01{ background-color: rgba(133,212,96,0.3);}
+
+.status-pill-01 .v-icon{ color:rgba(133,212,96,1) ;}
+
+
+.status-pill-02{ background-color: rgba(234,223,0,0.3);}
+.status-pill-02 .v-icon{ color:rgba(234,223,0,1) ;}
+
+.status-pill-03{ background-color: rgba(206,0,0,0.6);}
+.status-pill-03 .v-icon{ color:rgba(206,0,0,1) ;}
+
+.status-pill-01, .status-pill-02, .status-pill-03{
+  padding: 5px 15px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+
+}
+
+.status-pill-01 .v-icon{
+  margin-right: 10px;
+}
+
+
+
+
+
 </style>
 <script setup>
-  import { ref } from 'vue'
 
-
-
-  const orders = ref([
-
-        {
-      name: 'Order Name',
-      image: "",
-      credits: '0000.00',
-      date: '2025-01-01 00:00:00',
-      type: 'Vivid Standard',
-    },
-        {
-      name: 'Order Name',
-      thumbUrl: '',
-      credits: '0000.00',
-      date: '2025-01-01 00:00:00',
-      type: 'Vivid Standard',
-    },
-        {
-      name: 'Order Name',
-      image: '1.png',
-      credits: '0000.00',
-      date: '2025-01-01 00:00:00',
-      type: 'Vivid Standard',
-    },
-    {
-      name: 'Order Name',
-      status: 'Fulfilled',
-      credits: '0000.00',
-      date: '2025-01-01 00:00:00',
-      type: 'Vivid Standard',
-    },
-  ])
 </script>
