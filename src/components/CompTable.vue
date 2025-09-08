@@ -40,7 +40,7 @@
       >
         <td>{{ item.name }}</td>
         
-        <td><img src="../assets/images/tables/{{ item.image }}"/></td>
+
         <td>{{ item.credits }}</td>
         <td>{{ item.date }}</td>
         <td>{{ item.type }}</td>
@@ -73,14 +73,14 @@
 
         {
       name: 'Order Name',
-      image: "https://www.m3orange.com/vantor-fiexd/pill.png",
+      image: "",
       credits: '0000.00',
       date: '2025-01-01 00:00:00',
       type: 'Vivid Standard',
     },
         {
       name: 'Order Name',
-      thumbUrl: 'https://www.m3orange.com',
+      thumbUrl: '',
       credits: '0000.00',
       date: '2025-01-01 00:00:00',
       type: 'Vivid Standard',
