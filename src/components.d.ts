@@ -10,9 +10,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     'BUComponentCardHubProduct copy': typeof import('./components/BUComponentCardHubProduct copy.vue')['default']
-    Charts01: typeof import('./components/Charts01.vue')['default']
-    Charts02: typeof import('./components/Charts02.vue')['default']
-    Charts03: typeof import('./components/Charts03.vue')['default']
     CompAccordion: typeof import('./components/CompAccordion.vue')['default']
     CompCardHubProduct: typeof import('./components/CompCardHubProduct.vue')['default']
     CompColorRamps: typeof import('./components/CompColorRamps.vue')['default']
