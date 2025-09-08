@@ -177,7 +177,7 @@
 }
 
 .tool-bar {
-  background-color: #1D1D1D;
+      background-color: #212121;
     /* background-color: teal; */
   padding: 6px;
   width: fit-content;

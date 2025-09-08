@@ -1,6 +1,6 @@
 <template>
 
-<div class="dashboard-bg-mesh-01a">
+<div class="dashboard-bg-mesh-01">
 
 
   <v-container class="app-wrapper-dashboard ">
@@ -15,7 +15,7 @@
   <div class="text-block">
     <div class="hero-title">Atlas Design System</div>
     <div class="hero-paragraph">
-        Atlas is the design system for Vantor’s products and user experiences. This repository contains Atlas’s documentation, and contains design guidelines and usage, product specifications, and working code with live previews.
+        Atlas is the design system for Vantor’s products and user experiences. This repository contains Atlas’s documentation, which includes design and usage guidelines, product specifications, and working code with live previews.
     </div>
 
   </div>
@@ -28,7 +28,7 @@
 <v-col lg="3" md="6" sm="12">
 
   <div class="hero-button">
-    <!-- <v-btn
+    <v-btn
         class="mb-8"
         color="rgba(6,207,255,1)"
         size="x-large"
@@ -36,9 +36,11 @@
         density="default"
         outline
         block>
-    View Documentation
-      </v-btn> -->
-          <v-btn
+        <a href="https://dark-chill-08695284.figma.site/" target="_blank">
+        View Documentation
+        </a>
+      </v-btn>
+        <!--   <v-btn
         class="mb-8"
         color="white"
         size="large"
@@ -47,7 +49,7 @@
         outline
         block>
     View Documentation
-      </v-btn>
+      </v-btn> -->
   </div>
 
 
@@ -59,15 +61,10 @@
 
 </v-row>
 
-<v-row>Color Ramps</v-row>
+<v-row>Add Color Ramps</v-row>
 
-    <v-row gutters="10px"> <!--no-gutters-->
+    <v-row gutters="10px"> 
 
-      <!--
-<v-col cols="6">
-  <div class="dashboard-card"><Charts01/></div>
-  </v-col>
-  -->
 
         <v-col lg="7" md="7" sm="12">
           <div class="highcharts-dark">
@@ -81,16 +78,12 @@
         <div class="dashboard-card map-tools-adjust map-for-dashboard-card">
           <ComponentMapTools/>
         </div>
-
       </v-col>
 
 
-                  <v-col lg="4" md="6" sm="12">
-      <CompAccordion/> 
-
+      <v-col lg="4" md="6" sm="12">
+        <CompAccordion/> 
       </v-col>
-
-
 
       <v-col lg="4" md="6" sm="12">
           <CompCardHubProduct style="margin-bottom: 20px;"/>
@@ -104,22 +97,26 @@
       </v-col>
       
 
-
-
-            <v-col lg="4" md="6" sm="12">
-      <CompLogin/>
+      <v-col lg="4" md="6" sm="12">
+        <CompLogin/>
       </v-col>
-
-
 
       <v-col lg="4" md="6" sm="12">
         <div class="dashboard-card box-in-box">
         <CompDatePicker/>
         </div>
       </v-col>
+
+      <!-- <v-col lg="4" md="6" sm="12">
+        <div class="dashboard-card">
+        <CompColorRamps/>
+        </div>
+      </v-col> -->
+
+
     </v-row>
 
-  </v-container>
+  </v-container><!--app-wrapper-dashboar-->
 
 
 </div>
@@ -129,9 +126,9 @@
 <style>
 
 
-.dashboard-bg-mesh-01a{
-    background: url(../assets/images/dashboard/dashboard-bg-mesh-01d.svg);
-  background-size: 800px;
+.dashboard-bg-mesh-01{
+    background: url(../assets/images/dashboard/dashboard-bg-11a.png);
+  background-size: 1200px;
   background-repeat: no-repeat;
   background-position-x: 120% ;
   background-position-y: 100px ;
@@ -142,13 +139,13 @@
 
 
 .dashboard-bg-image-01{
-  background: url(../assets/images/dashboard/dashboard-bg-02.png);
+  background: url(../assets/images/dashboard/dashboard-bg-01.png);
 
-  background-size: 50%;
+  background-size: 60%;
   background-repeat: no-repeat;
-  background-position-x: 110% ;
+  background-position-x: 800px ;
   background-position-y: 100px ;
-  left: 0px;
+
 }
 
 .dashboard-bg-image-03{
@@ -199,7 +196,7 @@
 
 .logo-block, .text-block{
   border: 1px solid rgba(255,255,255,0.2);
-  padding: 10px;
+  padding: 20px 20px 30px 20px;
 }
 
 .hero-title{
@@ -217,9 +214,9 @@ line-height: 1.3em;
 }
 
 .hero-button .v-btn{
-padding: 35px 30px;
-
-  /* border: 1px solid white; */
+  padding: 35px 30px;
+  /* max-width: 100px!important; */
+    /* border: 1px solid white; */
   border-radius: 8px;
   margin-bottom: 0px;
 
@@ -302,7 +299,7 @@ position: unset!important;
 </style>
 
 <script lang="ts" setup>
-import CompTopNav from '../components/CompTopNav.vue';
+
 
 
 

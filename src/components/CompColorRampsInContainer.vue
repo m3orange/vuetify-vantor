@@ -1,9 +1,9 @@
 <template>
-
-
+<div class="full-screen-with-map">
+  <v-row style="height: 100vh;     justify-content: flex-start;">
 
       <div class="right-side-panel">
-        <div class="panel-content">
+<div class="panel-content">
           <h4>Visualization Settings</h4>
         <h5>Road Change Visualization</h5>
         <h6>Change Vector Color</h6>
@@ -61,12 +61,13 @@
 </div>
 
       </div>
-      <!-- <div>
+      <div>
          <img  src="../assets/images/color-ramps/ramp-panel-mockup.png" style="width: 380px;"/>
-      </div> -->
+      </div>
 
+  </v-row>
 
-
+</div>
 </template>
 
 <style>

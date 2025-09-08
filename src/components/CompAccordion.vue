@@ -69,7 +69,7 @@
       </v-expansion-panel-title>
 
       <v-expansion-panel-text class="accordion-panel-content">
-        <v-radio-group>
+        <v-radio-group v-model="radios">
         <v-row>
           <v-col>
             <v-card
@@ -80,7 +80,7 @@
             <v-card-title class="v-card-title-1">
             <div class="panel-content-above">
 
-            <v-radio label="2025-12-20 - 2025-12-21"  color="primary" value="primary"></v-radio>
+            <v-radio label="2025-12-20 - 2025-12-21"  color="primary" value="one"></v-radio>
             </div>
             </v-card-title>
             <v-card-text>
@@ -101,7 +101,7 @@
             >
               <v-card-title class="v-card-title-2">
                 <div class="">
-                  <v-radio label="2025-12-24 - 2025-12-25" color="purple" value="purple"></v-radio>
+                  <v-radio label="2025-12-24 - 2025-12-25" color="purple" value="two"></v-radio>
                 </div>
               </v-card-title>
               <v-card-text>
@@ -128,8 +128,9 @@
 <script setup>
   import { ref } from 'vue'
 
-const activePanel = ref('settings') // "settings" panel starts open
+  const activePanel = ref('settings') // "settings" panel starts open
 
+  const radios = ref('one')
 
   const locations = ['Australia', 'Barbados', 'Chile', 'Denmark', 'Ecuador', 'France']
 
@@ -151,7 +152,6 @@ const activePanel = ref('settings') // "settings" panel starts open
 .v-expansion-panel{
   background-color: var(--background);
 }
-
 
 .v-label{
   color: var(--on-surface);
@@ -180,16 +180,6 @@ const activePanel = ref('settings') // "settings" panel starts open
 }
 
 
-/* 
-.radio-01{
-  color: var(--vantor-blue);
-}
-
-.radio-02{
-  color: var(--on-surface);
-} */
-
-
 .v-expansion-panel{
   background-color: unset !important;
 }
@@ -202,7 +192,6 @@ const activePanel = ref('settings') // "settings" panel starts open
   padding:5px 20px 5px 20px!important;
 
 }
-
 
 .v-card-text img{
   height: 16px!important;
