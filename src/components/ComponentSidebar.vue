@@ -40,9 +40,6 @@
 </template>
 
 <style>
-.sidebar-links{
-
-}
 
 .v-list-item--nav .v-list-item-title{
   padding: 15px 5px;
