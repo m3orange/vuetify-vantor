@@ -80,15 +80,16 @@
             <v-card-title class="v-card-title-1">
             <div class="panel-content-above">
 
-            <v-radio label="2025-12-20 - 2025-12-21"  color="primary" value="one"></v-radio>
+            <v-radio label="2025-12-20 - 2025-12-21"  color="black" value="one"></v-radio>
+            Available
             </div>
             </v-card-title>
-            <v-card-text>
-            <div>CC: <img src="../assets/images/collections/collections-icons-01.png"/> 30% - 50%
-            </div>
-            <div>ONA: <img src="../assets/images/collections/collections-icons-02.png"/> 30°
-            </div>
-            </v-card-text>
+              <v-card-text>
+              <div>CC: <img src="../assets/images/collections/collections-icons-01.png"/> 30% - 50%
+              </div>
+              <div>ONA: <img src="../assets/images/collections/collections-icons-02.png"/> 30°
+              </div>
+              </v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -159,13 +160,19 @@
 }
 
 .v-card-title-1{
-    background-color: rgba(6, 207, 255, 0.15)!important;
+    background-color: rgba(6, 207, 255, 1)!important;
     border-bottom: 1px solid rgba(6, 207, 255, 1);
 
 }
 
+.v-card-title-1 .v-label,
+.v-card-title-2 .v-label{
+  color: #222222!important;
+  width: 100%;
+}
+
 .v-card-title-2{
-    background-color: unset!important;
+    background-color: var(--on-surface)!important;
     border-bottom: 1px solid var(--on-surface)!important;
 }
 
@@ -173,6 +180,11 @@
 .v-card-title-2{
     padding: 10px 10px 10px 12px;
 
+}
+
+.v-card-title-1 .v-selection-control__input > .v-icon,
+.v-card-title-2 .v-selection-control__input > .v-icon{
+  color: #333333!important;
 }
 
 .v-expansion-panel__shadow{
@@ -184,12 +196,24 @@
   background-color: unset !important;
 }
 
+.panel-content-above{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  font-size: 16px!important;
+  color: #333333;
+}
+
 .v-card-text{
   color: var(--on-surface);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding:5px 20px 5px 20px!important;
+
+
 
 }
 

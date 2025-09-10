@@ -1,63 +1,74 @@
 <template>
 
 <div class="dashboard-bg-mesh-01">
-
+<!--250910_1152-->
 
   <v-container class="app-wrapper-dashboard ">
 
 <DashboardHeader/>
 
-<v-row>Reminder: Add Color Ramps</v-row>
 
     <v-row gutters="10px"> 
-
-
-        <v-col lg="7" md="7" sm="12">
-          <div class="highcharts-dark">
-              <div class="embed-window" style="padding: 0px!important;">
-                  <iframe src="https://www.m3orange.com/vantor-perm/design-system-poc/charts/_bar-01.html" frameBorder="0" style="padding: 0!important; background-color: transparent!important;"></iframe>
-              </div>
-          </div><!--highcharts-dark ends-->
-      </v-col>
-
-      <v-col lg="5" md="5" sm="12">
-        <div class="dashboard-card map-tools-adjust map-for-dashboard-card">
-          <ComponentMapTools/>
-        </div>
-      </v-col>
-
 
       <v-col lg="4" md="6" sm="12">
         <CompAccordion/> 
       </v-col>
-
       <v-col lg="4" md="6" sm="12">
-          <CompCardHubProduct style="margin-bottom: 20px;"/>
-          <CompMonitoringCard/>
-      </v-col>
-
-      <v-col lg="4" md="6" sm="12">
-        <div class="dashboard-card">
-        <CompForm/>
+        <div class="dashboard-card map-tools-adjust map-for-dashboard-card" style="margin-bottom: 20px;">
+          <ComponentMapTools/>
         </div>
       </v-col>
-      
+
+      <v-col lg="4" md="12" sm="12">
+        <div class="dashboard-card box-in-box" style="padding-bottom: 10px!important;">
+        <CompDatePicker/>
+        </div>
+        <CompCardHubProduct style="margin-top: 20px;"/>
+        
+      </v-col>
+
+
+            <v-col lg="8" md="12" sm="12">
+          <div class="highcharts-dark">
+              <div class="embed-window" style="padding: 0px!important;">
+                  <iframe src="https://www.m3orange.com/vantor-perm/design-system-poc/charts/_bar-01.html" frameBorder="0" style="padding: 0!important; background-color: transparent!important;"></iframe>
+              </div>
+          </div>
+      </v-col>
+
+
+
+      <v-col lg="4" md="6" sm="12">
+        <div class="dashboard-card" style="padding: 30px 30px 40px 30px!important;">
+        <CompForm/>
+        </div>
+  
+
+      </v-col>
+
+      <v-col lg="4" md="6" sm="12">
+        <CompMonitoringCard/>
+      </v-col>
+      <v-col lg="8" md="12" sm="12">
+        <div class="dashboard-card" style="background-color: #212121 !important;">
+        <CompTable/>
+        </div>
+      </v-col>
+
+      <!-- <v-col lg="7" md="7" sm="12">
+          <div class="highcharts-dark">
+              <div class="embed-window" style="padding: 0px!important;">
+                  <iframe src="https://www.m3orange.com/vantor-perm/design-system-poc/charts/_bar-01.html" frameBorder="0" style="padding: 0!important; background-color: transparent!important;"></iframe>
+              </div>
+          </div>
+      </v-col>-->
 
       <v-col lg="4" md="6" sm="12">
         <CompLogin/>
       </v-col>
 
-      <v-col lg="4" md="6" sm="12">
-        <div class="dashboard-card box-in-box">
-        <CompDatePicker/>
-        </div>
-      </v-col>
 
-      <!-- <v-col lg="4" md="6" sm="12">
-        <div class="dashboard-card">
-        <CompColorRamps/>
-        </div>
-      </v-col> -->
+
 
 
     </v-row>
@@ -109,7 +120,7 @@ position: unset!important;
 }
 
 .embed-area{
-    /* border: 1px solid orange!important; */
+
     padding: 30px;
     margin: 0px!important;
     margin-top: 0px!important;
@@ -130,7 +141,7 @@ position: unset!important;
 .map-tools-adjust{
   display: flex;
     justify-content: center;
-    aspect-ratio: 1/0.8;
+    aspect-ratio: 1/1.21;
 }
 
 /* .embed-inside-layer-above{
@@ -143,7 +154,9 @@ position: unset!important;
   z-index: 1000;
 } */
 
-
+.form-button-row{
+  padding: 20px 0 5px 0!important;
+}
 
 </style>
 

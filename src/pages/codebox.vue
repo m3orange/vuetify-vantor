@@ -103,6 +103,39 @@
     </v-form>
 
 
+    <!--Table is below-->
+
+<v-table theme="orders-table">
+      <thead>
+            <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Credits</th>
+            <th>Creation Date</th>
+            <th>Product Type</th>
+            <th>Actions</th>
+            </tr>
+      </thead>
+      <tbody>
+            <tr>
+                  <td>Order Name</td>
+                  <td>
+                  <div class="status-pill-01"><v-icon icon="mdi-circle"></v-icon>In Progress</div>
+                  </td>
+                  <td>132255.39</td>
+                  <td>2025-09-05 13:45:14</td>
+                  <td>Precision3D True Ortho</td>
+                  <td>
+                        <div class="order-actions">
+                              <v-icon icon="mdi-tray-arrow-down" size="small"></v-icon>
+                              <v-icon icon="mdi-dots-vertical" size="small"></v-icon>
+                        </div>
+                  </td>
+            </tr>
+      </tbody>
+  </v-table>
+
+
 </template>
 
 <style>

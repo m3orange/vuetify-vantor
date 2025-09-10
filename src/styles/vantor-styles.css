@@ -38,8 +38,8 @@
   --vantor-plum: #8E0DD1;
   --vantor-purple: rgba(189, 82, 244,1);
   --vantor-light-gray: #b6b6b6;
-  --font-everett: "Everett Regular",Helvetica, Arial, sans-serif;
-    --font-everett-bold: "Everett Bold",Helvetica, Arial, sans-serif;
+  --font-everett: "Everett Regular", 'Everett Regular', Helvetica, Arial, sans-serif;
+    --font-everett-bold: "Everett Bold", 'Everett Bold', Helvetica, Arial, sans-serif;
   --font-inter: "Inter Regular",Helvetica, Arial, sans-serif;
   --v-theme-primary: rgba(6,207,255,1)!important;
   --vantor-secondary: var(--vantor-plum);
@@ -129,7 +129,7 @@ background-repeat: no-repeat;
 h1, h2, h3, h4, h5, h6{
     color: var(--v-theme-primary);
     margin-bottom: 20px;
-    font-family: "Everett Regular";
+    font-family: "Everett Bold", 'Everett Bold', Helvetica, Arial, sans-serif;
     color: var(--vantor-teal);
     font-weight: 600!important;
     letter-spacing: 0.55px;
@@ -558,7 +558,7 @@ min-height: 1200px;
 }
 
 .dashboard-card-title{
-  font-family: var(--font-everett)!important;
+  font-family: "Everett Regular", 'Everett Regular', Helvetica, Arial, sans-serif;
   font-weight: 600;
   letter-spacing: 0.5px;
   font-size: 18px!important;

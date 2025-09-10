@@ -157,6 +157,7 @@
       <template v-slot:activator="{ props: activatorProps }">
         <v-fab v-bind="activatorProps" size="medium" variant="flat">
               <img src="@/assets/images/map-tools/tool-btn-04b.png"/>
+              <v-tooltip activator="parent" location="top">Change</v-tooltip>
         </v-fab>
       </template>
 
@@ -237,9 +238,6 @@
     margin: 0px!important;
 }
 
-.v-tooltip{
-  border: 1px solid orange!important;
-}
 
 </style>
 

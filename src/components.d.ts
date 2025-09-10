@@ -22,6 +22,7 @@ declare module 'vue' {
     ComponentCardStats: typeof import('./components/ComponentCardStats.vue')['default']
     ComponentCheckbox: typeof import('./components/ComponentCheckbox.vue')['default']
     ComponentMapTools: typeof import('./components/ComponentMapTools.vue')['default']
+    ComponentMapToolsCondensed: typeof import('./components/ComponentMapToolsCondensed.vue')['default']
     ComponentNavDrawer: typeof import('./components/ComponentNavDrawer.vue')['default']
     ComponentRadioButton: typeof import('./components/ComponentRadioButton.vue')['default']
     ComponentSidebar: typeof import('./components/ComponentSidebar.vue')['default']
