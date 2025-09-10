@@ -39,7 +39,6 @@ declare module 'vue-router/auto-routes' {
     '/navdrawer': RouteRecordInfo<'/navdrawer', '/navdrawer', Record<never, never>, Record<never, never>>,
     '/radiobutton': RouteRecordInfo<'/radiobutton', '/radiobutton', Record<never, never>, Record<never, never>>,
     '/recordingmovies': RouteRecordInfo<'/recordingmovies', '/recordingmovies', Record<never, never>, Record<never, never>>,
-    '/sidebar': RouteRecordInfo<'/sidebar', '/sidebar', Record<never, never>, Record<never, never>>,
     '/table': RouteRecordInfo<'/table', '/table', Record<never, never>, Record<never, never>>,
     '/template': RouteRecordInfo<'/template', '/template', Record<never, never>, Record<never, never>>,
     '/various': RouteRecordInfo<'/various', '/various', Record<never, never>, Record<never, never>>,
