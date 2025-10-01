@@ -41,6 +41,7 @@ declare module 'vue-router/auto-routes' {
     '/recordingmovies': RouteRecordInfo<'/recordingmovies', '/recordingmovies', Record<never, never>, Record<never, never>>,
     '/table': RouteRecordInfo<'/table', '/table', Record<never, never>, Record<never, never>>,
     '/template': RouteRecordInfo<'/template', '/template', Record<never, never>, Record<never, never>>,
+    '/timepicker': RouteRecordInfo<'/timepicker', '/timepicker', Record<never, never>, Record<never, never>>,
     '/various': RouteRecordInfo<'/various', '/various', Record<never, never>, Record<never, never>>,
   }
 }

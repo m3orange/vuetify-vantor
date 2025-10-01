@@ -25,6 +25,7 @@ declare module 'vue' {
     ComponentNavDrawer: typeof import('./components/ComponentNavDrawer.vue')['default']
     ComponentRadioButton: typeof import('./components/ComponentRadioButton.vue')['default']
     ComponentsImport: typeof import('./components/ComponentsImport.vue')['default']
+    ComponentTimePicker: typeof import('./components/ComponentTimePicker.vue')['default']
     ComponentVarious: typeof import('./components/ComponentVarious.vue')['default']
     CompTable: typeof import('./components/CompTable.vue')['default']
     CompTopNav: typeof import('./components/CompTopNav.vue')['default']
@@ -34,10 +35,12 @@ declare module 'vue' {
     EmbedForm: typeof import('./components/EmbedForm.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']
+    NavFromFloater: typeof import('./components/NavFromFloater.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TableAvatarAndDropdown: typeof import('./components/tableAvatarAndDropdown.vue')['default']
     Template: typeof import('./components/-template.vue')['default']
+    TimePicker: typeof import('./components/TimePicker.vue')['default']
     TopBar: typeof import('./components/TopBar.vue')['default']
   }
 }

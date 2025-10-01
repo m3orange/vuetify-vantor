@@ -2,7 +2,7 @@
 
 
 <v-row class="hero-header">
-<v-col lg="7" md="6" sm="12" class="hero-left-col">
+<v-col lg="7" md="12" sm="12" class="hero-left-col">
   <div class="logo-block bg-with-corners">  
     <img src="../assets/images/logos/atlas-logo-bw.png"/>
 
