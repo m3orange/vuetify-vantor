@@ -30,8 +30,8 @@
   width: fit-content;
   height: 60px;
   bottom: 0px;
-  left: 0px;
-  position: sticky;
+  right: 0px;
+  position: fixed;
   /* background-color: #222; */
   display: flex;
   justify-content: flex-end;
@@ -45,11 +45,23 @@
     padding: 20px 10px;
     display: flex;
     align-items: center;
-      background-color: #222;
-      border: 1px solid rgba(255,255,255,0.2);
+      background-color: #111!important;
+      border: 0px;
       margin: 10px 12px 20px 0;
       margin-right: 12px;
       margin-bottom: 10px;
+}
+
+.menu-hamburger:hover{
+  background-color: #444 !important;
+}
+
+.menu-hamburger .v-icon{
+  color: #111!important;
+}
+
+.menu-hamburger:hover .v-icon{
+  color: #fff!important;
 }
 
 .v-list{

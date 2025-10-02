@@ -3,26 +3,8 @@
 <div class="dashboard-bg-mesh-01">
 <!--250910_1152-->
 
+<CompTopNav/>
 
-
-<v-row>
-   <v-col cols="12" style="margin-bottom: 0px;">
-      <RouterLink class="links" to="/">Home</RouterLink>
-      <RouterLink class="links" to="/import">Older Components</RouterLink>
-      <RouterLink class="links" to="/checkbox">Checkbox</RouterLink>
-      <RouterLink class="links" to="/radiobutton">Radio Button</RouterLink>
-      <RouterLink class="links" to="/cardstats">Stats Card</RouterLink>
-      <RouterLink class="links" to="/card">Card Grid</RouterLink>
-      <RouterLink class="links" to="/navdrawer">Sidebar Drawer</RouterLink>
-      <RouterLink class="links" to="/maptools">Map Tools</RouterLink>
-      <RouterLink class="links" to="/cardhubproduct">Hub Card</RouterLink>
-      <RouterLink class="links" to="/various">Various</RouterLink>
-   </v-col>
-
-     <v-col cols="12" style="margin-top: 0px;">
-
-   </v-col>
-</v-row>
 
 
 
