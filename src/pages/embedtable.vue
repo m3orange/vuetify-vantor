@@ -10,5 +10,15 @@
 
 <style>
 
+  .v-application__wrap{
+display: flex!important;
+height: 100%!important; 
+width: 100%;
+justify-content: center!important;
+align-content: center!important;
+background-color: #222!important;
+
+}
+
 
 </style>

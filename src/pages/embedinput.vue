@@ -1,9 +1,12 @@
 <template>
-  <div class="embed-container">
-<v-col cols="8">
-    <v-text-field placeholder="Enter something here" variant="outlined" persistent-placeholder label="Input Field"></v-text-field>
-</v-col>
-  </div>
+
+  <v-application>
+    <div class="embed-container">
+  <v-col cols="8">
+      <v-text-field placeholder="Enter something here" variant="outlined" persistent-placeholder label="Input Field"></v-text-field>
+  </v-col>
+    </div>
+  </v-application>
 </template>
 
 <script lang="ts" setup>
@@ -44,6 +47,21 @@ h2{
   .forced-font{
        font-family: "Everett Regular", 'Everett Regular', Everett Regular, Roboto Condensed, Helvetica, Arial, sans-serif!important;
   }
+
+.v-application__wrap{
+display: flex!important;
+height: 100%!important; 
+width: 100%;
+justify-content: center!important;
+align-content: center!important;
+background-color: #222!important;
+
+}
+
+.embed-container{
+  background: none;
+}
+
 
 
 </style>

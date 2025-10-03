@@ -180,7 +180,7 @@
 }
 
 .v-application__wrap{
-  display: flex!important;
+display: flex!important;
 height: 100%!important; 
 width: 100%;
 justify-content: center!important;

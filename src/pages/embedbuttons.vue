@@ -1,6 +1,6 @@
 <template>
   <div class="embed-container">
-    <v-row class="each-component" style="width: 650px;">
+    <v-row class="each-component" style="width: 650px;justify-content: center; align-items: center;">
       <v-btn density="default" size="x-large" variant="outlined" color="#06CFFF"
         class="form-button buttons-for-movies forced-font">Primary</v-btn>
       <v-btn density="default" size="x-large" variant="outlined" color="#B2B2B2"
@@ -8,7 +8,7 @@
         style="background-color: rgba(178, 178, 178, 0.1)">Secondary</v-btn>
       <v-btn density="default" size="x-large" variant="outlined" color="#4F94EC"
         class="form-button buttons-for-movies forced-font"
-        style="background-color: rgba(79, 148, 236, 0.1);">Tertiary</v-btn>
+        style="background-color: rgba(79, 148, 236, 0.1); margin-right: 0px!important;">Tertiary</v-btn>
     </v-row>
   </div>
 </template>
@@ -51,6 +51,22 @@ h2{
   .forced-font{
        font-family: "Everett Regular", 'Everett Regular', Everett Regular, Roboto Condensed, Helvetica, Arial, sans-serif!important;
   }
+
+  .v-application__wrap{
+display: flex!important;
+height: 100%!important; 
+width: 100%;
+justify-content: center!important;
+align-content: center!important;
+background-color: #222!important;
+
+}
+
+.embed-container{
+  background: none;
+}
+
+
 
 
 </style>
