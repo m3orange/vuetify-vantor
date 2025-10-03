@@ -1,6 +1,6 @@
 <template>
 
-
+<!--------------------- Table --------------------->
 
  <h1>Code Blocks</h1>
 
@@ -13,9 +13,22 @@
 
 
 <iframe src="https://www.designatvantor.com/embedtable"
-class="figma-live-demo" 
 width="100%" 
 height="200" 
+border="0" 
+style="border:0px!important; overflow-x: hidden; overflow-y: hidden;">
+</iframe>
+
+
+<!--------------------- Form --------------------->
+
+
+<h1>Live Demo</h1>
+
+
+<iframe src="https://www.designatvantor.com/form" 
+width="100%" 
+height="350" 
 border="0" 
 style="border:0px!important; overflow-x: hidden; overflow-y: hidden;">
 </iframe>

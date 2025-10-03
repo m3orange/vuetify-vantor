@@ -1,9 +1,19 @@
 <template>
-  <div class="embed-container">
+<v-application>
+
+
+  <div class="embed-container"
+  style="justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+    background: none;">
 
 
 <v-row>
-    <v-col cols="10" offset="1">
+    <v-col cols="12">
 
       <v-form ref="form" class="form-canvas" id="accordion-collection">
             <v-row no-gutters>
@@ -92,6 +102,8 @@
   </v-col>
 </v-row>
   </div>
+
+  </v-application>
 </template>
 
 <script setup>
@@ -104,7 +116,7 @@
 <style>
 
 .embed-container{
-  height: fit-content;
+
   padding: 80px 0;
 }
 
@@ -167,6 +179,14 @@
   letter-spacing: 0px;
 }
 
+.v-application__wrap{
+  display: flex!important;
+height: 100%!important; 
+width: 100%;
+justify-content: center!important;
+align-content: center!important;
+
+}
 
 
 </style>
