@@ -145,12 +145,8 @@ td, th{
 }
 
 .embed-container{
-  width: 100%!Important;
-
+ min-height: 320px;
 }
-
-
-
 
 
 </style>
