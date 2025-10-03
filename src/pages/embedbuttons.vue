@@ -65,6 +65,10 @@ background-color: #222!important;
   background: none;
 }
 
+.v-row{
+      justify-content: center!important;
+}
+
 
 
 
