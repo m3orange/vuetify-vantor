@@ -104,6 +104,7 @@
 .v-table{
   font-size: 13px!important;
   padding: 20px!important;
+  width: 100%!Important;
 }
 
 td, th{
@@ -144,17 +145,8 @@ td, th{
 }
 
 .embed-container{
-
-  margin: 0px;
-  padding: 0px;
-  max-width: fit-content!important;
-  height: auto;
-  background-color: #222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  width: 100%!Important;
+  border: 1px solid blue!important;
 }
 
 
