@@ -36,6 +36,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+        z-index: 200!important;
 }
 .v-overlay__content{
   background-color: #222;
@@ -45,11 +46,13 @@
     padding: 20px 10px;
     display: flex;
     align-items: center;
-      background-color: #111!important;
+      /* background-color: #111!important; */
+            background-color: transparent!important;
       border: 0px;
-      margin: 10px 12px 20px 0;
+      /* margin: 10px 12px 20px 0; */
       margin-right: 12px;
       margin-bottom: 10px;
+
 }
 
 .menu-hamburger:hover{
@@ -57,7 +60,8 @@
 }
 
 .menu-hamburger .v-icon{
-  color: #111!important;
+  color: transparent!important;
+
 }
 
 .menu-hamburger:hover .v-icon{
@@ -85,16 +89,17 @@
 
   const menuItems = [
     { text: 'Home', route: '/' },
+    { text: 'Embed Button', route: '/embedbuttons' },
+        { text: 'Embed Input', route: '/embedinput' },
+    { text: 'Embed Form', route: '/embedform' },
+    { text: 'Embed Table', route: '/embedtable' },
     { text: 'Checkbox', route: '/checkbox' },
     { text: 'Radio Button', route: '/radiobutton' },
     { text: 'Color Ramps', route: '/colorramps' },
-            { text: 'Accordion', route: '/accordion' },
-    { text: 'Date Picker', route: '/datepicker' },
     { text: 'Form', route: '/form' },
-    { text: 'Login', route: '/login' },
     { text: 'Map Tools', route: '/maptools' },
     { text: 'Sidebar', route: '/navdrawer' },
-    { text: 'Hub Card', route: '/cardhubproduct' },
+
       ]
 
 </script>

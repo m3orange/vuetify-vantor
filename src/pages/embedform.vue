@@ -1,0 +1,170 @@
+<template>
+  <div class="embed-container">
+<v-row>
+    <v-col cols="10" offset="1">
+
+      <v-form ref="form" class="form-canvas" id="accordion-collection">
+            <v-row no-gutters>
+              <v-col class="d-flex justify-start dashboard-card-title" cols="12">
+                General Parameters
+              </v-col>
+              <v-col
+                class="text-grey"
+                cols="8"
+              >
+              </v-col>
+            </v-row>
+      <v-row>
+        <v-col cols="12" sm="12">
+          <v-text-field variant="outlined" persistent-placeholder label="Order Name"></v-text-field>
+        </v-col>
+      </v-row>
+
+
+      <v-row>
+        <v-col cols="6" lg="12" md="6" sm="12" xs="12">
+          <v-text-field variant="outlined" persistent-placeholder label="Earliest Date">
+            <div class="form-slider">
+              <div class="calendar-date-text">
+                    <v-icon color="rgba(6,207,255,1)" icon="mdi-calendar-outline" size="small"></v-icon>2024-04-13
+              </div>
+            </div>
+          </v-text-field>
+        </v-col>
+
+
+      <v-col cols="6" lg="12" md="6" sm="12" xs="12">
+      <v-text-field variant="outlined" persistent-placeholder label="Latest Date">
+      <div class="form-slider">
+      <div class="calendar-date-text">
+            <v-icon color="rgba(6,207,255,1)" icon="mdi-calendar-outline" size="small"></v-icon>2024-12-07
+      </div>
+
+      </div>
+      </v-text-field>
+      </v-col>
+      </v-row>
+
+
+
+
+  <v-row>
+    <v-col cols="12" sm="12">
+      <div class="form-slider">
+      <v-text-field variant="outlined" density="compact" persistent-placeholder label="Off-Nadir Angle">
+      <div class="slider-text"> Minº 0</div>
+        <v-range-slider
+          v-model="value"
+          step="10"
+          thumb-label="never"
+          color="rgba(6,207,255,1)"
+          width="100%"
+        ></v-range-slider>
+        <div class="slider-text"> 30 Maxº</div>
+      </v-text-field>
+      </div>
+    </v-col>
+  </v-row>
+
+
+
+        <div class="d-flex flex-column">
+
+
+
+      <v-row align="center" class="form-button-row">
+
+
+
+
+          <v-btn density="default" size="large" variant="outlined" color="tertiary" class="form-button">Cancel</v-btn>
+          <v-btn density="default" size="large" variant="flat" color="primary" class="form-button bg-primary" style="background-color: rgba(6,207,255,1)!important; color: var(--background)!important;">Submit</v-btn>
+
+
+      </v-row>
+
+
+        </div>
+      </v-form>
+
+  </v-col>
+</v-row>
+  </div>
+</template>
+
+<script setup>
+  import { ref } from 'vue'
+
+  const value = ref([0, 50])
+</script>
+
+
+<style>
+
+.embed-container{
+  height: fit-content;
+  padding: 80px 0;
+}
+
+.form-slider{
+  z-index: 100;
+}
+.slider-text{
+  min-width: fit-content;
+}
+
+.form-slider .v-field__input {
+    display: flex!important;
+    grid-area: control;
+    flex-direction: row!important;
+    flex-wrap: nowrap!important;
+    min-height: fit-content!important;
+    gap: 25px;
+}
+
+.v-field .v-input{
+  height: 40px;
+}
+
+.form-slider .v-field{
+  /* border: 3px solid red!important; */
+  min-height: fit-content;
+}
+
+.v-field{
+  height: 50px;
+}
+.v-slider-thumb__label {
+    /* background: rgba(var(--v-theme-surface-variant), 1); */
+    background: #444444!important;
+    color: rgb(var(--v-theme-on-surface-variant));
+}
+
+.calendar-date-text{
+  font-family: var(--font-everett);
+  font-weight: 600;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.form-button-row{
+  display: flex;
+      justify-content: space-evenly;
+      margin: 5px 0 5px 0!important;
+}
+.v-btn__content{
+  font-family: "Everett Regular";
+  font-weight: 600;
+}
+
+.form-button{
+  text-transform: unset!important;
+  font-family: var(--font-everett-bold);
+  letter-spacing: 0px;
+}
+
+
+
+</style>

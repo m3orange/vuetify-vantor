@@ -28,6 +28,7 @@ declare module 'vue' {
     ComponentTimePicker: typeof import('./components/ComponentTimePicker.vue')['default']
     ComponentVarious: typeof import('./components/ComponentVarious.vue')['default']
     CompTable: typeof import('./components/CompTable.vue')['default']
+    CompTableCompact: typeof import('./components/CompTableCompact.vue')['default']
     CompTopNav: typeof import('./components/CompTopNav.vue')['default']
     'CompTopNav copy': typeof import('./components/CompTopNav copy.vue')['default']
     copy: typeof import('./components/CompTopNav copy.vue')['default']

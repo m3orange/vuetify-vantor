@@ -1,4 +1,5 @@
 <template>
+  <v-container>
 <v-row>
   <v-col cols="">
     <v-form ref="form" class="form-canvas" id="accordion-collection">
@@ -22,7 +23,7 @@
 
 
 <v-row>
-    <v-col cols="6" lg="6" md="12" sm="12">
+    <v-col cols="6" lg="12" md="12" sm="6">
       <v-text-field variant="outlined" persistent-placeholder label="Earliest Date">
         <div class="form-slider">
           <div class="calendar-date-text">
@@ -33,7 +34,7 @@
     </v-col>
 
 
-    <v-col cols="6" lg="6" md="12" sm="12">
+    <v-col cols="6" lg="12" md="12" sm="6">
       <v-text-field variant="outlined" persistent-placeholder label="Latest Date">
         <div class="form-slider">
           <div class="calendar-date-text">
@@ -90,7 +91,7 @@
 </v-row>
     
     
-
+</v-container>
 
 
 

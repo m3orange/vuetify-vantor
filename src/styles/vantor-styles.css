@@ -567,3 +567,23 @@ min-height: 1200px;
   margin-bottom: 10px;
 }
 
+
+
+
+.embed-container{
+  border: 1px solid purple!important;
+  margin: 0px;
+  padding: 0px;
+  max-width: 600px;
+  height: 200px;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.cell-align-right{
+  text-align: right;
+}
+
