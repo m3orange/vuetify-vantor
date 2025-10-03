@@ -25,6 +25,7 @@ declare module 'vue-router/auto-routes' {
     '/cardmonitoring': RouteRecordInfo<'/cardmonitoring', '/cardmonitoring', Record<never, never>, Record<never, never>>,
     '/cardstats': RouteRecordInfo<'/cardstats', '/cardstats', Record<never, never>, Record<never, never>>,
     '/checkbox': RouteRecordInfo<'/checkbox', '/checkbox', Record<never, never>, Record<never, never>>,
+    '/codeblock': RouteRecordInfo<'/codeblock', '/codeblock', Record<never, never>, Record<never, never>>,
     '/colorramps': RouteRecordInfo<'/colorramps', '/colorramps', Record<never, never>, Record<never, never>>,
     '/dashboard': RouteRecordInfo<'/dashboard', '/dashboard', Record<never, never>, Record<never, never>>,
     '/datepicker': RouteRecordInfo<'/datepicker', '/datepicker', Record<never, never>, Record<never, never>>,

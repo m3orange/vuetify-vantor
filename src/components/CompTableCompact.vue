@@ -16,7 +16,7 @@
 
 
       <tr>
-        <td>Order Name</td>
+        <td>Order</td>
         <td>
           <div class="status-pill-02"><v-icon icon="mdi-circle" size="10px"></v-icon>In Progress</div>
       </td>
@@ -31,7 +31,7 @@
         </td>
       </tr>
       <tr>
-        <td>Order Name</td>
+        <td>Order</td>
         <td>
           <div class="status-pill-02"><v-icon icon="mdi-circle" size="10px"></v-icon>In Progress</div>
       </td>
@@ -46,7 +46,7 @@
         </td>
       </tr>
       <tr>
-        <td>Order Name</td>
+        <td>Order</td>
         <td>
           <div class="status-pill-01"><v-icon icon="mdi-circle" size="10px"></v-icon>Fulfilled</div>
       </td>
@@ -61,7 +61,7 @@
         </td>
       </tr>
       <tr>
-        <td>Order Name</td>
+        <td>Order</td>
         <td>
           <div class="status-pill-03"><v-icon icon="mdi-circle" size="10px"></v-icon>Unfulfilled</div>
       </td>
@@ -76,7 +76,7 @@
         </td>
       </tr>
       <tr>
-        <td>Order Name</td>
+        <td>Order</td>
         <td>
           <div class="status-pill-01"><v-icon icon="mdi-circle" size="10px"></v-icon>Fulfilled</div>
       </td>
@@ -91,7 +91,7 @@
         </td>
       </tr>
       <tr>
-        <td>Order Name</td>
+        <td>Order</td>
         <td>
           <div class="status-pill-01"><v-icon icon="mdi-circle" size="10px"></v-icon>Fulfilled</div>
       </td>
@@ -105,21 +105,7 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td>Order Name</td>
-        <td>
-          <div class="status-pill-03"><v-icon icon="mdi-circle" size="10px"></v-icon>Unfulfilled</div>
-      </td>
-        <td class="cell-align-right">10,293.39</td>
-        <!-- <td>2025-09-05 13:45:14</td> -->
-        <td>Online Imagery</td>
-        <td>
-          <div class="order-actions">
-            <v-icon icon="mdi-tray-arrow-down" size="small"></v-icon>
-            <v-icon icon="mdi-dots-vertical" size="small"></v-icon>
-          </div>
-        </td>
-      </tr>
+
 
     </tbody>
   </v-table>
@@ -130,6 +116,15 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.v-table{
+  font-size: 13px!important;
+  padding: 20px!important;
+}
+
+td, th{
+  padding: 0px 8px!important;
 }
 
 .status-pill-01{ background-color: rgba(133,212,96,0.3);}
@@ -166,7 +161,7 @@
 }
 
 .embed-container{
-  border: 1px solid purple!important;
+
   margin: 0px;
   padding: 0px;
   max-width: fit-content!important;
@@ -175,6 +170,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 
