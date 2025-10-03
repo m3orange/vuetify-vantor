@@ -16,7 +16,7 @@
 
 
       <tr>
-        <td>Order</td>
+        <td>Order Name</td>
         <td>
           <div class="status-pill-02"><v-icon icon="mdi-circle" size="10px"></v-icon>In Progress</div>
       </td>
@@ -31,7 +31,7 @@
         </td>
       </tr>
       <tr>
-        <td>Order</td>
+        <td>Order Name</td>
         <td>
           <div class="status-pill-02"><v-icon icon="mdi-circle" size="10px"></v-icon>In Progress</div>
       </td>
@@ -46,7 +46,7 @@
         </td>
       </tr>
       <tr>
-        <td>Order</td>
+        <td>Order Name</td>
         <td>
           <div class="status-pill-01"><v-icon icon="mdi-circle" size="10px"></v-icon>Fulfilled</div>
       </td>
@@ -61,7 +61,7 @@
         </td>
       </tr>
       <tr>
-        <td>Order</td>
+        <td>Order Name</td>
         <td>
           <div class="status-pill-03"><v-icon icon="mdi-circle" size="10px"></v-icon>Unfulfilled</div>
       </td>
@@ -76,7 +76,7 @@
         </td>
       </tr>
       <tr>
-        <td>Order</td>
+        <td>Order Name</td>
         <td>
           <div class="status-pill-01"><v-icon icon="mdi-circle" size="10px"></v-icon>Fulfilled</div>
       </td>
@@ -90,23 +90,6 @@
           </div>
         </td>
       </tr>
-      <tr>
-        <td>Order</td>
-        <td>
-          <div class="status-pill-01"><v-icon icon="mdi-circle" size="10px"></v-icon>Fulfilled</div>
-      </td>
-        <td class="cell-align-right">6,293.39</td>
-        <!-- <td>2025-09-05 13:45:14</td> -->
-        <td>Object Detection</td>
-        <td>
-          <div class="order-actions">
-            <v-icon icon="mdi-tray-arrow-down" size="small"></v-icon>
-            <v-icon icon="mdi-dots-vertical" size="small"></v-icon>
-          </div>
-        </td>
-      </tr>
-
-
     </tbody>
   </v-table>
 </template>
