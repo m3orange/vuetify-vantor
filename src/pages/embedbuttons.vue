@@ -1,6 +1,6 @@
 <template>
   <div class="embed-container">
-    <v-row class="each-component" style="width: 650px;justify-content: center; align-items: center;">
+    <v-row style="width: 650px;justify-content: center; align-items: center;">
       <v-btn density="default" size="x-large" variant="outlined" color="#06CFFF"
         class="form-button buttons-for-movies forced-font">Primary</v-btn>
       <v-btn density="default" size="x-large" variant="outlined" color="#B2B2B2"
