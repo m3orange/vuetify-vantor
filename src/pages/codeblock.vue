@@ -12,7 +12,7 @@
 <h1>Live Demo</h1>
 
 
-<iframe src="https://www.designatvantor.com/embedtable" class="figma-live-demo" width="100%" frameBorder="0">
+<iframe src="https://www.designatvantor.com/embedtable" class="figma-live-demo" width="100%" border="0" style="border:0px;">
   </iframe>
 
 

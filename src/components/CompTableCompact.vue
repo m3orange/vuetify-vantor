@@ -146,7 +146,7 @@ td, th{
 
 .embed-container{
   width: 100%!Important;
-  border: 1px solid blue!important;
+
 }
 
 
