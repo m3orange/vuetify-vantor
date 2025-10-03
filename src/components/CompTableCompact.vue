@@ -90,6 +90,20 @@
           </div>
         </td>
       </tr>
+                  <tr>
+        <td>Order Name</td>
+        <td>
+          <div class="status-pill-02"><v-icon icon="mdi-circle" size="10px"></v-icon>In Progress</div>
+      </td>
+        <td class="cell-align-right">888.39</td>
+        <td>Vivid Standard 15cm HD</td>
+        <td>
+          <div class="order-actions">
+            <v-icon icon="mdi-tray-arrow-down" size="small"></v-icon>
+            <v-icon icon="mdi-dots-vertical" size="small"></v-icon>
+          </div>
+        </td>
+      </tr>
     </tbody>
   </v-table>
 </template>
@@ -145,7 +159,9 @@ td, th{
 }
 
 .embed-container{
- min-height: 320px;
+ height: 400px;
+ overflow-x: hidden;
+ overflow-y: hidden;
 }
 
 
