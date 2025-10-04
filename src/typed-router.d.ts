@@ -38,6 +38,7 @@ declare module 'vue-router/auto-routes' {
     '/homepage': RouteRecordInfo<'/homepage', '/homepage', Record<never, never>, Record<never, never>>,
     '/import': RouteRecordInfo<'/import', '/import', Record<never, never>, Record<never, never>>,
     '/index copy': RouteRecordInfo<'/index copy', '/index copy', Record<never, never>, Record<never, never>>,
+    '/launchpad': RouteRecordInfo<'/launchpad', '/launchpad', Record<never, never>, Record<never, never>>,
     '/login': RouteRecordInfo<'/login', '/login', Record<never, never>, Record<never, never>>,
     '/maptools': RouteRecordInfo<'/maptools', '/maptools', Record<never, never>, Record<never, never>>,
     '/movies': RouteRecordInfo<'/movies', '/movies', Record<never, never>, Record<never, never>>,
