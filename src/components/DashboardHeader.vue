@@ -10,7 +10,7 @@
   <div class="text-block bg-with-corners">
     <div class="hero-title">Atlas Design System</div>
     <div class="hero-paragraph">
-        Atlas is the design system for Vantor’s products and user experiences. This repository contains Atlas’s documentation, which includes design and usage guidelines, product specifications, and working code with live previews.
+        Atlas is the design system for all of our products and user experiences. This repository contains Atlas’s documentation, including usage guidelines, product specifications, and working live code previews.
     </div>
 
   </div>
