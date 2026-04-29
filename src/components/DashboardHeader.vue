@@ -20,6 +20,8 @@
 
 </v-col>
 
+
+  <!--
 <v-col lg="3" md="6" sm="12">
 
   <div class="hero-button">
@@ -35,7 +37,7 @@
         View Documentation
         </a>
       </v-btn>
-        <!--   <v-btn
+       <v-btn
         class="mb-8"
         color="white"
         size="large"
@@ -44,14 +46,14 @@
         outline
         block>
     View Documentation
-      </v-btn> -->
+      </v-btn>
   </div>
 
 
 
 </v-col>
 
-
+ -->
 
 
 </v-row>
